@@ -1,0 +1,39 @@
+ServerEvents.tags("item",event=>{
+    event.remove('forge:rods/iron',['ad_astra:iron_rod'])
+    event.remove('forge:plates/iron',['ad_astra:iron_plate'])
+    event.remove('forge:ingots/steel',['ad_astra:steel_ingot'])
+    event.remove('forge:nuggets/steel',['ad_astra:steel_nugget'])
+    event.remove('forge:plates/steel',['ad_astra:steel_plate'])
+    event.remove('forge:rods/steel',['ad_astra:steel_rod'])
+    event.remove('forge:storage_blocks/steel',['ad_astra:steel_block'])
+    event.remove('forge:storage_blocks/silicon',['expatternprovider:silicon_block'])
+    event.removeAll('gtceu:circuits/ulv')
+    event.add("gtceu:circuits/ulv",['mcgougou:ulv_universal_circuit','gtceu:vacuum_tube','gtceu:nand_chip'])
+    event.removeAll('gtceu:circuits/lv')
+    event.add("gtceu:circuits/lv",['mcgougou:lv_universal_circuit','gtceu:basic_electronic_circuit','gtceu:basic_integrated_circuit','gtceu:microchip_processor'])
+    event.removeAll('gtceu:circuits/mv')
+    event.add("gtceu:circuits/mv",['mcgougou:mv_universal_circuit','gtceu:good_electronic_circuit','gtceu:good_integrated_circuit','gtceu:micro_processor'])
+    event.removeAll('gtceu:circuits/hv')
+    event.add("gtceu:circuits/hv",['mcgougou:hv_universal_circuit','gtceu:advanced_integrated_circuit','gtceu:micro_processor_assembly','gtceu:nano_processor'])
+    //
+    event.removeAll('gtceu:circuits/ev')
+    event.add("gtceu:circuits/ev",['mcgougou:ev_universal_circuit','gtceu:micro_processor_computer','gtceu:nano_processor_assembly','gtceu:quantum_processor'])
+    event.removeAll('gtceu:circuits/iv')
+    event.add("gtceu:circuits/iv",['mcgougou:iv_universal_circuit','gtceu:micro_processor_mainframe','gtceu:nano_processor_computer','gtceu:quantum_processor_assembly','gtceu:crystal_processor'])
+    event.removeAll('gtceu:circuits/luv')
+    event.add("gtceu:circuits/luv",['mcgougou:luv_universal_circuit','gtceu:nano_processor_mainframe','gtceu:quantum_processor_computer','gtceu:crystal_processor_assembly','gtceu:wetware_processor'])
+    //
+        event.removeAll('gtceu:circuits/zpm')
+    event.add("gtceu:circuits/zpm",['mcgougou:zpm_universal_circuit','gtceu:quantum_processor_mainframe','gtceu:crystal_processor_computer','gtceu:wetware_processor_assembly'])
+        event.removeAll('gtceu:circuits/uv')
+    event.add("gtceu:circuits/uv",['mcgougou:uv_universal_circuit','gtceu:crystal_processor_mainframe','gtceu:wetware_processor_computer'])
+        event.removeAll('gtceu:circuits/uhv')
+    event.add("gtceu:circuits/uhv",['mcgougou:uhv_universal_circuit','gtceu:wetware_processor_mainframe'])
+    
+})
+
+ServerEvents.tags("fluid",event=>{
+
+event.removeAll("ad_astra:tier_1_rocket_fuel")
+    event.add("ad_astra:tier_1_rocket_fuel",["gtceu:tier1_rocket_fuel"])
+})
