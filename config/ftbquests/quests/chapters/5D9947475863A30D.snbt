@@ -1,0 +1,42 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5D9947475863A30D"
+	group: "53F6DF5DCC136A9C"
+	icon: "gtceu:ev_machine_hull"
+	id: "5D9947475863A30D"
+	order_index: 5
+	quest_links: [
+		{
+			id: "0F17C2B7D66D0708"
+			linked_quest: "2DBC4BC82B483726"
+			size: 1.2d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "4323B51DD9EE0796"
+			linked_quest: "2ACB6FB13A2326BF"
+			x: -1.0d
+			y: -2.5d
+		}
+	]
+	quests: [{
+		dependencies: ["2DBC4BC82B483726"]
+		id: "65C4901A2932808D"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "6D08C4683185C190"
+			table_id: 3438830455175391625L
+			type: "random"
+		}]
+		tasks: [{
+			id: "01C8DEAA037D00CF"
+			item: "gtceu:hno3_factory"
+			type: "item"
+		}]
+		x: 1.0d
+		y: -1.0d
+	}]
+	title: "第六章：超高压时代（EV）"
+}

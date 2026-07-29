@@ -1,0 +1,11 @@
+{
+	id: "3C571C0BE32EF17B"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 128, item: "ae2:fluix_glass_cable" }
+		{ count: 128, item: "ae2:fluix_covered_cable" }
+		{ count: 128, item: "ae2:fluix_smart_cable" }
+	]
+	title: "ae xianl"
+}

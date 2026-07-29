@@ -1,0 +1,15 @@
+{
+	id: "3242A78D006DEA2B"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 16, item: "ae2:interface" }
+		{ count: 16, item: "ae2:import_bus" }
+		{ count: 16, item: "ae2:export_bus" }
+		{ count: 16, item: "ae2:pattern_provider" }
+		{ count: 4, item: "expatternprovider:ex_pattern_provider" }
+		{ count: 16, item: "ae2:storage_bus" }
+		{ count: 32, item: "ae2:quartz_fiber" }
+	]
+	title: "ae1"
+}

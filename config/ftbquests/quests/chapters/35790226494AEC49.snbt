@@ -1,0 +1,137 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "35790226494AEC49"
+	group: ""
+	icon: "ftbquests:book"
+	id: "35790226494AEC49"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7BDD19DA08C901B7"
+			tasks: [{
+				id: "5D28177F2C38EF45"
+				title: "欢迎来到[平原化工厂]整合包！"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: [
+				"整合包为半专家包（也许），难度不会太低，模组小白慎入"
+				"已经内置了gt配方速度为10倍"
+			]
+			id: "6E7F94C247223F8B"
+			tasks: [{
+				id: "2E0806ABA4C6E220"
+				title: "整合包难度"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: ["本整合包由mcgougou制作"]
+			id: "165515F5CEEF9651"
+			tasks: [{
+				id: "667A48DEDCCBE733"
+				title: "整合包制作名单"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: ["整合包以GTM为主要模组，在此基础上进行了深度的魔改，使游戏内容更加贴合现实"]
+			id: "05792B2271479E18"
+			tasks: [{
+				id: "3D1A4A77901E20AE"
+				title: "整合包主要内容简介"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:command_block"
+			id: "72C42E2A7102995D"
+			rewards: [{
+				command: "/gamerule keepInventory true"
+				id: "3687895CBB367C67"
+				type: "command"
+			}]
+			tasks: [{
+				id: "77984B5052E5EB3F"
+				title: "死亡不掉落"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:command_block"
+			id: "4ACF7143E9F8D7FB"
+			rewards: [{
+				command: "/gamerule doDaylightCycle false"
+				id: "13C59828E8A1EF53"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3FD2DFE3A3BB2F00"
+				title: "时间暂停"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:command_block"
+			id: "6A230CAA0ADA063F"
+			rewards: [{
+				command: "/gamerule doDaylightCycle true"
+				id: "5188D315BE519F00"
+				type: "command"
+			}]
+			tasks: [{
+				id: "70D708C916742AD5"
+				title: "时间继续流逝"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: ["如题，可以纯和平游玩，不用担心怪物了"]
+			id: "798BD2519A4CA246"
+			tasks: [{
+				id: "336C4C7805417AE4"
+				title: "和平游玩"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: ["感谢群友在内测期间对整合包的支持"]
+			id: "150227A8AEFDE61C"
+			tasks: [{
+				id: "7F494836E33CF254"
+				title: "鸣谢清单"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "前言"
+}

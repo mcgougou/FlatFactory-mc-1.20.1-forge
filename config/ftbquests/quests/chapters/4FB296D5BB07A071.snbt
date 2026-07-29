@@ -1,0 +1,2054 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4FB296D5BB07A071"
+	group: "73356BC45C6ECC71"
+	icon: "gtceu:iron_dust"
+	id: "4FB296D5BB07A071"
+	order_index: 0
+	quest_links: [
+		{
+			id: "7AF23A28884DACB8"
+			linked_quest: "524633DB9D0B95B1"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "2985CC8E8CE2DAA0"
+			linked_quest: "6064231281192C9C"
+			x: -5.5d
+			y: 14.0d
+		}
+		{
+			id: "1269E19591CDA448"
+			linked_quest: "0EED90337DB60118"
+			x: 33.5d
+			y: 4.0d
+		}
+	]
+	quests: [
+		{
+			icon: "gtceu:sapphire_dust"
+			id: "0651F48C57A71A82"
+			tasks: [
+				{
+					id: "110D3ED9045A3E08"
+					item: "gtceu:sapphire_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36821A849AE62888"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			id: "615F7C7ED225D0C9"
+			tasks: [{
+				id: "3A042493CC52F89C"
+				title: "铝的制取"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			icon: "gtceu:cryolite_dust"
+			id: "30834DBCCE03D634"
+			tasks: [
+				{
+					id: "5FC1ADA9A741B2A1"
+					item: "gtceu:cryolite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43802455A4982BA5"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0651F48C57A71A82"
+				"30834DBCCE03D634"
+			]
+			icon: "gtceu:aluminium_oxide_with_cryolite_dust"
+			id: "0E85D949CF5FEDE6"
+			tasks: [
+				{
+					id: "3B13A00CBCEFEBD7"
+					item: "gtceu:aluminium_oxide_with_cryolite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3716AAE8CE3C610E"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E85D949CF5FEDE6"]
+			icon: "gtceu:aluminium_oxide_with_cryolite_bucket"
+			id: "30EEFC49877B729E"
+			tasks: [
+				{
+					id: "1DE9B338726EB732"
+					item: "gtceu:aluminium_oxide_with_cryolite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "360E5F3ACE41A64E"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E85D949CF5FEDE6"]
+			description: ["电解机"]
+			icon: "gtceu:aluminium_dust"
+			id: "1C0161C481F76BA7"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "6FB3D2FB80A3B9A0"
+					item: "gtceu:aluminium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36E5CF8109FCEFA7"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "52D394AA05FFEAA7"
+			tasks: [{
+				id: "41A7EA66D1F29A34"
+				title: "锰的制取"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			icon: "gtceu:pyrolusite_dust"
+			id: "493C2B1D6A63E1CE"
+			tasks: [
+				{
+					id: "5836508FB65053C3"
+					item: "gtceu:pyrolusite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5035E85B1FD6F126"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["47A052EA705A2E5C"]
+			icon: "gtceu:manganese_dust"
+			id: "76F379D78A43D16E"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1A66583DC38AE72A"
+					item: "gtceu:manganese_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C3E6FCE410402B9"
+					type: "checkmark"
+				}
+			]
+			x: 10.25d
+			y: 0.5d
+		}
+		{
+			dependencies: ["493C2B1D6A63E1CE"]
+			icon: "gtceu:manganese_monoxide_dust"
+			id: "19F6A1370CC1D590"
+			tasks: [
+				{
+					id: "762B7610D374C205"
+					item: "gtceu:manganese_monoxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52B137428427A08B"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["19F6A1370CC1D590"]
+			icon: "gtceu:manganese_sulfate_solution_bucket"
+			id: "47A052EA705A2E5C"
+			tasks: [
+				{
+					id: "2E1019B52BC734BB"
+					item: "gtceu:manganese_sulfate_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "739393B2F9EF3D5F"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "52D3B03CC11D3C9E"
+			tasks: [{
+				id: "0CDA24DB3C47F226"
+				title: "钒(五氧化二钒)的制取"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			icon: "gtceu:vanadium_magnetite_dust"
+			id: "767090610F99BC73"
+			tasks: [
+				{
+					id: "2A9D8C7D52F5A57F"
+					item: "gtceu:vanadium_magnetite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CD11644D8177A15"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["767090610F99BC73"]
+			icon: "gtceu:vanadium_slag_dust"
+			id: "15661A9E950D072A"
+			tasks: [
+				{
+					id: "15E82371B8E3899C"
+					item: "gtceu:vanadium_slag_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "72E52D6C073C16AE"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["15661A9E950D072A"]
+			icon: "gtceu:vanadium_containing_leaching_solution_bucket"
+			id: "10EBC839959E18A6"
+			tasks: [
+				{
+					id: "16025147DBCF7E69"
+					item: "gtceu:vanadium_containing_leaching_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "082E589827403A2E"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			id: "032B662132F46687"
+			tasks: [{
+				id: "4096B153A4886681"
+				title: "氢的制取"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["430C9F648F111AD6"]
+			icon: "gtceu:potassium_hydroxide_dust"
+			id: "3C58AAB89B79E4C0"
+			tasks: [
+				{
+					id: "400C938DCDF71008"
+					item: "gtceu:potassium_hydroxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7B6746D56D08B4A4"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3C58AAB89B79E4C0"]
+			description: [
+				"氢氧化钾和水一起放到电解机，选1号电路."
+				"氢氧化钾只提升水导电性，不消耗。"
+				"想直接电解水？试试就知道了"
+			]
+			icon: "gtceu:hydrogen_bucket"
+			id: "6B8D13B48D96525D"
+			tasks: [
+				{
+					id: "1D32E872E61A7396"
+					item: "gtceu:hydrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "276D88104F16F8CE"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			id: "5585602F933CE548"
+			tasks: [{
+				id: "72F0CB3F02AEB709"
+				title: "氮的制取"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["524633DB9D0B95B1"]
+			description: ["前期唯一的氮来源。"]
+			icon: "gtceu:nitrogen_bucket"
+			id: "2EB16E475BED355D"
+			tasks: [
+				{
+					id: "295A9C98D59E436B"
+					item: "gtceu:nitrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "231E9760319CAB1C"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			id: "63EC5952A6C67833"
+			tasks: [{
+				id: "5C1B9472F15650C0"
+				title: "氯的制取"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			icon: "gtceu:salt_water_bucket"
+			id: "3681E5B4C1419878"
+			tasks: [
+				{
+					id: "5D8F90185923E6CF"
+					item: "gtceu:salt_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4E91BDD4D55680C3"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3681E5B4C1419878"]
+			description: ["电解盐水可以量产氯气，同时也会产生氢气"]
+			icon: "gtceu:chlorine_bucket"
+			id: "2C2400D8EA183990"
+			tasks: [
+				{
+					id: "3C2EC8F7CABE1970"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B3E41B097C402AB"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"可以电解水，也可以分馏空气，在制取氮气和氢气时可同时获得氧气"
+				"电解水更快"
+			]
+			id: "73CB8BFAAC1A5FE4"
+			tasks: [{
+				id: "55027CA4FAA9E1CC"
+				title: "氧的制取"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3C58AAB89B79E4C0"]
+			description: [
+				"氢氧化钾和水一起放到电解机，选1号电路."
+				"氢氧化钾是催化剂，提升水导电性，不消耗。"
+				"你想直接电解水？那你试试呗"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:oxygen_bucket"
+			id: "399C263BF7ABBFEB"
+			tasks: [
+				{
+					id: "216C41D447E84F3D"
+					item: "gtceu:oxygen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7439D05B9647EA2D"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["524633DB9D0B95B1"]
+			description: [""]
+			hide_dependency_lines: true
+			icon: "gtceu:oxygen_bucket"
+			id: "02286B74972E7BAE"
+			tasks: [
+				{
+					id: "7F27CA8300B15D92"
+					item: "gtceu:oxygen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7CCA71E28DC37FC0"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["10EBC839959E18A6"]
+			icon: "gtceu:ammonium_metavanadate_dust"
+			id: "28281A426938A57E"
+			tasks: [
+				{
+					id: "0304163ED0EEFAA7"
+					item: "gtceu:ammonium_metavanadate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2E8AD1E9F3DF5869"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["28281A426938A57E"]
+			description: ["生产硫酸的重要催化剂"]
+			icon: "gtceu:vanadium_pentoxide_dust"
+			id: "692729023A64226F"
+			tasks: [
+				{
+					id: "51E475EB9BD8A0CF"
+					item: "gtceu:vanadium_pentoxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C5AC64B32E43D21"
+					type: "checkmark"
+				}
+			]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["692729023A64226F"]
+			description: ["氧化铝可以回收"]
+			icon: "gtceu:vanadium_ingot"
+			id: "7CDC3B7EA815B297"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "348D12F6129812FE"
+					item: "gtceu:vanadium_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "713E6C6C7122C22C"
+					type: "checkmark"
+				}
+			]
+			x: 11.0d
+			y: 5.899999999999999d
+		}
+		{
+			id: "4B987489CB940D73"
+			tasks: [{
+				id: "53405D8027123E71"
+				title: "砷"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 16.5d
+		}
+		{
+			icon: "gtceu:realgar_dust"
+			id: "032ADF24BF042C31"
+			tasks: [
+				{
+					id: "625802C6AF7B03E1"
+					item: "gtceu:realgar_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DD5BA7FC655D915"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 18.0d
+		}
+		{
+			icon: "gtceu:cobaltite_dust"
+			id: "2A6CD7180673D320"
+			tasks: [
+				{
+					id: "67EF1CBA7CDDD588"
+					item: "gtceu:cobaltite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47D575998252E898"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"2A6CD7180673D320"
+				"032ADF24BF042C31"
+			]
+			icon: "gtceu:arsenic_trioxide_dust"
+			id: "1EE406318BE48DA1"
+			tasks: [
+				{
+					id: "559268F3000EC255"
+					item: "gtceu:arsenic_trioxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "48BFF59119A19487"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["1EE406318BE48DA1"]
+			icon: "gtceu:arsenic_dust"
+			id: "0290F9A83C9EE95B"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "67F65A7AA9695464"
+					item: "gtceu:arsenic_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "379F6AB410CD5FBC"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 19.0d
+		}
+		{
+			id: "08021F824C618919"
+			tasks: [{
+				id: "17B0640BBD266A5F"
+				title: "镓"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6064231281192C9C"]
+			icon: "gtceu:bayer_solution_bucket"
+			id: "29B5B44E26C04912"
+			tasks: [
+				{
+					id: "3864818A3A571838"
+					item: "gtceu:bayer_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44F8ECFEE06249A1"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["29B5B44E26C04912"]
+			icon: "gtceu:al_ga_oh_3_dust"
+			id: "73568367E9E76FEE"
+			tasks: [
+				{
+					id: "73863F3C89ADA27B"
+					item: "gtceu:al_ga_oh_3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2EF8C897B3258596"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["73568367E9E76FEE"]
+			icon: "gtceu:fujiazha_dust"
+			id: "40203877645A9BA7"
+			tasks: [
+				{
+					id: "5A24341CE5E0904C"
+					item: "gtceu:fujiazha_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22AD6A10D934ED5C"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["40203877645A9BA7"]
+			icon: "gtceu:raw_nagaoh4_solution_bucket"
+			id: "2002436F3EE711ED"
+			tasks: [
+				{
+					id: "0C166DC30CD55699"
+					item: "gtceu:raw_nagaoh4_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08F3E93EDACD7F3F"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["40203877645A9BA7"]
+			description: ["全是没用的杂质，扔了吧"]
+			icon: "gtceu:fujiajianjinzha_dust"
+			id: "727173F2F296200B"
+			tasks: [
+				{
+					id: "47CEA7E918F51417"
+					item: "gtceu:fujiajianjinzha_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78DA41AC629E2D07"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["2002436F3EE711ED"]
+			description: ["纯镓酸钠溶液！"]
+			icon: "gtceu:nagaoh4_solution_bucket"
+			id: "73F2E37A3ED8DF55"
+			tasks: [
+				{
+					id: "04E98CFEF766DC31"
+					item: "gtceu:nagaoh4_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D56C37DD3EE063A"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["73F2E37A3ED8DF55"]
+			icon: "gtceu:gallium_dust"
+			id: "7984140022E93405"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "74EAC2BB3B5F14BF"
+					item: "gtceu:gallium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06448435B36C9937"
+					type: "checkmark"
+				}
+			]
+			x: 1.25d
+			y: 14.0d
+		}
+		{
+			id: "0A7B5186AAC8D5D0"
+			tasks: [{
+				id: "6980D03DEAC23004"
+				title: "铬"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:chromite_dust"
+			id: "5B12139C3BC00297"
+			tasks: [
+				{
+					id: "7416B472A353EFC0"
+					item: "gtceu:chromite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5BC404C3A17E4D67"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5B12139C3BC00297"]
+			icon: "gtceu:gesuanna_dust"
+			id: "7F882951F3BCF39E"
+			tasks: [
+				{
+					id: "2BEB3651EC1DF589"
+					item: "gtceu:gesuanna_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "40D9568C0FC64FE5"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"7F882951F3BCF39E"
+				"0084B5994F5C14AD"
+			]
+			icon: "gtceu:zhonggesuanna_dust"
+			id: "14D51E66E28CD1DD"
+			tasks: [
+				{
+					id: "2DAD3AFA625589FC"
+					item: "gtceu:zhonggesuanna_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "568F459D1B1E05F2"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["14D51E66E28CD1DD"]
+			icon: "gtceu:cr2o3_dust"
+			id: "410C5C1010F7DEC7"
+			tasks: [
+				{
+					id: "50BDE588BC49B0D8"
+					item: "gtceu:cr2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1B23D6FC31483F4A"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["410C5C1010F7DEC7"]
+			icon: "gtceu:chromium_ingot"
+			id: "3E47EC8FBE32852F"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "3B4748BC21189F0C"
+					item: "gtceu:chromium_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20E293BF442F0322"
+					type: "checkmark"
+				}
+			]
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			icon: "gtceu:sulfuric_acid_bucket"
+			id: "0084B5994F5C14AD"
+			tasks: [
+				{
+					id: "27A10713422B09C5"
+					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "25882E7E61F28BEF"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			id: "6FF0DD26EEA984A3"
+			tasks: [{
+				id: "027C45E6D62B43C2"
+				title: "磷"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			description: ["研磨磷灰石（宝石）"]
+			icon: "gtceu:apatite_dust"
+			id: "489FB365C688CAD5"
+			tasks: [
+				{
+					id: "4AE503B866D9CF54"
+					item: "gtceu:apatite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1554CD1EF1F3C894"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["489FB365C688CAD5"]
+			icon: "gtceu:white_p_dust"
+			id: "47E5DD48481138FE"
+			tasks: [
+				{
+					id: "5C42C8FC3DCE31BB"
+					item: "gtceu:white_p_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3AA6CBB010EC7F0A"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["47E5DD48481138FE"]
+			icon: "gtceu:phosphorus_dust"
+			id: "637B6EE695AB369C"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "556FC615FCDF183E"
+					item: "gtceu:phosphorus_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77608E986F173A9E"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 14.5d
+		}
+		{
+			id: "65B6BE4EBA80CBCE"
+			tasks: [{
+				id: "1F4748EEDBEFB5EF"
+				title: "lv"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			id: "6C8D4032E3BF6B21"
+			tasks: [{
+				id: "3ADE518550F94CDE"
+				title: "mv"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			id: "61F263A0C47FA21D"
+			tasks: [{
+				id: "34FA4AC3F0CDB034"
+				title: "锑"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 25.5d
+		}
+		{
+			description: ["处理辉锑矿得到"]
+			icon: "gtceu:stibnite_dust"
+			id: "6B96CD69E0E0F560"
+			tasks: [
+				{
+					id: "2D5309C4E459CCCC"
+					item: "gtceu:stibnite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63477F092F7CA6B2"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 27.0d
+		}
+		{
+			dependencies: ["6B96CD69E0E0F560"]
+			icon: "gtceu:antimony_trioxide_dust"
+			id: "38D6E0C51E938398"
+			tasks: [
+				{
+					id: "4163A980087CF164"
+					item: "gtceu:antimony_trioxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "709BC6071D454B19"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["38D6E0C51E938398"]
+			icon: "gtceu:antimony_dust"
+			id: "02AC95A966D0AA8E"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [
+				{
+					id: "3C6C30B60ADE8FF0"
+					item: "gtceu:antimony_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BF9559F5E55EF35"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 27.0d
+		}
+		{
+			id: "2DB643F97FBB0C74"
+			tasks: [{
+				id: "5627DD9AB540D113"
+				title: "铅"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 22.0d
+		}
+		{
+			description: ["处理方铅矿"]
+			icon: "gtceu:galena_dust"
+			id: "28DE868F731A2EA7"
+			tasks: [
+				{
+					id: "5EBE873A22A41551"
+					item: "gtceu:galena_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "68690C61DA6DEB7B"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["28DE868F731A2EA7"]
+			icon: "gtceu:massicot_dust"
+			id: "5475888FC5F17614"
+			tasks: [
+				{
+					id: "407ED4726E070462"
+					item: "gtceu:massicot_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "124E04C55DD0BB57"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["5475888FC5F17614"]
+			description: ["铅的熔点很低，还原时直接能获得锭"]
+			icon: "gtceu:lead_ingot"
+			id: "26B00CB7391FB5BE"
+			tasks: [
+				{
+					id: "550CBB26335D767F"
+					item: "gtceu:lead_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6CDBC696BBF2B1AB"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 23.5d
+		}
+		{
+			id: "4DF32F89BF39A8A3"
+			tasks: [{
+				id: "2CE8BB6CCB39165E"
+				title: "镁"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			description: ["处理菱镁矿"]
+			icon: "gtceu:magnesite_dust"
+			id: "7415BD577FBD0F7A"
+			tasks: [
+				{
+					id: "231C8FE18BC77510"
+					item: "gtceu:magnesite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B28C3F5554CE42A"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7415BD577FBD0F7A"]
+			description: ["化学反应釜"]
+			icon: "gtceu:magnesia_dust"
+			id: "62FF148465686494"
+			tasks: [
+				{
+					id: "4FB7E733EC5C6247"
+					item: "gtceu:magnesia_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "058D9D4C3C6A95AF"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["62FF148465686494"]
+			id: "47A61234051B565C"
+			tasks: [{
+				id: "3AF7775B9D1AE154"
+				item: "gtceu:mgcl2_solution_bucket"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["47A61234051B565C"]
+			description: [
+				"化学反应釜。"
+				"直接蒸发氯化镁溶液会使得氯化镁为氢氧化镁，这样氯化镁就会不纯。"
+				"因此必须使用干燥的HCl气体使水解平衡逆向移动，并带走水蒸气，低温逐步脱水，得到纯净无水氯化镁"
+			]
+			icon: "gtceu:magnesium_chloride_dust"
+			id: "773B7326A44B4454"
+			tasks: [
+				{
+					id: "72B5AB092F4BD75F"
+					item: "gtceu:magnesium_chloride_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "781CB824193AE9A2"
+					type: "checkmark"
+				}
+			]
+			x: 18.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["773B7326A44B4454"]
+			icon: "gtceu:mgcl2_molten_bucket"
+			id: "28D7BE162E55905A"
+			tasks: [
+				{
+					id: "31FDF51F37583ED4"
+					item: "gtceu:mgcl2_molten_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "111F59BE565BBAA7"
+					type: "checkmark"
+				}
+			]
+			x: 20.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["28D7BE162E55905A"]
+			icon: "gtceu:magnesium_dust"
+			id: "4307B210CEDE0364"
+			tasks: [
+				{
+					id: "5858CC091D531D85"
+					item: "gtceu:magnesium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "49777459F201FD9C"
+					type: "checkmark"
+				}
+			]
+			x: 21.5d
+			y: 7.5d
+		}
+		{
+			id: "280A35F10D8EFA5F"
+			tasks: [{
+				id: "4C99CEADE2C81B9E"
+				title: "钠"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			icon: "gtceu:salt_dust"
+			id: "5B379D769868EDAD"
+			tasks: [
+				{
+					id: "453A5C1DA0B82809"
+					item: "gtceu:salt_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "150463708E7EFBE1"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B379D769868EDAD"]
+			icon: "gtceu:nacl_molten_bucket"
+			id: "4B04EF7F078FFB9F"
+			tasks: [
+				{
+					id: "541DD7F111816426"
+					item: "gtceu:nacl_molten_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21147FAF066C5541"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B04EF7F078FFB9F"]
+			icon: "gtceu:sodium_dust"
+			id: "3BCBF39FE64FBD68"
+			tasks: [
+				{
+					id: "7B75D55B080FF1B5"
+					item: "gtceu:sodium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03EFB08F140CB37B"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			id: "487E56E7AECD7F59"
+			tasks: [{
+				id: "0257B296E7075E45"
+				title: "钾"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			icon: "gtceu:sodium_dust"
+			id: "31F444DAEF8B432B"
+			tasks: [
+				{
+					id: "31C9404C1E4EC5E0"
+					item: "gtceu:sodium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4A682F6F3F10211D"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			icon: "gtceu:rock_salt_dust"
+			id: "47933980750C8E96"
+			tasks: [
+				{
+					id: "0DC082BB45C6C050"
+					item: "gtceu:rock_salt_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39E3E7BF2962EF6A"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"47933980750C8E96"
+				"31F444DAEF8B432B"
+			]
+			description: ["虽然钾金属活动性强于钠，但钾沸点更低、优先汽化变为蒸气脱离反应体系，因此钠可以置换出钾。"]
+			icon: "gtceu:k_gas_bucket"
+			id: "6D3312446F8137D6"
+			tasks: [
+				{
+					id: "62F2547E6355C4D9"
+					item: "gtceu:k_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C0664AC29FC2F36"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D3312446F8137D6"]
+			icon: "gtceu:potassium_dust"
+			id: "5704A2598317F92C"
+			tasks: [
+				{
+					id: "30B10F08543B9FFC"
+					item: "gtceu:potassium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F9A649379C3ACC4"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			id: "5155CBE1BCD16ABA"
+			tasks: [{
+				id: "349B2FF2CF05B366"
+				title: "hv"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			description: ["电压等级仅供参考"]
+			id: "675D03685408E32B"
+			size: 1.5d
+			tasks: [{
+				id: "27AC0B8B52C6FA54"
+				title: "注意"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			id: "06DC675F40FBC59E"
+			tasks: [{
+				id: "4BB085927AA0F406"
+				title: "钛"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:raw_ilmenite"
+			id: "7E435D3922DDFA3B"
+			tasks: [
+				{
+					id: "25043D29BBE7F6D6"
+					item: "gtceu:raw_ilmenite"
+					type: "item"
+				}
+				{
+					id: "6F397624FD66489C"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7E435D3922DDFA3B"]
+			icon: "gtceu:ilmenite_dust"
+			id: "0697BBD9D54457EA"
+			tasks: [
+				{
+					id: "5853BF71663D1EE6"
+					item: "gtceu:ilmenite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5276FBBABFE37D39"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0697BBD9D54457EA"]
+			icon: "gtceu:rutile_dust"
+			id: "2DC1F49E90560C88"
+			tasks: [
+				{
+					id: "3F03FA985A831AC8"
+					item: "gtceu:rutile_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52F048493ABEC2F4"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2DC1F49E90560C88"]
+			description: [""]
+			icon: "gtceu:raw_ticl4_bucket"
+			id: "0C5653F55D6DD1A2"
+			tasks: [
+				{
+					id: "66B960C947CB0D6D"
+					item: "gtceu:raw_ticl4_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06869335F14E4DC2"
+					type: "checkmark"
+				}
+			]
+			x: 18.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0C5653F55D6DD1A2"]
+			id: "7B86055B06B5E5F5"
+			tasks: [{
+				id: "55C4E46FCE7B9DBC"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 10.5d
+		}
+		{
+			icon: "gtceu:magnesium_chloride_dust"
+			id: "33E30AA1F00565CC"
+			tasks: [
+				{
+					id: "5762287CE7F0278F"
+					item: "gtceu:magnesium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "558F5731DEB2F483"
+					type: "checkmark"
+				}
+			]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"33E30AA1F00565CC"
+				"7B86055B06B5E5F5"
+			]
+			description: ["氯化镁可以回收重新处理为金属镁"]
+			icon: "gtceu:hot_titanium_ingot"
+			id: "7EA80257E32A1E57"
+			tasks: [
+				{
+					id: "04DF4A777B1BF3D5"
+					item: "gtceu:hot_titanium_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3D42AB5AA034476B"
+					type: "checkmark"
+				}
+			]
+			x: 21.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7EA80257E32A1E57"]
+			description: ["真空冷冻机"]
+			icon: "gtceu:titanium_ingot"
+			id: "566F27E630DE94BA"
+			tasks: [
+				{
+					id: "2B178A9374EDCA2E"
+					item: "gtceu:titanium_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E7BA21B102DFD4D"
+					type: "checkmark"
+				}
+			]
+			x: 23.0d
+			y: 10.5d
+		}
+		{
+			description: ["实际上这些处理步骤实在是太复杂了，完全还原太费时间，因此作者稍微做了简化（但是也不多）"]
+			id: "2ACB6FB13A2326BF"
+			tasks: [{
+				id: "2FD71C7CC0309FDF"
+				title: "铂系处理"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: -2.0d
+		}
+		{
+			description: ["月球"]
+			icon: "gtceu:raw_cooperite"
+			id: "239EB4A6DB9196E3"
+			tasks: [
+				{
+					id: "778B6706057091D0"
+					item: "gtceu:raw_cooperite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "270235B43E0DDE91"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["239EB4A6DB9196E3"]
+			icon: "gtceu:platinum_group_sludge_dust"
+			id: "4D7C2DF04DD6E8B7"
+			tasks: [
+				{
+					id: "32163C5A15A1287D"
+					item: "gtceu:platinum_group_sludge_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4519D2AA39781F93"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D7C2DF04DD6E8B7"]
+			icon: "gtceu:boxi_cl_bucket"
+			id: "6F514189D501BC4E"
+			tasks: [
+				{
+					id: "258EF60A43F1E047"
+					item: "gtceu:boxi_cl_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20E87A40BD2BCA3E"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F514189D501BC4E"]
+			icon: "gtceu:ruoso4_gas_bucket"
+			id: "2C860642DEE40F1F"
+			tasks: [
+				{
+					id: "05418C22C930B5CE"
+					item: "gtceu:ruoso4_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2820F322D08123E3"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6F514189D501BC4E"]
+			icon: "gtceu:boxi_cl_out_ruos_bucket"
+			id: "5DC089B2C3988FE4"
+			tasks: [
+				{
+					id: "08006999C201572A"
+					item: "gtceu:boxi_cl_out_ruos_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38961B5C3E30A682"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C860642DEE40F1F"]
+			icon: "gtceu:osmium_tetroxide_dust"
+			id: "3FC24F6FC32010F4"
+			tasks: [
+				{
+					id: "310CB7F31FA402E5"
+					item: "gtceu:osmium_tetroxide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44F169B18D4BE70A"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2C860642DEE40F1F"]
+			icon: "gtceu:hrucl_bucket"
+			id: "5B8682C011CE337A"
+			tasks: [
+				{
+					id: "15A8ED6E0F56DAE2"
+					item: "gtceu:hrucl_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "319B53A735EAAB4A"
+					type: "checkmark"
+				}
+			]
+			x: 33.5d
+			y: -1.0d
+		}
+		{
+			id: "014FD93B2AE6521E"
+			tasks: [{
+				id: "359611EACC8DFAC0"
+				title: "ev"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FC24F6FC32010F4"]
+			icon: "gtceu:hoscl_bucket"
+			id: "6655DBE36DEBAE06"
+			tasks: [
+				{
+					id: "553F095C4EE4B34A"
+					item: "gtceu:hoscl_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D1C730D467D6E62"
+					type: "checkmark"
+				}
+			]
+			x: 33.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B8682C011CE337A"]
+			icon: "gtceu:nh4ru_dust"
+			id: "0BB224D5CBA8494B"
+			tasks: [
+				{
+					id: "21B807A6E2DC4FE9"
+					item: "gtceu:nh4ru_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1DB95C25CAF05B77"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6655DBE36DEBAE06"]
+			icon: "gtceu:nh4os_dust"
+			id: "7149AD46AA93FC7B"
+			tasks: [
+				{
+					id: "29F6DA497D1F529A"
+					item: "gtceu:nh4os_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D48B4579BD28BBD"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7149AD46AA93FC7B"]
+			icon: "gtceu:osmium_dust"
+			id: "616F27F1DF5764DA"
+			tasks: [
+				{
+					id: "5B90B3B146E8088D"
+					item: "gtceu:osmium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "301D6CE1569F273D"
+					type: "checkmark"
+				}
+			]
+			x: 39.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BB224D5CBA8494B"]
+			icon: "gtceu:ruthenium_dust"
+			id: "04FA395234487305"
+			tasks: [
+				{
+					id: "604AA2E1E0EEFEE1"
+					item: "gtceu:ruthenium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A600919E6A73DD3"
+					type: "checkmark"
+				}
+			]
+			x: 39.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5DC089B2C3988FE4"]
+			icon: "gtceu:small_pdoh_dust"
+			id: "17E48118FFD146B0"
+			tasks: [
+				{
+					id: "5657F5F5D3307FC4"
+					item: "gtceu:small_pdoh_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00A831D2E0BCAD89"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["17E48118FFD146B0"]
+			icon: "gtceu:pdnh3cl_dust"
+			id: "666C77DBD4A0337A"
+			tasks: [
+				{
+					id: "7810AEA006A5DFE4"
+					item: "gtceu:pdnh3cl_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0286209D459FBA0F"
+					type: "checkmark"
+				}
+			]
+			x: 33.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0EED90337DB60118"
+				"666C77DBD4A0337A"
+			]
+			id: "04479D87D15FBF62"
+			tasks: [{
+				id: "7D85F1DC300E1E1B"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: 39.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5DC089B2C3988FE4"]
+			id: "572975D4071786E3"
+			tasks: [{
+				id: "52C093438E0A5101"
+				item: "gtceu:boxi_cl_out_3_bucket"
+				type: "item"
+			}]
+			x: 33.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572975D4071786E3"]
+			icon: "gtceu:nh4pt_dust"
+			id: "4B9AC53CA2F0DA42"
+			tasks: [
+				{
+					id: "635690D878A13710"
+					item: "gtceu:nh4pt_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BAEC20B9AB79CF1"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4B9AC53CA2F0DA42"]
+			icon: "gtceu:platinum_dust"
+			id: "491C3F7C5410B1BE"
+			tasks: [
+				{
+					id: "0D208B387426D89E"
+					item: "gtceu:platinum_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F537E1E77151657"
+					type: "checkmark"
+				}
+			]
+			x: 39.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["572975D4071786E3"]
+			icon: "gtceu:boxi_cl_out_4_bucket"
+			id: "58C996DCD170C076"
+			tasks: [
+				{
+					id: "2A27200BBA63D96C"
+					item: "gtceu:boxi_cl_out_4_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78AB658E6D0211B8"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58C996DCD170C076"]
+			icon: "gtceu:hrhcl_bucket"
+			id: "184CDE8E8095D0C5"
+			tasks: [
+				{
+					id: "585D3BC4EE884970"
+					item: "gtceu:hrhcl_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "405EB490872CF532"
+					type: "checkmark"
+				}
+			]
+			x: 36.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["58C996DCD170C076"]
+			icon: "gtceu:small_nh4ir_dust"
+			id: "6983B1E65455A01C"
+			tasks: [
+				{
+					id: "34252B9281338DB1"
+					item: "gtceu:small_nh4ir_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47F1CF4B3B1DE8D6"
+					type: "checkmark"
+				}
+			]
+			x: 36.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6983B1E65455A01C"]
+			icon: "gtceu:iridium_dust"
+			id: "1F07D12B8756C08D"
+			tasks: [
+				{
+					id: "2B3FB46F259C1E70"
+					item: "gtceu:iridium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B71D4D33A463397"
+					type: "checkmark"
+				}
+			]
+			x: 39.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["184CDE8E8095D0C5"]
+			icon: "gtceu:nh4rh_dust"
+			id: "6FD2DB2D4B25C959"
+			tasks: [
+				{
+					id: "0441CA06395DE85E"
+					item: "gtceu:nh4rh_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6FB62B83260A3A88"
+					type: "checkmark"
+				}
+			]
+			x: 38.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6FD2DB2D4B25C959"]
+			icon: "gtceu:rhodium_dust"
+			id: "51E47CBCB7F08B5E"
+			tasks: [
+				{
+					id: "3A3560BAC27ECA46"
+					item: "gtceu:rhodium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7DD03B1E3D947A56"
+					type: "checkmark"
+				}
+			]
+			x: 39.5d
+			y: 1.0d
+		}
+	]
+	title: "单质元素"
+}
