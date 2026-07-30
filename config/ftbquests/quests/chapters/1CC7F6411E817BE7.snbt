@@ -25,7 +25,7 @@
 				type: "item"
 			}]
 			title: "ae功能性方块"
-			x: 0.0d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -47,7 +47,7 @@
 				type: "item"
 			}]
 			title: "ae线缆"
-			x: 1.5d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -89,7 +89,7 @@
 				type: "item"
 			}]
 			title: "ae下单相关"
-			x: 3.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -345,6 +345,11 @@
 					item: "infinitestoragecell:infinity_fluid_cell"
 					type: "item"
 				}
+				{
+					id: "376859A0C2C81645"
+					item: "extendedae_plus:infinity_biginteger_cell"
+					type: "item"
+				}
 			]
 			tasks: [{
 				consume_items: true
@@ -383,16 +388,25 @@
 			dependencies: ["1D459456A81EB01E"]
 			icon: "gtmthings:lv_wireless_energy_receive_cover"
 			id: "0CF3934CEDCE902D"
-			rewards: [{
-				id: "40A909A67E83A66A"
-				item: "gtmthings:lv_wireless_energy_receive_cover"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "40A909A67E83A66A"
+					item: "gtmthings:lv_wireless_energy_receive_cover"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A8FE4A16E52B73A"
+					table_id: 3269001606956127165L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				consume_items: true
-				count: 2L
+				count: 9L
 				id: "088A49D8E68B9584"
-				item: { Count: 4, id: "coinsje:copper_coin" }
+				item: "coinsje:copper_coin"
 				type: "item"
 			}]
 			title: "LV无线电"
@@ -404,16 +418,25 @@
 			dependencies: ["72D89E8BC7E1AE0B"]
 			icon: "gtmthings:mv_wireless_energy_receive_cover"
 			id: "0E71913E1CF5D030"
-			rewards: [{
-				id: "724C7717D4AAB973"
-				item: "gtmthings:mv_wireless_energy_receive_cover"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "724C7717D4AAB973"
+					item: "gtmthings:mv_wireless_energy_receive_cover"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EC4CF7BC14458B6"
+					table_id: 4433314265784009265L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				consume_items: true
-				count: 5L
+				count: 2L
 				id: "3C019E9C34E34330"
-				item: { Count: 5, id: "coinsje:copper_coin" }
+				item: "coinsje:iron_coin"
 				type: "item"
 			}]
 			title: "MV无线电"
@@ -425,13 +448,23 @@
 			dependencies: ["59DF2E07CF1A2D66"]
 			icon: "gtmthings:hv_wireless_energy_receive_cover"
 			id: "33F5926ED29FD50E"
-			rewards: [{
-				id: "7AF66F575BB93799"
-				item: "gtmthings:hv_wireless_energy_receive_cover"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7AF66F575BB93799"
+					item: "gtmthings:hv_wireless_energy_receive_cover"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "234C38F68588397A"
+					table_id: 7408385106827145076L
+					type: "choice"
+				}
+			]
 			tasks: [{
 				consume_items: true
+				count: 3L
 				id: "4905FB51BB83E3E6"
 				item: "coinsje:iron_coin"
 				type: "item"
@@ -632,6 +665,27 @@
 			title: "多方块仓室电路自动切换"
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:light_gray_concrete"
+			id: "43D7D77B0C46F265"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DA6C39ECC31DB5F"
+				table_id: 155514679378728090L
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "6C7E34A622F277C4"
+				item: { Count: 4, id: "coinsje:copper_coin" }
+				type: "item"
+			}]
+			title: "混凝土元件"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "商店"

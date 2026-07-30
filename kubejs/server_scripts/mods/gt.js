@@ -286,6 +286,7 @@ event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_00_neth')
         .duration(15)
         .EUt(8);
 event.recipes.gtceu.monster_killer_recipe('mcgougou:monster_killer_recipe')
+.itemOutputs('minecraft:experience_bottle')
         .chancedOutput('minecraft:rotten_flesh',5000,0)
         .chancedOutput('minecraft:bone',4000,0)
         .chancedOutput('minecraft:arrow',2000,0)

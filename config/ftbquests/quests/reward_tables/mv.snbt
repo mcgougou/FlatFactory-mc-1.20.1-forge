@@ -1,0 +1,11 @@
+{
+	id: "3D864BD605BA4231"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ count: 4, item: "gtmthings:mv_2a_wireless_energy_input_hatch" }
+		{ count: 2, item: "gtmthings:mv_4a_wireless_energy_input_hatch" }
+		{ item: "gtmthings:mv_16a_wireless_energy_input_hatch" }
+	]
+	title: "mv"
+}

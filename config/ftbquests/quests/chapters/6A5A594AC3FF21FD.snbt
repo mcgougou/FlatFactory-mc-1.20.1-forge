@@ -840,6 +840,7 @@
 				"76B60BB5108D477B"
 				"1AC4EC46BA35D370"
 			]
+			description: ["先合成锻铁粒"]
 			id: "122DA0D10343EF81"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -954,7 +955,7 @@
 		{
 			dependencies: ["1AC4EC46BA35D370"]
 			description: [
-				"需消耗电量1eu/t，每个配方时长为1tick，可以开启批处理模式降低性能消耗。"
+				"需消耗电量0eu/t，每个配方时长为1tick，可以开启批处理模式降低性能消耗。"
 				"结构中必须有输入总线，输出总线，能源仓。任务都送了，有ae之后建议换成ae的总线。"
 				"圆石不够可以去木制矿物采掘机0号电路挖"
 			]
