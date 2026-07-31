@@ -83,10 +83,10 @@
 			]
 			id: "5753B5DA44A55910"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "250C83AB1CAC256F"
-				table_id: 3438830455175391625L
-				type: "random"
+				count: 64
+				id: "752E2F252A5CE575"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
 			}]
 			size: 1.5d
 			tasks: [

@@ -487,7 +487,8 @@ event.create("hv_yasuo","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("bender").recipeTypes("compressor")  .recipeTypes("extruder").recipeTypes("fluid_solidifier") .recipeTypes("forge_hammer").recipeTypes("forming_press").recipeTypes("lathe").recipeTypes("wiremill")
-        .recipeModifiers([//GTRecipeModifiers.PARALLEL_HATCH
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
+          GTRecipeModifiers.OC_NON_PERFECT,
             (machine, recipe)=> hv(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
@@ -499,7 +500,7 @@ event.create("hv_yasuo","multiblock")
   .where('D',  Predicates.controller(Predicates.blocks(definition.get())))
   .where('B', Predicates.blocks('minecraft:piston'))
   .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).setMinGlobalLimited(13)
-  .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
   .build()
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
@@ -508,7 +509,8 @@ event.create("hv_fenli","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS).recipeTypes("centrifuge").recipeTypes("cutter").recipeTypes("distillery").recipeTypes("electrolyzer").recipeTypes("electromagnetic_separator")
         .recipeTypes("sifter").recipeTypes("thermal_centrifuge") .recipeTypes("macerator")
-        .recipeModifiers([//GTRecipeModifiers.PARALLEL_HATCH
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
+          GTRecipeModifiers.OC_NON_PERFECT,
             (machine, recipe)=> hv(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
@@ -516,7 +518,7 @@ event.create("hv_fenli","multiblock")
   .aisle('AAA', 'ABA', 'ACA')
   .aisle('AAA', 'A#A', 'AAA')
   .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).setMinGlobalLimited(13)
-    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
   .where('B', Predicates.blocks(GTBlocks.FILTER_CASING.get()))
   .where('C',  Predicates.heatingCoils())
   .where('#',  Predicates.controller(Predicates.blocks(definition.get())))
@@ -529,7 +531,8 @@ event.create("hv_jiagong","multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("assembler").recipeTypes("brewery").recipeTypes("canner").recipeTypes("chemical_bath").recipeTypes("fermenter").recipeTypes("mixer").recipeTypes("ore_washer").recipeTypes("packer")
          .recipeTypes("polarizer").recipeTypes("laser_engraver").recipeTypes("circuit_assembler")
-        .recipeModifiers([//GTRecipeModifiers.PARALLEL_HATCH
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
+          GTRecipeModifiers.OC_NON_PERFECT,
             (machine, recipe)=> hv(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
@@ -538,7 +541,7 @@ event.create("hv_jiagong","multiblock")
   .aisle('AAA', 'A#A', 'AAA')
   .where('C', Predicates.heatingCoils())
   .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).setMinGlobalLimited(13)
-    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
   .where('B', Predicates.blocks(GTBlocks.CASING_GRATE.get()))
   .where('#', Predicates.controller(Predicates.blocks(definition.get())))
   .build()
@@ -549,7 +552,8 @@ event.create("hv_jiare","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS).recipeTypes("electric_furnace").recipeTypes("alloy_smelter").recipeTypes("arc_furnace").recipeTypes("autoclave").recipeTypes("extractor").recipeTypes("fluid_heater")
 
-        .recipeModifiers([//GTRecipeModifiers.PARALLEL_HATCH
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
+          GTRecipeModifiers.OC_NON_PERFECT,
             (machine, recipe)=> hv(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
@@ -557,7 +561,7 @@ event.create("hv_jiare","multiblock")
   .aisle('ABA', 'ABA', 'ABA')
   .aisle('AAA', 'A#A', 'AAA')
   .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).setMinGlobalLimited(13)
-    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
   .where('B', Predicates.heatingCoils())
   .where('#',  Predicates.controller(Predicates.blocks(definition.get())))
   .build()
@@ -741,21 +745,21 @@ const $RecipeLogic = Java.loadClass("com.gregtechceu.gtceu.api.machine.trait.Rec
 GTCEuStartupEvents.registry("gtceu:machine", (event) => {
   event
       .create("new_parallel_hatch", "custom")
-      .tiers(GTValues.ZPM, GTValues.UV,GTValues.UHV)
+      .tiers(GTValues.UEV, GTValues.UIV,GTValues.UXV)
       .machine((holder, tier, tankScaling) => {
         return new $ParallelHatchPartMachine(holder, tier);
       })
       .definition((tier, builder) => {
         let name = "Simple";
         switch (tier) {
-          case GTValues.ZPM:
-            name = "进阶版 MKI";
+          case GTValues.UEV:
+            name = "UEV";
             break;
-          case GTValues.UV:
-            name = "进阶版 MKII";
+          case GTValues.UIV:
+            name = "UIV";
             break;
-          case GTValues.UHV:
-            name = "进阶版 MKIII";
+          case GTValues.UXV:
+            name = "UXV";
             break;
         }
         builder
