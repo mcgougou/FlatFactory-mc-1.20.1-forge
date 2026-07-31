@@ -332,25 +332,13 @@
 		}
 		{
 			can_repeat: true
-			icon: "infinitestoragecell:infinity_item_cell"
+			icon: "extendedae_plus:infinity_biginteger_cell"
 			id: "435CAE7B0CE991A9"
-			rewards: [
-				{
-					id: "6748136C7999CAFE"
-					item: "infinitestoragecell:infinity_item_cell"
-					type: "item"
-				}
-				{
-					id: "23B2496EC845FA40"
-					item: "infinitestoragecell:infinity_fluid_cell"
-					type: "item"
-				}
-				{
-					id: "376859A0C2C81645"
-					item: "extendedae_plus:infinity_biginteger_cell"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "376859A0C2C81645"
+				item: "extendedae_plus:infinity_biginteger_cell"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 4L
