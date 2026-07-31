@@ -35,7 +35,10 @@
 		}
 		{
 			dependencies: ["7BDD19DA08C901B7"]
-			description: ["本整合包由mcgougou制作"]
+			description: [
+				"本整合包由mcgougou制作"
+				"F2Core模组由AquentisAXY制作"
+			]
 			id: "165515F5CEEF9651"
 			tasks: [{
 				id: "667A48DEDCCBE733"
@@ -71,8 +74,8 @@
 				title: "死亡不掉落"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
@@ -88,8 +91,8 @@
 				title: "时间暂停"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			can_repeat: true
@@ -105,8 +108,8 @@
 				title: "时间继续流逝"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7BDD19DA08C901B7"]
@@ -131,6 +134,55 @@
 			}]
 			x: 3.0d
 			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:command_block"
+			id: "2A161BA5D80008BB"
+			rewards: [{
+				command: "/gamerule doWeatherCycle false"
+				id: "272F87A0D4716CC1"
+				type: "command"
+			}]
+			tasks: [{
+				id: "60E11890EE0E7186"
+				title: "天气暂停"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:command_block"
+			id: "23EB6A1F7235BF33"
+			rewards: [{
+				command: "/gamerule doWeatherCycle true"
+				id: "4ACD8D4FDF4B33F5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "756EE09A74E58B08"
+				title: "天气继续切换"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"【商店】里有卖很多东西， 可以经常去看看"
+				"【部分内容教程】主要是前期的一些教程，新手可以参考"
+				"【单质元素】和【材料合成】章节涵盖了几乎所有的产线流程"
+			]
+			id: "2CAB93487F968B74"
+			tasks: [{
+				id: "12FAF889DC3760C4"
+				title: "任务章节"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "前言"

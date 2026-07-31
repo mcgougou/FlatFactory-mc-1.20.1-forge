@@ -286,7 +286,13 @@ ServerEvents.recipes(event=>{
         'gtceu:large_chemical_reactor/nitric_acid_from_dioxide_1',
         'gtceu:chemical_reactor/dinitrogen_tetroxide_from_ammonia',
         'gtceu:large_chemical_reactor/dinitrogen_tetroxide_shortcut',
-        'gtceu:large_chemical_reactor/dinitrogen_tetroxide_from_ammonia'
+        'gtceu:large_chemical_reactor/dinitrogen_tetroxide_from_ammonia',
+        'gtceu:electrolyzer/decomposition_electrolyzing_bastnasite',
+        'gtceu:shapeless/centrifuged_ore_to_dust_neodymium',
+        'gtceu:electromagnetic_separator/separate_bastnasite_pure_dust_to_dust',
+        'gtceu:electromagnetic_separator/separate_monazite_pure_dust_to_dust',
+        'gtceu:centrifuge/rare_earth_separation',
+        'gtceu:forge_hammer/hammer_neodymium_refined_ore_to_dust'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})
@@ -300,6 +306,18 @@ event.replaceInput({id:'gtceu:assembler/smd_diode'},'gtceu:fine_platinum_wire','
 event.replaceOutput({ type:"minecraft:blasting" }, 'gtceu:certus_quartz_gem', 'ae2:certus_quartz_crystal')
 event.replaceOutput({ type:"minecraft:smelting" }, 'gtceu:certus_quartz_gem', 'ae2:certus_quartz_crystal')
 event.replaceInput({ id:'gtceu:assembler/cover_advanced_energy_detector' }, 'gtceu:hv_sensor', 'gtceu:lv_sensor')
+//nd
+
+event.replaceOutput({ id: 'gtceu:macerator/macerate_magnetic_neodymium_block' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_hv_item_magnet' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_neodymium_turbine_blade' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_neodymium_plate' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_double_neodymium_plate' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_neodymium_block' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_magnetic_neodymium_ingot' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:macerator/macerate_neodymium_ingot' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+event.replaceOutput({ id: 'gtceu:centrifuge/decomposition_centrifuging__magnetic_neodymium' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
+// event.replaceOutput({ id: '' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')
 //ti
 event.replaceOutput({ id: 'gtceu:chemical_reactor/titanium_tetrachloride' }, Fluid.of('gtceu:titanium_tetrachloride'), Fluid.of('gtceu:raw_ticl4'))
 event.replaceOutput({ id: 'gtceu:large_chemical_reactor/titanium_tetrachloride' }, Fluid.of('gtceu:titanium_tetrachloride'), Fluid.of('gtceu:raw_ticl4'))

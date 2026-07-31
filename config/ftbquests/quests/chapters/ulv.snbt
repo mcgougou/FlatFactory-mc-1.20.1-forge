@@ -69,7 +69,7 @@
 				"69DA41D684830654"
 				"7B5944A413606BF3"
 			]
-			description: ["粘土块你还获得不了，先合成小堆粘土粉"]
+			description: ["粘土块通过压缩机合成，之后再用研钵粉碎"]
 			icon: "gtceu:compressed_fireclay"
 			id: "20AA04F5B686F1A6"
 			rewards: [
@@ -87,11 +87,6 @@
 				}
 			]
 			tasks: [
-				{
-					id: "1F69663C0CFE633A"
-					item: "gtceu:small_clay_dust"
-					type: "item"
-				}
 				{
 					id: "6A32AD65FBECDAB9"
 					item: "gtceu:clay_dust"

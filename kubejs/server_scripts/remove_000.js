@@ -1,5 +1,11 @@
 // priority: 97
 ServerEvents.recipes(event=>{
+    //nd
+
+event.replaceOutput({ type:'gtceu:thermal_centrifuge' }, 'gtceu:neodymium_dust', 'gtceu:rare_earth_dust')  
+event.replaceOutput({ type:'gtceu:ore_washer' }, 'gtceu:neodymium_dust', 'gtceu:rare_earth_dust')  
+event.replaceOutput({ type:'gtceu:macerator' }, 'gtceu:neodymium_dust', 'gtceu:rare_earth_dust')  
+event.replaceOutput({ type:'gtceu:centrifuge' }, 'gtceu:neodymium_dust', 'gtceu:rare_earth_dust')  
 //pt
 event.replaceOutput({ type:'gtceu:chemical_bath' }, 'gtceu:platinum_dust', 'gtceu:platinum_group_sludge_dust')
 event.replaceOutput({ type:'gtceu:forge_hammer' }, 'gtceu:platinum_dust', 'gtceu:platinum_group_sludge_dust')

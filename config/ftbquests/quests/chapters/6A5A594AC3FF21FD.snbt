@@ -644,6 +644,16 @@
 					item: "gtceu:terminal"
 					type: "item"
 				}
+				{
+					id: "434FE40FEAF9A0D0"
+					item: "gtmthings:advanced_terminal"
+					type: "item"
+				}
+				{
+					id: "51DE2716DBA3ED7D"
+					item: "f2core:multiblock_validator"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			tasks: [{
