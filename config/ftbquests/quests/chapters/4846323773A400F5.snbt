@@ -2908,6 +2908,128 @@
 			x: -1.5d
 			y: 22.0d
 		}
+		{
+			description: ["相比现实流程有所简化"]
+			id: "76DF84AE443BAC00"
+			tasks: [{
+				id: "295C1B1511534083"
+				title: "P507"
+				type: "checkmark"
+			}]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			icon: "gtceu:butyraldehyde_bucket"
+			id: "5B8F8B006B4EA7E6"
+			tasks: [
+				{
+					id: "6FEC8D7C79E8220A"
+					item: "gtceu:butyraldehyde_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0C799E9FB93C9872"
+					type: "checkmark"
+				}
+			]
+			x: 20.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B8F8B006B4EA7E6"]
+			icon: "gtceu:xinxiquan_bucket"
+			id: "5938750AE8BCBE16"
+			tasks: [
+				{
+					id: "0B7553A85ABD617D"
+					item: "gtceu:xinxiquan_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54B1FC9745C5B37C"
+					type: "checkmark"
+				}
+			]
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5938750AE8BCBE16"]
+			icon: "gtceu:yixinchun_bucket"
+			id: "3A807A02BBA24E6A"
+			tasks: [
+				{
+					id: "46680B38F8B40C2F"
+					item: "gtceu:yixinchun_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "04E405260EB78B46"
+					type: "checkmark"
+				}
+			]
+			x: 23.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A807A02BBA24E6A"]
+			icon: "gtceu:lvdaiyixinwan_bucket"
+			id: "2E01EDB7E836063F"
+			tasks: [
+				{
+					id: "0190F80089A02443"
+					item: "gtceu:lvdaiyixinwan_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "66CD54EA92070A1B"
+					type: "checkmark"
+				}
+			]
+			x: 23.5d
+			y: 3.5d
+		}
+		{
+			icon: "gtceu:yichunna_dust"
+			id: "13801FB3D33492EC"
+			tasks: [
+				{
+					id: "2159DCC9D864AD03"
+					item: "gtceu:yichunna_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1AD9961215221B04"
+					type: "checkmark"
+				}
+			]
+			x: 23.5d
+			y: 0.5d
+		}
+		{
+			icon: "gtceu:pcl3_bucket"
+			id: "1845BE528F4A05A2"
+			tasks: [
+				{
+					id: "21D75009F82D7E7A"
+					item: "gtceu:pcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A65E6B1880D3E35"
+					type: "checkmark"
+				}
+			]
+			x: 23.5d
+			y: 5.0d
+		}
 	]
 	title: "材料合成"
 }
