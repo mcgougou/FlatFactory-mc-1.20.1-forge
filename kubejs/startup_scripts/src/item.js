@@ -322,6 +322,31 @@ event.create('lvdaiyixinwan')
         .formula("C₂H₅ONa")
         .color(0xF5F2EF)
         .iconSet(GTMaterialIconSet.DULL);
+        event.create('linsuaneryixingxinzhi')
+        .liquid(293)
+        .formula("C₁₆H₃₅O₃P")
+        .color(0xEFF5FC)
+        .iconSet(GTMaterialIconSet.DULL);
+        event.create('p507nayan')
+        .liquid(293)
+        .formula("C₁₆H₃₄NaO₃P")
+        .color(0xE4EEF7)
+        .iconSet(GTMaterialIconSet.DULL);
+event.create('p507')
+        .liquid(293)
+        .formula("C₁₆H₃₅O₃P")
+        .color(0xEDF4FB)
+        .iconSet(GTMaterialIconSet.DULL);
+        event.create('yalinsuaneryixingxinzhi')
+        .liquid(293)
+        .formula("C₁₆H₃₅O₃P")
+        .color(0xF0F6FC)
+        .iconSet(GTMaterialIconSet.DULL);
+        event.create('yalinsuaneryixingxinzhina')
+        .liquid(293)
+        .formula("C₁₆H₃₄NaO₃P")
+        .color(0xE8F0F8)
+        .iconSet(GTMaterialIconSet.DULL);
 event.create('n2h4h2o')
         .liquid(293)
         .formula("N₂H₄・H₂O")

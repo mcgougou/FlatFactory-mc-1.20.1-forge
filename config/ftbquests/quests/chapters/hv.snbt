@@ -766,7 +766,7 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: -8.5d
 		}
 		{
@@ -777,7 +777,7 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -795,7 +795,7 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: -10.0d
 		}
 		{
@@ -812,7 +812,7 @@
 				item: "gtceu:the_nether_marker"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: -10.0d
 		}
 		{
@@ -826,17 +826,14 @@
 			}]
 			tasks: [{
 				id: "2AA4EFEBD03084D3"
-				item: "minecraft:glowstone_dust"
+				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.5d
 			y: -10.0d
 		}
 		{
-			dependencies: [
-				"17DE6CC9C4F61A91"
-				"4D53CDB7936E9C78"
-			]
+			dependencies: ["4D53CDB7936E9C78"]
 			id: "093CC3F1025F07ED"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1021,6 +1018,23 @@
 			}]
 			x: -2.5d
 			y: -16.5d
+		}
+		{
+			dependencies: ["17DE6CC9C4F61A91"]
+			id: "100F3E53AB78FB91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "643220B067B9E368"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6F890E4BC6C6D05D"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
 		}
 	]
 	title: "第五章：高压时代（HV）"

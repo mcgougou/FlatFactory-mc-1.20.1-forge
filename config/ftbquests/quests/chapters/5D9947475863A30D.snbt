@@ -20,6 +20,12 @@
 			x: -1.0d
 			y: -2.5d
 		}
+		{
+			id: "550D60A279BA444C"
+			linked_quest: "76DF84AE443BAC00"
+			x: 1.0d
+			y: -2.5d
+		}
 	]
 	quests: [{
 		dependencies: ["2DBC4BC82B483726"]

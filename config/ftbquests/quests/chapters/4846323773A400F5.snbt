@@ -2909,7 +2909,10 @@
 			y: 22.0d
 		}
 		{
-			description: ["相比现实流程有所简化"]
+			description: [
+				"相比现实流程有所简化"
+				"P507是萃取稀土的核心物质"
+			]
 			id: "76DF84AE443BAC00"
 			tasks: [{
 				id: "295C1B1511534083"
@@ -2992,7 +2995,7 @@
 				}
 			]
 			x: 23.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			icon: "gtceu:yichunna_dust"
@@ -3009,7 +3012,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 23.5d
+			x: 26.5d
 			y: 0.5d
 		}
 		{
@@ -3027,8 +3030,112 @@
 					type: "checkmark"
 				}
 			]
-			x: 23.5d
-			y: 5.0d
+			x: 25.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A807A02BBA24E6A"
+				"1845BE528F4A05A2"
+			]
+			icon: "gtceu:yalinsuaneryixingxinzhi_bucket"
+			id: "23243BA0486DCD53"
+			tasks: [
+				{
+					id: "754EA3CFC9DBFEBA"
+					item: "gtceu:yalinsuaneryixingxinzhi_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52F44E20FDA8B966"
+					type: "checkmark"
+				}
+			]
+			x: 25.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"23243BA0486DCD53"
+				"13801FB3D33492EC"
+			]
+			icon: "gtceu:yalinsuaneryixingxinzhina_bucket"
+			id: "79D1712EB353A4F5"
+			tasks: [
+				{
+					id: "067A4FED66777543"
+					item: "gtceu:yalinsuaneryixingxinzhina_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "654D2F2E809E5087"
+					type: "checkmark"
+				}
+			]
+			x: 26.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"79D1712EB353A4F5"
+				"2E01EDB7E836063F"
+			]
+			icon: "gtceu:linsuaneryixingxinzhi_bucket"
+			id: "0B940495EB9987CF"
+			tasks: [
+				{
+					id: "0615376FA25C092A"
+					item: "gtceu:linsuaneryixingxinzhi_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C31FA71FAA96728"
+					type: "checkmark"
+				}
+			]
+			x: 28.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B940495EB9987CF"]
+			icon: "gtceu:p507nayan_bucket"
+			id: "6362D01057EAACD1"
+			tasks: [
+				{
+					id: "7D38B6B48F656AFF"
+					item: "gtceu:p507nayan_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7A2A2BA5D61B9AFB"
+					type: "checkmark"
+				}
+			]
+			x: 29.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6362D01057EAACD1"]
+			icon: "gtceu:p507_bucket"
+			id: "387AFA25A8A96170"
+			tasks: [
+				{
+					id: "1F1789EF19A3C297"
+					item: "gtceu:p507_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "278876480D7F657B"
+					type: "checkmark"
+				}
+			]
+			x: 31.0d
+			y: 2.0d
 		}
 	]
 	title: "材料合成"

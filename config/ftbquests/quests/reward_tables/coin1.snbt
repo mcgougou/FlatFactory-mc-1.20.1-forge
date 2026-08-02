@@ -3,13 +3,15 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ count: 4, item: "coinsje:copper_coin", weight: 8.0f }
-		{ item: "coinsje:copper_coin_pile", weight: 8.0f }
-		{ item: "coinsje:iron_coin", weight: 6.0f }
-		{ count: 2, item: "coinsje:iron_coin", weight: 4.0f }
-		{ count: 4, item: "coinsje:iron_coin", weight: 3.0f }
-		{ item: "coinsje:iron_coin_pile" }
-		{ item: "coinsje:gold_coin", weight: 0.5f }
+		{ count: 4, item: "coinsje:copper_coin", weight: 9.0f }
+		{ item: "coinsje:copper_coin_pile", weight: 9.0f }
+		{ item: "coinsje:iron_coin", weight: 8.0f }
+		{ count: 2, item: "coinsje:iron_coin", weight: 6.0f }
+		{ count: 4, item: "coinsje:iron_coin", weight: 4.0f }
+		{ item: "coinsje:iron_coin_pile", weight: 2.0f }
+		{ item: "coinsje:gold_coin", weight: 2.0f }
+		{ item: "coinsje:netherite_coin" }
+		{ count: 4, item: "coinsje:gold_coin", weight: 1.5f }
 	]
 	title: "coin1"
 }
