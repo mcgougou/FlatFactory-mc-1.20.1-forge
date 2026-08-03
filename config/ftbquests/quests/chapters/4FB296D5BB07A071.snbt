@@ -1586,6 +1586,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["65C4901A2932808D"]
 			description: ["实际上这些处理步骤实在是太复杂了，完全还原太费时间，因此作者稍微做了简化（但是也不多）"]
 			id: "2ACB6FB13A2326BF"
 			tasks: [{
@@ -2048,6 +2049,60 @@
 			]
 			x: 39.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["76DF84AE443BAC00"]
+			id: "651899B6EA1E402D"
+			tasks: [{
+				id: "092154FB313DE90F"
+				title: "稀土"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: 5.5d
+		}
+		{
+			icon: "gtceu:rare_earth_dust"
+			id: "0C8B157F055C6A95"
+			tasks: [
+				{
+					id: "46C48A018EA573A5"
+					item: "gtceu:small_rare_earth_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38705194955A3169"
+					item: "gtceu:rare_earth_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DCAC15156FE9108"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0C8B157F055C6A95"]
+			icon: "gtceu:recl3_bucket"
+			id: "78D021F194BD355F"
+			tasks: [
+				{
+					id: "0A15C3FAD800940B"
+					item: "gtceu:recl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "714BD8EBEF1C9B13"
+					type: "checkmark"
+				}
+			]
+			x: 28.0d
+			y: 7.0d
 		}
 	]
 	title: "单质元素"

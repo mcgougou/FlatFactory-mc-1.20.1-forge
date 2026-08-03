@@ -1512,6 +1512,12 @@ event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_08021646')
 .outputFluids(Fluid.of("gtceu:p507",1000)).itemOutputs('gtceu:salt_dust')
         .duration(30)
         .EUt(1920);
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_xitucl3')
+.inputFluids(Fluid.of("gtceu:hydrochloric_acid",24000))
+.itemInputs('16x gtceu:rare_earth_dust')
+.outputFluids(Fluid.of("gtceu:recl3",16000))
+        .duration(80)
+        .EUt(1920);
 // event.recipes.gtceu.test_generator('mcgougou:turbinerecipe_01')
 //         .itemInputs('gtceust')
 //         .itemOutputs('gtcedust')

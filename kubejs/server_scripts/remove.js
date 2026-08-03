@@ -292,12 +292,13 @@ ServerEvents.recipes(event=>{
         'gtceu:electromagnetic_separator/separate_bastnasite_pure_dust_to_dust',
         'gtceu:electromagnetic_separator/separate_monazite_pure_dust_to_dust',
         'gtceu:centrifuge/rare_earth_separation',
-        'gtceu:forge_hammer/hammer_neodymium_refined_ore_to_dust'
+        'gtceu:forge_hammer/hammer_neodymium_refined_ore_to_dust',
+        'gtceu:electrolyzer/decomposition_electrolyzing_monazite'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})
         })
-event.replaceOutput({id:'gtceu:distillation_tower/distill_liquid_air'},Fluid.of('gtceu:helium'),Fluid.of('gtceu:air'))
+event.replaceOutput({id:'gtceu:distillation_tower/distill_liquid_air'},Fluid.of('gtceu:helium'),Fluid.of('gtceu:neon'))
 event.replaceOutput({id:'gtceu:assembler/cover_advanced_energy_detector'},'gtceu:hv_sensor','gtceu:lv_sensor')
 // event.replaceInput({id:'gtceu:shaped/filter_casing'},'gtceu:mv_electric_motor','gtceu:lv_electric_motor')
 event.replaceInput({id:'gtceu:macerator/macerate_certus_quartz_gem'},'gtceu:certus_quartz_gem','#ae2:all_certus_quartz')

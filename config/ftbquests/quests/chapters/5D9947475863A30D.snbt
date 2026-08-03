@@ -17,14 +17,20 @@
 		{
 			id: "4323B51DD9EE0796"
 			linked_quest: "2ACB6FB13A2326BF"
-			x: -1.0d
+			x: 1.0d
 			y: -2.5d
 		}
 		{
 			id: "550D60A279BA444C"
 			linked_quest: "76DF84AE443BAC00"
 			x: 1.0d
-			y: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "548AE49E12A0F18B"
+			linked_quest: "651899B6EA1E402D"
+			x: 2.5d
+			y: -4.5d
 		}
 	]
 	quests: [{
