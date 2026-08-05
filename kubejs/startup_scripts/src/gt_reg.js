@@ -110,7 +110,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         //setMaxIOSize(int,int,int,int)
         //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
-        .setMaxIOSize(3,0, 2, 2)
+        .setMaxIOSize(3,0, 4, 2)
         .setMaxTooltips(5)//设置最大信息提示
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
         
@@ -135,6 +135,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         //setMaxIOSize(int,int,int,int)
         //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
         .setMaxIOSize(3,1, 3, 1)
+        .setMaxTooltips(5)//设置最大信息提示
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
+    event.create('xitu_recipe')
+        //类
+        .category('example')
+        //setEUIO 耗能in/产能out
+        .setEUIO('in')
+        //setMaxIOSize(int,int,int,int)
+        //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
+        .setMaxIOSize(3,3, 7, 20)
         .setMaxTooltips(5)//设置最大信息提示
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
         
@@ -467,6 +477,58 @@ event.create("plastic_factory","multiblock")
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/pyrolyse_oven");
+///xitu
+event.create("xitu_factory","multiblock")
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("xitu_recipe")
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT])
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('#########################', '###AAA###################', '#####A###################', '#BBB#A###################', '#B###A###################', '#B###A###################', '#B#AAA###################', '#B#######################', '#BBB#####################', '#########################')
+  .aisle('#########################', '##ACCCA##################', '#BBDACA##################', 'BEEEDCA##################', 'BEBBACA##################', 'BEB#ACA##################', 'BEDCCCA##################', 'BEBDAA###################', 'BEEE#####################', '#BBB#####################')
+  .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '#BBEFGGGGGGGGGGGGGGGGGFB#', '#B#BFGGGGGGGGGGGGGGGGGF##', '#B#AFFFFFFFFFFFFFFFFFFF##', '#BACFGGGGGGGGGGGGGGGGGFA#', '#B#DFGGGGGGGGGGGGGGGGGF##', '#BBEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##', '###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##', '###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##', '###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##', '###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '##BEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
+  .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '####F##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '####F##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '####F##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '####F##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####FFFFFFFFFFFFFFFFFFFA#', '####HCCCCCCCCCCCCCCCCCCCA', '####F##F##F##F##F##F##FD#', '####IEEEEEEEEEEEEEEEEEEEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '####ICCCCCCCCCCCCCCCCCCCA', '####F##F##F##F##F##F##FD#', '####HEEEEEEEEEEEEEEEEEEEB', '####GGGGGGGGGGGGGGGGGGGB#')
+  .aisle('####JFFFFFFFFFFFFFFFFFF##', '####FGGGGGGGGGGGGGGGGGFA#', '####FGGGGGGGGGGGGGGGGGF##', '####FGGGGGGGGGGGGGGGGGFB#', '####FGGGGGGGGGGGGGGGGGF##', '####FFFFFFFFFFFFFFFFFFF##', '####FGGGGGGGGGGGGGGGGGFA#', '####FGGGGGGGGGGGGGGGGGF##', '####FGGGGGGGGGGGGGGGGGFB#', '####FGGGGGGGGGGGGGGGGGF##')
+  .where('B', Predicates.blocks('gtceu:titanium_frame'))
+  .where('D', Predicates.blocks('gtceu:stainless_steel_frame'))
+  .where('A', Predicates.blocks('gtceu:polytetrafluoroethylene_frame'))
+  .where('F', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+  .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.IMPORT_ITEMS)).or(Predicates.abilities(PartAbility.EXPORT_ITEMS)).or(Predicates.abilities(PartAbility.INPUT_ENERGY)))
+  .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+  .where('C', Predicates.blocks(GTBlocks.CASING_POLYTETRAFLUOROETHYLENE_PIPE.get()))
+  .where('J', Predicates.controller(Predicates.blocks(definition.get())))
+  .where('E', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
+  .where('I', Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+  .where('H', Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+  .where('#', Predicates.any())
+  .build()
+)
+    .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
+            "gtceu:block/multiblock/pyrolyse_oven");
 function hv(machine, recipe) {
     if (!(machine instanceof $MetaMachine)) return ModifierFunction.NULL;
     if (!(recipe instanceof $GTRecipe)) return ModifierFunction.NULL;
@@ -688,7 +750,7 @@ event.create('mv_generator', 'multiblock')
         .generator(true)
         .appearanceBlock(GTBlocks.CASING_STAINLESS_TURBINE)
         .pattern(definition => FactoryBlockPattern.start()
-  .aisle('AAA', 'ABA', 'AAA')
+  .aisle('AAA', 'AAA', 'AAA')
   .aisle('AAA', 'A#A', 'AAA')
   .aisle('AAA', 'A#A', 'ACA')
   .aisle('AAA', 'A#A', 'ACA')
@@ -698,7 +760,7 @@ event.create('mv_generator', 'multiblock')
   .where('A', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
   .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.abilities(PartAbility.IMPORT_ITEMS)).or(Predicates.abilities(PartAbility.EXPORT_ITEMS)).or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
 .or(Predicates.abilities(PartAbility.OUTPUT_ENERGY)))
-  .where('B', Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+  // .where('B', Predicates.abilities(PartAbility.IMPORT_FLUIDS))
   .where('C', Predicates.abilities(PartAbility.MUFFLER))
   .where('#', Predicates.air())
   .build()

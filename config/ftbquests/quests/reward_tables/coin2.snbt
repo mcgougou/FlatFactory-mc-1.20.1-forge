@@ -1,0 +1,18 @@
+{
+	id: "5DB67492D1120FB4"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 3, item: "coinsje:iron_coin", weight: 10.0f }
+		{ item: "coinsje:iron_coin_pile", weight: 9.0f }
+		{ count: 6, item: "coinsje:iron_coin", weight: 10.0f }
+		{ item: "coinsje:gold_coin", weight: 9.0f }
+		{ count: 4, item: "coinsje:gold_coin", weight: 6.0f }
+		{ item: "coinsje:gold_coin_pile", weight: 5.0f }
+		{ item: "coinsje:diamond_coin", weight: 5.0f }
+		{ item: "coinsje:netherite_coin" }
+		{ count: 4, item: "coinsje:diamond_coin", weight: 2.0f }
+		{ item: "coinsje:netherite_coin_pile", weight: 0.1f }
+	]
+	title: "coin2"
+}

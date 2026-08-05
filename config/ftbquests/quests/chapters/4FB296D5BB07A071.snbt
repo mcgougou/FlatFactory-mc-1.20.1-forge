@@ -10,19 +10,19 @@
 		{
 			id: "7AF23A28884DACB8"
 			linked_quest: "524633DB9D0B95B1"
-			x: 5.0d
-			y: 4.0d
+			x: -5.5d
+			y: 13.5d
 		}
 		{
 			id: "2985CC8E8CE2DAA0"
 			linked_quest: "6064231281192C9C"
 			x: -5.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			id: "1269E19591CDA448"
 			linked_quest: "0EED90337DB60118"
-			x: 33.5d
+			x: 36.5d
 			y: 4.0d
 		}
 	]
@@ -231,7 +231,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: 5.5d
+			y: 2.5d
 		}
 		{
 			icon: "gtceu:vanadium_magnetite_dust"
@@ -249,7 +249,7 @@
 				}
 			]
 			x: 5.0d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["767090610F99BC73"]
@@ -268,7 +268,7 @@
 				}
 			]
 			x: 6.5d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["15661A9E950D072A"]
@@ -287,7 +287,7 @@
 				}
 			]
 			x: 8.0d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			id: "032B662132F46687"
@@ -349,8 +349,8 @@
 				title: "氮的制取"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: -5.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["524633DB9D0B95B1"]
@@ -369,8 +369,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
-			y: 4.0d
+			x: -4.0d
+			y: 13.5d
 		}
 		{
 			id: "63EC5952A6C67833"
@@ -497,7 +497,7 @@
 				}
 			]
 			x: 9.5d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["28281A426938A57E"]
@@ -517,7 +517,7 @@
 				}
 			]
 			x: 11.0d
-			y: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["692729023A64226F"]
@@ -539,7 +539,7 @@
 				}
 			]
 			x: 11.0d
-			y: 5.899999999999999d
+			y: 2.8999999999999986d
 		}
 		{
 			id: "4B987489CB940D73"
@@ -549,7 +549,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 16.5d
+			y: 19.5d
 		}
 		{
 			icon: "gtceu:realgar_dust"
@@ -567,7 +567,7 @@
 				}
 			]
 			x: -5.5d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			icon: "gtceu:cobaltite_dust"
@@ -585,7 +585,7 @@
 				}
 			]
 			x: -5.5d
-			y: 20.0d
+			y: 23.0d
 		}
 		{
 			dependencies: [
@@ -607,7 +607,7 @@
 				}
 			]
 			x: -4.0d
-			y: 19.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["1EE406318BE48DA1"]
@@ -628,7 +628,7 @@
 				}
 			]
 			x: -2.0d
-			y: 19.0d
+			y: 22.0d
 		}
 		{
 			id: "08021F824C618919"
@@ -638,7 +638,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 12.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6064231281192C9C"]
@@ -657,7 +657,7 @@
 				}
 			]
 			x: -4.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["29B5B44E26C04912"]
@@ -676,7 +676,7 @@
 				}
 			]
 			x: -3.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["73568367E9E76FEE"]
@@ -695,7 +695,7 @@
 				}
 			]
 			x: -2.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["40203877645A9BA7"]
@@ -714,7 +714,7 @@
 				}
 			]
 			x: -1.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["40203877645A9BA7"]
@@ -734,7 +734,7 @@
 				}
 			]
 			x: -2.5d
-			y: 15.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["2002436F3EE711ED"]
@@ -754,7 +754,7 @@
 				}
 			]
 			x: -0.5d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["73F2E37A3ED8DF55"]
@@ -775,7 +775,7 @@
 				}
 			]
 			x: 1.25d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			id: "0A7B5186AAC8D5D0"
@@ -785,7 +785,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			icon: "gtceu:chromite_dust"
@@ -803,7 +803,7 @@
 				}
 			]
 			x: 5.0d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5B12139C3BC00297"]
@@ -822,7 +822,7 @@
 				}
 			]
 			x: 6.5d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -844,7 +844,7 @@
 				}
 			]
 			x: 8.0d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["14D51E66E28CD1DD"]
@@ -863,7 +863,7 @@
 				}
 			]
 			x: 9.5d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["410C5C1010F7DEC7"]
@@ -884,7 +884,7 @@
 				}
 			]
 			x: 11.0d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			icon: "gtceu:sulfuric_acid_bucket"
@@ -902,7 +902,7 @@
 				}
 			]
 			x: 8.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			id: "6FF0DD26EEA984A3"
@@ -912,7 +912,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: 13.0d
+			y: 10.0d
 		}
 		{
 			description: ["研磨磷灰石（宝石）"]
@@ -931,7 +931,7 @@
 				}
 			]
 			x: 5.0d
-			y: 14.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["489FB365C688CAD5"]
@@ -950,7 +950,7 @@
 				}
 			]
 			x: 6.5d
-			y: 14.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["47E5DD48481138FE"]
@@ -971,7 +971,7 @@
 				}
 			]
 			x: 8.0d
-			y: 14.5d
+			y: 11.5d
 		}
 		{
 			id: "65B6BE4EBA80CBCE"
@@ -1001,7 +1001,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 25.5d
+			y: 28.5d
 		}
 		{
 			description: ["处理辉锑矿得到"]
@@ -1020,7 +1020,7 @@
 				}
 			]
 			x: -5.5d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["6B96CD69E0E0F560"]
@@ -1039,7 +1039,7 @@
 				}
 			]
 			x: -4.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["38D6E0C51E938398"]
@@ -1060,7 +1060,7 @@
 				}
 			]
 			x: -2.0d
-			y: 27.0d
+			y: 30.0d
 		}
 		{
 			id: "2DB643F97FBB0C74"
@@ -1070,7 +1070,7 @@
 				type: "checkmark"
 			}]
 			x: -5.5d
-			y: 22.0d
+			y: 25.0d
 		}
 		{
 			description: ["处理方铅矿"]
@@ -1089,7 +1089,7 @@
 				}
 			]
 			x: -5.5d
-			y: 23.5d
+			y: 26.5d
 		}
 		{
 			dependencies: ["28DE868F731A2EA7"]
@@ -1108,7 +1108,7 @@
 				}
 			]
 			x: -4.0d
-			y: 23.5d
+			y: 26.5d
 		}
 		{
 			dependencies: ["5475888FC5F17614"]
@@ -1128,7 +1128,7 @@
 				}
 			]
 			x: -2.5d
-			y: 23.5d
+			y: 26.5d
 		}
 		{
 			id: "4DF32F89BF39A8A3"
@@ -1525,7 +1525,7 @@
 			y: 10.5d
 		}
 		{
-			icon: "gtceu:magnesium_chloride_dust"
+			icon: "gtceu:magnesium_dust"
 			id: "33E30AA1F00565CC"
 			tasks: [
 				{
@@ -2051,7 +2051,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["76DF84AE443BAC00"]
+			dependencies: [
+				"76DF84AE443BAC00"
+				"0203FA140A8C3E8F"
+			]
 			id: "651899B6EA1E402D"
 			tasks: [{
 				id: "092154FB313DE90F"
@@ -2086,7 +2089,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["0C8B157F055C6A95"]
+			dependencies: ["22B7B56D366D4FB9"]
 			icon: "gtceu:recl3_bucket"
 			id: "78D021F194BD355F"
 			tasks: [
@@ -2101,8 +2104,452 @@
 					type: "checkmark"
 				}
 			]
-			x: 28.0d
+			x: 30.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["0C8B157F055C6A95"]
+			icon: "gtceu:re2so43_dust"
+			id: "262CE1E98520391F"
+			tasks: [
+				{
+					id: "74B67433DE1D6B80"
+					item: "gtceu:re2so43_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6D34DC9A3BB2707B"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["262CE1E98520391F"]
+			icon: "gtceu:reoh3_dust"
+			id: "22B7B56D366D4FB9"
+			tasks: [
+				{
+					id: "19FF296E3CA45005"
+					item: "gtceu:reoh3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "486A9E486B859792"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 7.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "gtceu:hhmy_bucket"
+			id: "6C16BB3C1FB763D1"
+			tasks: [
+				{
+					id: "3AFFE3A93D712024"
+					item: "gtceu:hhmy_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1EB7DA973D629C7A"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: 9.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "gtceu:p507_bucket"
+			id: "150205445745276B"
+			tasks: [
+				{
+					id: "5BA4567D76B229E9"
+					item: "gtceu:p507_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "35015E1F0A9035CC"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:sccl3_bucket"
+			id: "55940E2919510B3C"
+			tasks: [
+				{
+					id: "29182BE649D7A585"
+					item: "gtceu:sccl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "454D4BDCB7F87B7E"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:ycl3_bucket"
+			id: "09E1A75D9DC56C22"
+			tasks: [
+				{
+					id: "275AD83055740486"
+					item: "gtceu:ycl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "57287AF7D70A32F1"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:lacl3_bucket"
+			id: "6A4D640B538DFF22"
+			tasks: [
+				{
+					id: "44E13572DA3F8F59"
+					item: "gtceu:lacl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21D3DD50236F1D54"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:cecl3_bucket"
+			id: "47CA9F3F4899640C"
+			tasks: [
+				{
+					id: "6F6D336EC7DED639"
+					item: "gtceu:cecl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "472A48B2DF7177C1"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:prcl3_bucket"
+			id: "47E1113E1D8A3B5E"
+			tasks: [
+				{
+					id: "16B9DE57DEF4A256"
+					item: "gtceu:prcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "493C283109460562"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:ndcl3_bucket"
+			id: "1BC4D1A7EAF64774"
+			tasks: [
+				{
+					id: "4572E36167B254CE"
+					item: "gtceu:ndcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "177EC7A954FD6132"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:smcl3_bucket"
+			id: "53037B473B62F48E"
+			tasks: [
+				{
+					id: "6729A6D9BBA60A26"
+					item: "gtceu:smcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5146E20D74F5CE46"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:eucl3_bucket"
+			id: "52631BE8869BC704"
+			tasks: [
+				{
+					id: "3E4839D4FD462275"
+					item: "gtceu:eucl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08136EF4226C88B5"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:gdcl3_bucket"
+			id: "11802F685440CC94"
+			tasks: [
+				{
+					id: "608F24CBCEB1CC6C"
+					item: "gtceu:gdcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "271D73773E094368"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:tbcl3_bucket"
+			id: "12FA6628893E47AD"
+			tasks: [
+				{
+					id: "6C0FFD1F0A8D477E"
+					item: "gtceu:tbcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3FB378522007A479"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:dycl3_bucket"
+			id: "1FBE6C36302D73F8"
+			tasks: [
+				{
+					id: "445C43ECBCD0B2BF"
+					item: "gtceu:dycl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "001DF738A63296F2"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:hocl3_bucket"
+			id: "47358AFE240F3B9B"
+			tasks: [
+				{
+					id: "7C4FACFB06A58CD9"
+					item: "gtceu:hocl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03029FD7BFFBF53A"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:ercl3_bucket"
+			id: "2449B15A7335F660"
+			tasks: [
+				{
+					id: "41AC4ADEFB0A1246"
+					item: "gtceu:ercl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CC67294910E791D"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:tmcl3_bucket"
+			id: "1A98FFA862493924"
+			tasks: [
+				{
+					id: "032C4E7EA63B6F8C"
+					item: "gtceu:tmcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BC8B06D4ADAA3D9"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:ybcl3_bucket"
+			id: "1E51280F9A9574FA"
+			tasks: [
+				{
+					id: "4353AF074BF3751E"
+					item: "gtceu:ybcl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "272F11F3FA8460B0"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"78D021F194BD355F"
+				"6C16BB3C1FB763D1"
+				"150205445745276B"
+			]
+			icon: "gtceu:lucl3_bucket"
+			id: "175DB457B106D6C2"
+			tasks: [
+				{
+					id: "15F772CD1C6D021F"
+					item: "gtceu:lucl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "420435595313E412"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 20.5d
 		}
 	]
 	title: "单质元素"

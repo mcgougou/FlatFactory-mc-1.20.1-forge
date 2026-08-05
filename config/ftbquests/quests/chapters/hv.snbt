@@ -723,8 +723,8 @@
 			id: "2DBC4BC82B483726"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "58188ADF945C9803"
-				table_id: 3438830455175391625L
+				id: "0F74531ED3BC86CD"
+				table_id: 6752712865210306484L
 				type: "random"
 			}]
 			shape: "gear"

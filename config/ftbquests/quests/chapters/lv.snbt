@@ -583,6 +583,30 @@
 			x: -4.0d
 			y: -3.0d
 		}
+		{
+			dependencies: [
+				"2CB606ACC5A2E036"
+				"4A90B31E31D1A65C"
+			]
+			description: [
+				"制取氮气！"
+				"输入仓不够可以用ME输入仓或者使用巨型输入总成"
+			]
+			id: "524633DB9D0B95B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61A5E8D6085F84D8"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			tasks: [{
+				id: "07225DF4820158BB"
+				item: "gtceu:simple_air_distillery"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
 	]
 	title: "第三章：低压时代（LV）"
 }

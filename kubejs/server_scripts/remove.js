@@ -293,7 +293,28 @@ ServerEvents.recipes(event=>{
         'gtceu:electromagnetic_separator/separate_monazite_pure_dust_to_dust',
         'gtceu:centrifuge/rare_earth_separation',
         'gtceu:forge_hammer/hammer_neodymium_refined_ore_to_dust',
-        'gtceu:electrolyzer/decomposition_electrolyzing_monazite'
+        'gtceu:electrolyzer/decomposition_electrolyzing_monazite',
+        'gtceu:large_chemical_reactor/vinyl_acetate',
+        'gtceu:chemical_reactor/acetic_acid_from_elements',
+        'gtceu:chemical_reactor/acetic_acid_from_monoxide',
+        'gtceu:large_chemical_reactor/acetic_acid_from_elements',
+        'gtceu:large_chemical_reactor/acetic_acid_from_monoxide',
+        'gtceu:chemical_reactor/acetic_acid_from_ethylene',
+        'gtceu:large_chemical_reactor/acetic_acid_from_methanol',
+        'gtceu:chemical_reactor/acetic_acid_from_methanol',
+        'gtceu:large_chemical_reactor/acetic_acid_from_ethylene',
+        'gtceu:chemical_reactor/acetic_acid_from_ethylene',
+        'gtceu:chemical_reactor/vinyl_acetate',
+        'gtceu:chemical_reactor/pva_from_air',
+        'gtceu:chemical_reactor/pva_from_oxygen',
+        'gtceu:large_chemical_reactor/pva_from_tetrachloride_oxygen',
+        'gtceu:large_chemical_reactor/pva_from_tetrachloride_air',
+        'gtceu:large_chemical_reactor/pva_from_air',
+        'gtceu:large_chemical_reactor/pva_from_oxygen',
+        'gtceu:large_chemical_reactor/polyvinyl_butyral',
+        'gtceu:chemical_reactor/polyvinyl_butyral',
+        'gtceu:chemical_reactor/butraldehyde',
+        'gtceu:large_chemical_reactor/butraldehyde'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})

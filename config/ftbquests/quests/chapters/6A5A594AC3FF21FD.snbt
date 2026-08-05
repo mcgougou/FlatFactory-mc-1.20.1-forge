@@ -1044,6 +1044,73 @@
 			x: -8.5d
 			y: 3.0d
 		}
+		{
+			can_repeat: true
+			description: ["gt似乎充不了这个，只能用ad astra的充能器了"]
+			icon: "buildinggadgets2:gadget_building"
+			id: "650FF679C4005A14"
+			rewards: [
+				{
+					id: "3BA7A429E1248DC3"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "284F27A268E135D5"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "2EC63AEF76E8BF6D"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1A354D0F2AB291C2"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E45C3366BBF40A8"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "35ADA7EE3C9C6D16"
+					item: {
+						Count: 1
+						id: "ad_astra:energizer"
+						tag: {
+							BotariumData: {
+								Energy: 2000000L
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 128L
+				id: "0017F4CC5F9E7621"
+				item: { Count: 128, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			title: "建筑小帮手"
+			x: -8.5d
+			y: 4.0d
+		}
 	]
 	title: "第一章：石器时代"
 }

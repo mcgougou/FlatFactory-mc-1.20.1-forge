@@ -1,5 +1,30 @@
 ServerEvents.recipes(event => {
     //               event.custom()
+event.custom({
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "BDB",
+    "CBA"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:clean_machine_casing"
+    },
+    "B": {
+      "item": "gtceu:laminated_glass"
+    },
+    "C": {
+      "item": "gtceu:stable_machine_casing"
+    },
+    "D": {
+      "item": "mcgougou:luv_universal_circuit"
+    }
+  },
+  "result": {
+    "item": "gtceu:xitu_factory"
+  }
+})
        event.custom({
   "type": "minecraft:crafting_shaped",
   "pattern": [

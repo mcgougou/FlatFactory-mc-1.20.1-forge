@@ -191,6 +191,12 @@
 				"{image:image_ftbq:textures/danfkjixiebi.png width:220 height:150 align:center}"
 			]
 			id: "4C523BDDB8BC1EDE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "164F9CD768B9FD65"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
 			tasks: [{
 				id: "4670230B73BA91FF"
 				title: "单方块被动物品槽位"

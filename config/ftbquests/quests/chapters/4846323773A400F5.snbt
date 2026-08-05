@@ -3137,6 +3137,93 @@
 			x: 31.0d
 			y: 2.0d
 		}
+		{
+			id: "1A42A5E54F4D980D"
+			tasks: [{
+				id: "28BD7758ECF96A30"
+				title: "聚乙烯醇缩丁醛"
+				type: "checkmark"
+			}]
+			x: 20.5d
+			y: 6.5d
+		}
+		{
+			icon: "gtceu:vinyl_acetate_bucket"
+			id: "23A1E7FF766738F2"
+			tasks: [
+				{
+					id: "6008F057C24FE459"
+					item: "gtceu:vinyl_acetate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "059CA9E3FA664E56"
+					type: "checkmark"
+				}
+			]
+			x: 20.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["23A1E7FF766738F2"]
+			icon: "gtceu:polyvinyl_acetate_bucket"
+			id: "541024B65D18FA96"
+			tasks: [
+				{
+					id: "1D5D5D36C3E7C0E6"
+					item: "gtceu:polyvinyl_acetate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "17CF599FB54CE1D3"
+					type: "checkmark"
+				}
+			]
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"541024B65D18FA96"
+				"6D69F6F382B4CD12"
+			]
+			icon: "gtceu:polyvinyl_butyral_bucket"
+			id: "23EA8E8DEF209B6D"
+			tasks: [
+				{
+					id: "3BE9989B83946924"
+					item: "gtceu:polyvinyl_butyral_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6769498B94709800"
+					type: "checkmark"
+				}
+			]
+			x: 23.5d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:butyraldehyde_bucket"
+			id: "6D69F6F382B4CD12"
+			tasks: [
+				{
+					id: "3C81F97553DBB85A"
+					item: "gtceu:butyraldehyde_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3823B31DDD798D89"
+					type: "checkmark"
+				}
+			]
+			x: 22.0d
+			y: 9.5d
+		}
 	]
 	title: "材料合成"
 }

@@ -23,32 +23,81 @@
 		{
 			id: "550D60A279BA444C"
 			linked_quest: "76DF84AE443BAC00"
-			x: 1.0d
-			y: -4.5d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			id: "548AE49E12A0F18B"
 			linked_quest: "651899B6EA1E402D"
-			x: 2.5d
-			y: -4.5d
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			id: "3951EB211E2B68CF"
+			linked_quest: "1A42A5E54F4D980D"
+			x: 1.0d
+			y: 1.0d
 		}
 	]
-	quests: [{
-		dependencies: ["2DBC4BC82B483726"]
-		id: "65C4901A2932808D"
-		rewards: [{
-			exclude_from_claim_all: true
-			id: "6D08C4683185C190"
-			table_id: 3438830455175391625L
-			type: "random"
-		}]
-		tasks: [{
-			id: "01C8DEAA037D00CF"
-			item: "gtceu:hno3_factory"
-			type: "item"
-		}]
-		x: 1.0d
-		y: -1.0d
-	}]
+	quests: [
+		{
+			dependencies: ["2DBC4BC82B483726"]
+			id: "65C4901A2932808D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "333C462EE651D8EC"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "01C8DEAA037D00CF"
+				item: "gtceu:hno3_factory"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A42A5E54F4D980D"]
+			id: "528767E88A19A4B5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "150174A74864E4E2"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "46970C1042528948"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"528767E88A19A4B5"
+				"6ED0B2A27571B554"
+			]
+			description: [
+				"输入输出仓必须放在指定位置！"
+				"如果写样板可以放输入总成或者多重输入仓在别的位置，然后固定位置的输入仓放不消耗的流体"
+			]
+			id: "0203FA140A8C3E8F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "424836D7A9914324"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "092E770E0E9CDF4A"
+				item: "gtceu:xitu_factory"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+	]
 	title: "第六章：超高压时代（EV）"
 }
