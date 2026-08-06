@@ -136,6 +136,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
         .setMaxIOSize(3,1, 3, 1)
         .setMaxTooltips(5)//设置最大信息提示
+        .setSound(GTSoundEntries.TURBINE)   
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
+    event.create('ev_generator_recipe')
+        //类
+        .category('example')
+        //setEUIO 耗能in/产能out
+        .setEUIO('out')
+        //setMaxIOSize(int,int,int,int)
+        //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
+        .setMaxIOSize(3,1, 3, 1)
+        .setMaxTooltips(5)//设置最大信息提示
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
     event.create('xitu_recipe')
         //类
@@ -486,7 +497,7 @@ event.create("xitu_factory","multiblock")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('#########################', '###AAA###################', '#####A###################', '#BBB#A###################', '#B###A###################', '#B###A###################', '#B#AAA###################', '#B#######################', '#BBB#####################', '#########################')
-  .aisle('#########################', '##ACCCA##################', '#BBDACA##################', 'BEEEDCA##################', 'BEBBACA##################', 'BEB#ACA##################', 'BEDCCCA##################', 'BEBDAA###################', 'BEEE#####################', '#BBB#####################')
+  .aisle('#########################', '##ACCCA##################', '#BBDACA##################', 'BEEEDCA##################', 'BEBBACA##################', 'BEB#ACA##################', 'BEDCCCA##################', 'BEBDAA###################', 'BEEEB####################', '#BBB#####################')
   .aisle('###AFFFFFFFFFFFFFFFFFFF##', '##ACFGGGGGGGGGGGGGGGGGFA#', '###DFGGGGGGGGGGGGGGGGGF##', '#BBEFGGGGGGGGGGGGGGGGGFB#', '#B#BFGGGGGGGGGGGGGGGGGF##', '#B#AFFFFFFFFFFFFFFFFFFF##', '#BACFGGGGGGGGGGGGGGGGGFA#', '#B#DFGGGGGGGGGGGGGGGGGF##', '#BBEFGGGGGGGGGGGGGGGGGFB#', '###BFGGGGGGGGGGGGGGGGGF##')
   .aisle('###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#', '###AFFFFFFFFFFFFFFFFFFFA#', '##ACCCCCCCCCCCCCCCCCCCCCA', '###DF##F##F##F##F##F##FD#', '##BEEEEEEEEEEEEEEEEEEEEEB', '###BGGGGGGGGGGGGGGGGGGGB#')
   .aisle('####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#', '####FFFFFFFFFFFFFFFFFFFA#', '###AF##F##F##F##F##F##FCA', '####F##F##F##F##F##F##FD#', '###BF##F##F##F##F##F##FEB', '####GGGGGGGGGGGGGGGGGGGB#')
@@ -545,6 +556,51 @@ function hv(machine, recipe) {
         //.chanceMultiplier(double)       
          
 }
+function hv_ore_fun(machine, recipe) {
+    if (!(machine instanceof $MetaMachine)) return ModifierFunction.NULL;
+    if (!(recipe instanceof $GTRecipe)) return ModifierFunction.NULL;
+ 
+ 
+ 
+                            //步差大于等于1时，执行配方加速
+    return ModifierFunction.builder()
+        .durationMultiplier(0.5).eutMultiplier(0.5) 
+        .build();
+        //其他可用的方法
+        //.eutMultiplier(double)             能量消耗
+        //.outputMultiplier(double)       
+        //.chanceMultiplier(double)       
+         
+}
+event.create("hv_ore","multiblock")
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("ore_breaker_recipe")
+        .recipeTypes("fluid_driller_recipe")
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
+          GTRecipeModifiers.OC_PERFECT,
+            (machine, recipe)=> hv_ore_fun(machine,recipe)])
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('AAAAAAAAA', 'AAAAAAAAA', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('AABAAABAA', 'AACAAACAA', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('ABBBABBBA', 'ACBCACBCA', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##')
+  .aisle('AABBABBAA', 'AACBABCAA', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('AAAABAAAA', 'AAAABAAAA', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('AABBABBAA', 'AACBABCAA', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('ABBBABBBA', 'ACBCACBCA', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '#CBC#CBC#', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##')
+  .aisle('AABAAABAA', 'AACAAACAA', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '##C###C##', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .aisle('AAAADAAAA', 'AAAAAAAAA', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')
+  .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()).or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+  .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .where('B', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
+  .where('C', Predicates.blocks('gtceu:stainless_steel_frame'))
+  .where('D', Predicates.controller(Predicates.blocks(definition.get())))
+  .where('#', Predicates.any())
+  .build()
+)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
+            "gtceu:block/multiblock/pyrolyse_oven");
 event.create("hv_yasuo","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
@@ -800,6 +856,51 @@ event.create('hv_generator', 'multiblock')
   .build()
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/multiblock/pyrolyse_oven");
+event.create('ev_generator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        //LargeTurbineMachine(IMachineBlockEntity holder, int tier)
+        //tier 电压等级，是发电量计算的变量之一
+        .recipeType('ev_generator_recipe')
+        //注册recipeType，这里不再给出示范
+        .generator(true)
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_TURBINE)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('AAAAAAAAAAAAAAAA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'AAAAAAAAAAAAAAAA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'AAAAAAAAAAAAAAAA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'ABBBBABBBBABBBBA', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'A##############A', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'CCCCC#CCCC#CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A##############A', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'A##############A', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'B##############B', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'A#############AA', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AADDAAAAAAAADDAA')
+  .aisle('AAAAAAAAAAAAAAAA', 'CCCCCCCCCCCCCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'A#############AA', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'CCCCC######CCCCC', 'AAAAAAAAAAAAAAAA')
+  .aisle('EAAAAAAAAAAAAAAA', 'ABBBBCCCCCCBBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'AAAAAAAAAAAAAAAA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'AAAAAAAAAAAAAAAA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'ABBBBAAAAAABBBBA', 'AAAAAAAAAAAAAAAA')
+  .where('A', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+    .or(Predicates.abilities(PartAbility.IMPORT_ITEMS)).or(Predicates.abilities(PartAbility.EXPORT_ITEMS)).or(Predicates.abilities(PartAbility.IMPORT_FLUIDS)).or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+.or(Predicates.abilities(PartAbility.OUTPUT_ENERGY)).or(Predicates.abilities(PartAbility.OUTPUT_LASER)))
+  .where('E', Predicates.controller(Predicates.blocks(definition.get())))
+  .where('C', Predicates.blocks('gtceu:titanium_firebox_casing'))
+  .where('B', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
+  .where('D', Predicates.blocks('gtceu:ev_muffler_hatch'))
+  .where('#', Predicates.any())
+  .build()
+)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_stable_titanium",
             "gtceu:block/multiblock/pyrolyse_oven");
 })
 const $ParallelHatchPartMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine"); 

@@ -23,20 +23,20 @@
 		{
 			id: "550D60A279BA444C"
 			linked_quest: "76DF84AE443BAC00"
-			x: 2.5d
-			y: 2.5d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			id: "548AE49E12A0F18B"
 			linked_quest: "651899B6EA1E402D"
-			x: 4.0d
-			y: 2.5d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			id: "3951EB211E2B68CF"
 			linked_quest: "1A42A5E54F4D980D"
-			x: 1.0d
-			y: 1.0d
+			x: 2.5d
+			y: -2.5d
 		}
 	]
 	quests: [
@@ -71,8 +71,8 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -95,7 +95,35 @@
 				item: "gtceu:xitu_factory"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DBC4BC82B483726"]
+			description: [
+				"拥有1024A EV的发电量"
+				"消声仓只能使用EV级别"
+			]
+			id: "3EFCCF172A08F093"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53C9103DC6368AD7"
+					table_id: 6752712865210306484L
+					type: "random"
+				}
+				{
+					id: "4F01D2CAD21E0FEC"
+					item: "gtmthings:ev_1024a_wireless_laser_source_hatch"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0174DAB5D0A88627"
+				item: "gtceu:ev_generator"
+				type: "item"
+			}]
+			x: -1.0d
 			y: 1.0d
 		}
 	]

@@ -2062,7 +2062,7 @@
 				type: "checkmark"
 			}]
 			x: 26.0d
-			y: 5.5d
+			y: 8.5d
 		}
 		{
 			icon: "gtceu:rare_earth_dust"
@@ -2086,7 +2086,7 @@
 				}
 			]
 			x: 26.0d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["22B7B56D366D4FB9"]
@@ -2105,7 +2105,7 @@
 				}
 			]
 			x: 30.5d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0C8B157F055C6A95"]
@@ -2124,7 +2124,7 @@
 				}
 			]
 			x: 27.5d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["262CE1E98520391F"]
@@ -2143,7 +2143,7 @@
 				}
 			]
 			x: 29.0d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			hide_dependent_lines: true
@@ -2162,7 +2162,7 @@
 				}
 			]
 			x: 30.5d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			hide_dependent_lines: true
@@ -2181,7 +2181,7 @@
 				}
 			]
 			x: 30.5d
-			y: 11.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -2204,7 +2204,7 @@
 				}
 			]
 			x: 32.0d
-			y: 5.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -2227,7 +2227,7 @@
 				}
 			]
 			x: 32.0d
-			y: 6.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -2250,7 +2250,7 @@
 				}
 			]
 			x: 32.0d
-			y: 7.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2273,7 +2273,7 @@
 				}
 			]
 			x: 32.0d
-			y: 8.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -2296,7 +2296,7 @@
 				}
 			]
 			x: 32.0d
-			y: 9.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -2319,7 +2319,7 @@
 				}
 			]
 			x: 32.0d
-			y: 10.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -2342,7 +2342,7 @@
 				}
 			]
 			x: 32.0d
-			y: 11.5d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -2365,7 +2365,7 @@
 				}
 			]
 			x: 32.0d
-			y: 12.5d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -2388,7 +2388,7 @@
 				}
 			]
 			x: 32.0d
-			y: 13.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -2411,7 +2411,7 @@
 				}
 			]
 			x: 32.0d
-			y: 14.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -2434,7 +2434,7 @@
 				}
 			]
 			x: 32.0d
-			y: 15.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -2457,7 +2457,7 @@
 				}
 			]
 			x: 32.0d
-			y: 16.5d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -2480,7 +2480,7 @@
 				}
 			]
 			x: 32.0d
-			y: 17.5d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -2503,7 +2503,7 @@
 				}
 			]
 			x: 32.0d
-			y: 18.5d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -2526,7 +2526,7 @@
 				}
 			]
 			x: 32.0d
-			y: 19.5d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -2549,7 +2549,681 @@
 				}
 			]
 			x: 32.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["55940E2919510B3C"]
+			icon: "gtceu:scco3_dust"
+			id: "7878C99681B052FA"
+			tasks: [
+				{
+					id: "7E941344081FA49F"
+					item: "gtceu:scco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54E65E79EE679BC8"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["09E1A75D9DC56C22"]
+			icon: "gtceu:yco3_dust"
+			id: "1D5403E3CE372EAC"
+			tasks: [
+				{
+					id: "00250E925E84395A"
+					item: "gtceu:yco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CBD6BA9F712CC81"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6A4D640B538DFF22"]
+			icon: "gtceu:laco3_dust"
+			id: "74B52F1728036102"
+			tasks: [
+				{
+					id: "39B50201EE2C4926"
+					item: "gtceu:laco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1CDC1BD4C88074F1"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["47CA9F3F4899640C"]
+			icon: "gtceu:ceco3_dust"
+			id: "2990D510B6AA18BC"
+			tasks: [
+				{
+					id: "1EEE6B49E8596463"
+					item: "gtceu:ceco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3091A92AF9FEB732"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["47E1113E1D8A3B5E"]
+			icon: "gtceu:prco3_dust"
+			id: "66EEB3E784D83C68"
+			tasks: [
+				{
+					id: "2C06677484AA5E14"
+					item: "gtceu:prco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20865410DE0A192E"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1BC4D1A7EAF64774"]
+			icon: "gtceu:ndco3_dust"
+			id: "19E2584F8AC1CE7A"
+			tasks: [
+				{
+					id: "207737C61CDB174C"
+					item: "gtceu:ndco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5DE1C50B1BFA9AC5"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["53037B473B62F48E"]
+			icon: "gtceu:smco3_dust"
+			id: "05F89C66D3F1A36A"
+			tasks: [
+				{
+					id: "5E01E37708A25DAA"
+					item: "gtceu:smco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0A0B34CECB5EC1CF"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["52631BE8869BC704"]
+			icon: "gtceu:euco3_dust"
+			id: "4EE787E94CACFE8B"
+			tasks: [
+				{
+					id: "579D4718D0EB61F8"
+					item: "gtceu:euco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E1BDA3918BECA62"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["11802F685440CC94"]
+			icon: "gtceu:gdco3_dust"
+			id: "1106420F10F155A1"
+			tasks: [
+				{
+					id: "55CAEA9EC37F7068"
+					item: "gtceu:gdco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C328E12EC4EA680"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["12FA6628893E47AD"]
+			icon: "gtceu:tbco3_dust"
+			id: "1AA0D93F551BF0F2"
+			tasks: [
+				{
+					id: "57AB376107127C65"
+					item: "gtceu:tbco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CC2DEECFBF4DA27"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["1FBE6C36302D73F8"]
+			icon: "gtceu:dyco3_dust"
+			id: "42250ACE99C462B9"
+			tasks: [
+				{
+					id: "3138F31D5BC11B2C"
+					item: "gtceu:dyco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D508321266A5DC1"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["47358AFE240F3B9B"]
+			icon: "gtceu:hoco3_dust"
+			id: "3CA2197C548DB2AF"
+			tasks: [
+				{
+					id: "00A9A431D71EFA8C"
+					item: "gtceu:hoco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "512E5C85A8375073"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2449B15A7335F660"]
+			icon: "gtceu:erco3_dust"
+			id: "1F0E2A6DA238D497"
+			tasks: [
+				{
+					id: "10ACC19BD01E3496"
+					item: "gtceu:erco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5141018A19EA1498"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
 			y: 20.5d
+		}
+		{
+			dependencies: ["1A98FFA862493924"]
+			icon: "gtceu:tmco3_dust"
+			id: "154957622A81339B"
+			tasks: [
+				{
+					id: "205B205C8BEC7045"
+					item: "gtceu:tmco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C6C57271B6BEB4F"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["1E51280F9A9574FA"]
+			icon: "gtceu:ybco3_dust"
+			id: "6A434C2F5FF6424F"
+			tasks: [
+				{
+					id: "448DCC06F89711AA"
+					item: "gtceu:ybco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77F4F6ED6A54AFB2"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["175DB457B106D6C2"]
+			icon: "gtceu:luco3_dust"
+			id: "0DEF4D53CCF8F0BC"
+			tasks: [
+				{
+					id: "420CC602B3AB8E5D"
+					item: "gtceu:luco3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2852AA9BFD2BE6D9"
+					type: "checkmark"
+				}
+			]
+			x: 33.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["7878C99681B052FA"]
+			icon: "gtceu:sc2o3_dust"
+			id: "521DDAEBEF2F8073"
+			tasks: [
+				{
+					id: "092AC03737C9102F"
+					item: "gtceu:sc2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B392737D2A3BF67"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["74B52F1728036102"]
+			icon: "gtceu:la2o3_dust"
+			id: "4846F15835CF19E4"
+			tasks: [
+				{
+					id: "1E83DA4C7557CB02"
+					item: "gtceu:la2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0DB44BA148DC4039"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1D5403E3CE372EAC"]
+			icon: "gtceu:y2o3_dust"
+			id: "1CEEAE7605F418B9"
+			tasks: [
+				{
+					id: "0D0D20A0DA379AB6"
+					item: "gtceu:y2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "10C0EF9CB6349237"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2990D510B6AA18BC"]
+			icon: "gtceu:ce2o3_dust"
+			id: "22B8CF93693107E1"
+			tasks: [
+				{
+					id: "6BF6D5DAEDEEC76F"
+					item: "gtceu:ce2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "35D1CDC1D9CC97D3"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["66EEB3E784D83C68"]
+			icon: "gtceu:pr2o3_dust"
+			id: "0C6E8B41D607817E"
+			tasks: [
+				{
+					id: "7D46AED697DE73F8"
+					item: "gtceu:pr2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B8068CCF3797C19"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["19E2584F8AC1CE7A"]
+			icon: "gtceu:nd2o3_dust"
+			id: "14977EA768F6FF89"
+			tasks: [
+				{
+					id: "0E678BF268F039F4"
+					item: "gtceu:nd2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2ED6AD60CA1A6E1E"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["05F89C66D3F1A36A"]
+			icon: "gtceu:sm2o3_dust"
+			id: "569743269E9CC9BF"
+			tasks: [
+				{
+					id: "76A0909A83F16A92"
+					item: "gtceu:sm2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64C49C5FB3F29F03"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["4EE787E94CACFE8B"]
+			icon: "gtceu:eu2o3_dust"
+			id: "46ABD3D7FDFEB576"
+			tasks: [
+				{
+					id: "41738232DB186CE4"
+					item: "gtceu:eu2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38C400353DF0F865"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1106420F10F155A1"]
+			icon: "gtceu:gd2o3_dust"
+			id: "37B336BB57A853E1"
+			tasks: [
+				{
+					id: "25401D25DA7B0FE1"
+					item: "gtceu:gd2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "168A23B3FE5B405A"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["1AA0D93F551BF0F2"]
+			icon: "gtceu:tb2o3_dust"
+			id: "2370192DA7B5998D"
+			tasks: [
+				{
+					id: "462667D2CE6B96F2"
+					item: "gtceu:tb2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "333EBC4F8B0D6F0E"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["42250ACE99C462B9"]
+			icon: "gtceu:dy2o3_dust"
+			id: "4960514E6A4B5714"
+			tasks: [
+				{
+					id: "4C68CDA729FCDE7F"
+					item: "gtceu:dy2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2AF5A45DF42F39D7"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3CA2197C548DB2AF"]
+			icon: "gtceu:ho2o3_dust"
+			id: "0C4D7C06A325B9C5"
+			tasks: [
+				{
+					id: "1BCE97F754585FD7"
+					item: "gtceu:ho2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52DC8AD9D3D5C7DE"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["1F0E2A6DA238D497"]
+			icon: "gtceu:er2o3_dust"
+			id: "3F24B8F0A28079D7"
+			tasks: [
+				{
+					id: "425BA28F4E62D763"
+					item: "gtceu:er2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03BA496D1EDEF2B7"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["154957622A81339B"]
+			icon: "gtceu:tm2o3_dust"
+			id: "3A4C15216D2DFB40"
+			tasks: [
+				{
+					id: "1D027103A0DD7273"
+					item: "gtceu:tm2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C4D8C256D16AB41"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6A434C2F5FF6424F"]
+			icon: "gtceu:yb2o3_dust"
+			id: "65B0C8590F1BB2E9"
+			tasks: [
+				{
+					id: "6889F771286C5014"
+					item: "gtceu:yb2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0373A74D96DE8FA4"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["0DEF4D53CCF8F0BC"]
+			icon: "gtceu:lu2o3_dust"
+			id: "05C27BA4306320CF"
+			tasks: [
+				{
+					id: "567D065EA325E64E"
+					item: "gtceu:lu2o3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "125635A472911B3B"
+					type: "checkmark"
+				}
+			]
+			x: 34.0d
+			y: 23.5d
+		}
+		{
+			id: "7F876F6DDA899EF1"
+			tasks: [{
+				id: "0F670375B4327640"
+				title: "钙"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: 4.0d
+		}
+		{
+			icon: "gtceu:quicklime_dust"
+			id: "0E6BC9820828DB86"
+			tasks: [
+				{
+					id: "4EC6733FBEB51E1A"
+					item: "gtceu:quicklime_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B6D61368183A055"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0E6BC9820828DB86"]
+			icon: "gtceu:ca_gas_bucket"
+			id: "44E245B3645AAD8F"
+			tasks: [
+				{
+					id: "59CABA9BEF979022"
+					item: "gtceu:ca_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D9DC1F392F99FB7"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["44E245B3645AAD8F"]
+			icon: "gtceu:calcium_dust"
+			id: "689944B8B464DF1D"
+			tasks: [
+				{
+					id: "1FF06D7A5618CC2C"
+					item: "gtceu:calcium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60CAC20D1A723BBC"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 5.5d
 		}
 	]
 	title: "单质元素"

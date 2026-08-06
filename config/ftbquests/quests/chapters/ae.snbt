@@ -63,6 +63,12 @@
 		{
 			description: ["无限容量的输出仓室！！！"]
 			id: "08C9BE96E61B4650"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E38303AF14BA2D6"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "748995EE9CBC724B"
@@ -189,6 +195,12 @@
 			dependencies: ["46D089C6AD12F726"]
 			description: ["可简化的东西"]
 			id: "03D6A5CDCFFBC349"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43339169165DE0F3"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "2CBCF1D2691163A4"

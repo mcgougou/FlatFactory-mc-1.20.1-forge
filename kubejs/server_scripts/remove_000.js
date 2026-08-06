@@ -1,5 +1,7 @@
 // priority: 97
 ServerEvents.recipes(event=>{
+    //ca
+event.replaceOutput({ type:'gtceu:centrifuge' }, 'gtceu:calcium_dust', 'gtceu:calcite_dust')      
     //nd
 
 event.replaceOutput({ type:'gtceu:thermal_centrifuge' }, 'gtceu:neodymium_dust', 'gtceu:rare_earth_dust')  

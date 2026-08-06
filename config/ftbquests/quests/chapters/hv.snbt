@@ -1038,6 +1038,24 @@
 			x: -1.0d
 			y: -10.0d
 		}
+		{
+			dependencies: ["669DECACB2C6B203"]
+			description: ["推荐搭配并行控制仓使用"]
+			id: "3785A21149FBFD19"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B6F17E19A837034"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			tasks: [{
+				id: "716BE7B1F4D094EF"
+				item: "gtceu:hv_ore"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
 	]
 	title: "第五章：高压时代（HV）"
 }

@@ -3,6 +3,50 @@ ServerEvents.recipes(event => {
 event.custom({
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:stable_machine_casing"
+    },
+    "B": {
+      "item": "gtceu:engine_intake_casing"
+    },
+    "C": {
+      "item": "mcgougou:luv_universal_circuit"
+    }
+  },
+  "result": {
+    "item": "gtceu:ev_generator"
+  }
+})
+event.custom({
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:clean_machine_casing"
+    },
+    "B": {
+      "item": "mcgougou:iv_universal_circuit"
+    },
+    "C": {
+      "item": "gtceu:ore_breaker"
+    }
+  },
+  "result": {
+    "item": "gtceu:hv_ore"
+  }
+})
+event.custom({
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
     "ABC",
     "BDB",
     "CBA"

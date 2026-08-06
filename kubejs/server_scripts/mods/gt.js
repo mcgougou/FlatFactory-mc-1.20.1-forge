@@ -162,6 +162,7 @@ event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_19_overworld')
         .itemOutputs('2x gtceu:raw_garnet_sand')
         .itemOutputs('2x gtceu:raw_asbestos')
         .itemOutputs('gtceu:raw_diatomite')
+        .itemOutputs('gtceu:bi2o3_dust')
         .circuit(19)
         .duration(20)
         .EUt(8);
@@ -1478,7 +1479,7 @@ event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_yxccl_11561')
         .EUt(1920);
 
 event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_yichunnaaa')
-.inputFluids(Fluid.of("gtceu:ethanol",1000)).outputFluids(Fluid.of("gtceu:hydrogen",100))
+.inputFluids(Fluid.of("gtceu:ethanol",1000)).outputFluids(Fluid.of("gtceu:hydrogen",1000))
 .itemInputs('gtceu:sodium_dust')
 .itemOutputs('gtceu:yichunna_dust')
         .duration(10)
@@ -1597,8 +1598,297 @@ event.recipes.gtceu.xitu_recipe('mcgougou:xitu_1')
 .notConsumableFluid(Fluid.of("gtceu:hhmy",216000))
 .notConsumableFluid(Fluid.of("gtceu:p507",72000))
 .notConsumableFluid(Fluid.of("gtceu:hydrochloric_acid",480000))
-        .duration(100)
+        .duration(250)
         .EUt(1920);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_bi')
+.itemInputs('gtceu:bi2o3_dust')
+.itemInputs('3x gtceu:carbon_dust')
+.itemOutputs('2x gtceu:bismuth_dust')
+.outputFluids(Fluid.of("gtceu:carbon_monoxide",3000))
+.blastFurnaceTemp(1073)
+        .duration(20)
+        .EUt(120);
+event.recipes.gtceu.ev_generator_recipe('mcgougou:ev_generator_1')
+        .inputFluids(Fluid.of('gtceu:oil_heavy', 10000))
+        .inputFluids( Fluid.of('water', 1000000))
+        .outputFluids(Fluid.of('gtceu:distilled_water', 750000))
+        .itemOutputs('64x gtceu:dark_ash_dust')
+        .duration(20)
+        .circuit(1)
+        .EUt(-2097152);
+// event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_laco3')
+// .inputFluids( Fluid.of('gtceu:lacl3', 2000))
+// .itemInputs('3x gtceu:soda_ash_dust')
+// .itemOutputs('gtceu:laco3_dust')
+// .outputFluids(Fluid.of("gtceu:salt_water",3000))
+//         .duration(10)
+//         .EUt(1920);
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_scco3')
+.inputFluids( Fluid.of('gtceu:sccl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:scco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_laco3')
+.inputFluids( Fluid.of('gtceu:lacl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:laco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_ceco3')
+.inputFluids( Fluid.of('gtceu:cecl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:ceco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_prco3')
+.inputFluids( Fluid.of('gtceu:prcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:prco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_ndco3')
+.inputFluids( Fluid.of('gtceu:ndcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:ndco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_smco3')
+.inputFluids( Fluid.of('gtceu:smcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:smco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_eucl3')
+.inputFluids( Fluid.of('gtceu:eucl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:euco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_gdco3')
+.inputFluids( Fluid.of('gtceu:gdcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:gdco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_tbco3')
+.inputFluids( Fluid.of('gtceu:tbcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:tbco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_dyco3')
+.inputFluids( Fluid.of('gtceu:dycl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:dyco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_hoco3')
+.inputFluids( Fluid.of('gtceu:hocl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:hoco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_erco3')
+.inputFluids( Fluid.of('gtceu:ercl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:erco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_tmco3')
+.inputFluids( Fluid.of('gtceu:tmcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:tmco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_ybco3')
+.inputFluids( Fluid.of('gtceu:ybcl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:ybco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_luco3')
+.inputFluids( Fluid.of('gtceu:lucl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:luco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.large_chemical_reactor('mcgougou:chem_yco3')
+.inputFluids( Fluid.of('gtceu:ycl3', 2000))
+.itemInputs('3x gtceu:soda_ash_dust')
+.itemOutputs('gtceu:yco3_dust')
+.outputFluids(Fluid.of("gtceu:salt_water",3000))
+        .duration(10)
+        .EUt(1920);event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_sc2o3')
+.itemInputs('gtceu:scco3_dust')
+.itemOutputs('gtceu:sc2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_la2o3')
+.itemInputs('gtceu:laco3_dust')
+.itemOutputs('gtceu:la2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ce2o3')
+.itemInputs('gtceu:ceco3_dust')
+.itemOutputs('gtceu:ce2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_pr2o3')
+.itemInputs('gtceu:prco3_dust')
+.itemOutputs('gtceu:pr2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_nd2o3')
+.itemInputs('gtceu:ndco3_dust')
+.itemOutputs('gtceu:nd2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_sm2o3')
+.itemInputs('gtceu:smco3_dust')
+.itemOutputs('gtceu:sm2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_eu2o3')
+.itemInputs('gtceu:euco3_dust')
+.itemOutputs('gtceu:eu2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_gd2o3')
+.itemInputs('gtceu:gdco3_dust')
+.itemOutputs('gtceu:gd2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_tb2o3')
+.itemInputs('gtceu:tbco3_dust')
+.itemOutputs('gtceu:tb2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_dy2o3')
+.itemInputs('gtceu:dyco3_dust')
+.itemOutputs('gtceu:dy2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ho2o3')
+.itemInputs('gtceu:hoco3_dust')
+.itemOutputs('gtceu:ho2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_er2o3')
+.itemInputs('gtceu:erco3_dust')
+.itemOutputs('gtceu:er2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_tm2o3')
+.itemInputs('gtceu:tmco3_dust')
+.itemOutputs('gtceu:tm2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_yb2o3')
+.itemInputs('gtceu:ybco3_dust')
+.itemOutputs('gtceu:yb2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_lu2o3')
+.itemInputs('gtceu:luco3_dust')
+.itemOutputs('gtceu:lu2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_y2o3')
+.itemInputs('gtceu:yco3_dust')
+.itemOutputs('gtceu:y2o3_dust')
+.outputFluids(Fluid.of("gtceu:carbon_dioxide",3000))
+.blastFurnaceTemp(1173)
+        .duration(10)
+        .EUt(1920);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ca')
+.itemInputs('6x gtceu:quicklime_dust')
+.itemOutputs('2x gtceu:aluminium_dust')
+.outputFluids(Fluid.of("gtceu:ca_gas",3000))
+.itemOutputs('3x gtceu:lvsuangai_dust')
+.blastFurnaceTemp(1173)
+        .duration(20)
+        .EUt(1920);
+event.recipes.gtceu.fluid_solidifier('mcgougou:sol_ca')
+.inputFluids(Fluid.of("gtceu:ca_gas",1000))
+.itemOutputs('gtceu:calcium_dust')
+        .duration(20)
+        .EUt(500);
 // event.recipes.gtceu.test_generator('mcgougou:turbinerecipe_01')
 //         .itemInputs('gtceust')
 //         .itemOutputs('gtcedust')

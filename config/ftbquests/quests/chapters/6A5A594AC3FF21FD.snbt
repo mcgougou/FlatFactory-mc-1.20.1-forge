@@ -49,6 +49,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "2095F6FDAD69B18E"
+					item: "avaritia:infinity_bucket"
+					type: "item"
+				}
 			]
 			tasks: [{
 				dimension: "minecraft:overworld"
