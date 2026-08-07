@@ -1,5 +1,27 @@
 ServerEvents.recipes(event => {
     //               event.custom()
+    event.custom({
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:heatproof_machine_casing"
+    },
+    "B": {
+      "item": "mcgougou:hv_universal_circuit"
+    },
+    "C": {
+      "item": "gtceu:electric_blast_furnace"
+    }
+  },
+  "result": {
+    "item": "gtceu:mcgougou_furnace_2"
+  }
+})
 event.custom({
   "type": "minecraft:crafting_shaped",
   "pattern": [

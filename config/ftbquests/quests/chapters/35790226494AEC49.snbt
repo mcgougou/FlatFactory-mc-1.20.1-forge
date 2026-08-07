@@ -170,6 +170,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["7BDD19DA08C901B7"]
 			description: [
 				"【商店】里有卖很多东西， 可以经常去看看"
 				"【部分内容教程】主要是前期的一些教程，新手可以参考"
@@ -183,6 +184,18 @@
 			}]
 			x: 0.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["7BDD19DA08C901B7"]
+			description: ["欢迎进入qq群813864648进行讨论"]
+			id: "1EE87B967A2BA0A6"
+			tasks: [{
+				id: "5AD7B96D69E2812F"
+				title: "qq群"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 	title: "前言"

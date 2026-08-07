@@ -26,6 +26,8 @@ ItemEvents.tooltip(event=>{
     event.add('gtceu:xitu_factory',[
         "可以使用并行控制仓",
     "具有无损超频"])
+    event.add('gtceu:mcgougou_furnace_2',["能耗极低，但速度上限取决于能源仓的等级和功率，推荐直接使用当前可制作的最强的能源仓",
+        "可以使用并行控制仓"])
     event.add('gtceu:hv_ore',[
         "自带配方时间和能耗0.5x",
         "可以使用并行控制仓",

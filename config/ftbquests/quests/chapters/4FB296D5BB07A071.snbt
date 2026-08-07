@@ -2055,6 +2055,7 @@
 				"76DF84AE443BAC00"
 				"0203FA140A8C3E8F"
 			]
+			description: ["这里没有钷的获取，因为钷是放射性元素，自然中存量很低"]
 			id: "651899B6EA1E402D"
 			tasks: [{
 				id: "092154FB313DE90F"
@@ -3224,6 +3225,376 @@
 			]
 			x: 29.0d
 			y: 5.5d
+		}
+		{
+			icon: "gtceu:calcium_dust"
+			id: "676903E7B2F4AB3D"
+			tasks: [
+				{
+					id: "2F61B4D4062E89AC"
+					item: "gtceu:calcium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0870C9EA4F391B06"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"521DDAEBEF2F8073"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:sc_dust"
+			id: "5E53B474A9D10E06"
+			tasks: [
+				{
+					id: "18879F23EB564296"
+					item: "gtceu:sc_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0AE9728888603272"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1CEEAE7605F418B9"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:yttrium_dust"
+			id: "7120F9307FDD01DE"
+			tasks: [
+				{
+					id: "74E29D42253A0F44"
+					item: "gtceu:yttrium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "463EEDF209C1DD26"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"4846F15835CF19E4"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:lanthanum_dust"
+			id: "2D4FFBCD61194313"
+			tasks: [
+				{
+					id: "1E688820DB821D4D"
+					item: "gtceu:lanthanum_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A5A12E6833C1CA3"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"22B8CF93693107E1"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:cerium_dust"
+			id: "77A4DBAA15CC8C33"
+			tasks: [
+				{
+					id: "0EE42123D86C8E46"
+					item: "gtceu:cerium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6851A8928BB9228E"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"0C6E8B41D607817E"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:pr_dust"
+			id: "40C5B87499448F3C"
+			tasks: [
+				{
+					id: "1619E1F21306B6C6"
+					item: "gtceu:pr_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00817AE65D6C6353"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"14977EA768F6FF89"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:neodymium_dust"
+			id: "691963905AC6E734"
+			tasks: [
+				{
+					id: "2AC5CD050A0A8B1D"
+					item: "gtceu:neodymium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B003B1777F962FB"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"569743269E9CC9BF"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:samarium_dust"
+			id: "346E5F5A648F07A9"
+			tasks: [
+				{
+					id: "2BB4FCF5496F03CA"
+					item: "gtceu:samarium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D379CAD264D3DF8"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"46ABD3D7FDFEB576"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:europium_dust"
+			id: "7BD2771CAF8B0489"
+			tasks: [
+				{
+					id: "2C34447B25CE82C3"
+					item: "gtceu:europium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "078FE88DDB8330A0"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"37B336BB57A853E1"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:gd_dust"
+			id: "6095D84F7E6EFA88"
+			tasks: [
+				{
+					id: "68D01654FFADF823"
+					item: "gtceu:gd_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "785A2FE1B5F1298E"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"2370192DA7B5998D"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:tb_dust"
+			id: "736313AED70A8E2D"
+			tasks: [
+				{
+					id: "588C98D16229AE33"
+					item: "gtceu:tb_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2881806B421E8399"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"4960514E6A4B5714"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:dy_dust"
+			id: "462B71BF373AA020"
+			tasks: [
+				{
+					id: "12979449C9AB8B4B"
+					item: "gtceu:dy_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "580277FB50DD894B"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"0C4D7C06A325B9C5"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:ho_dust"
+			id: "0B26D28CDD6E3421"
+			tasks: [
+				{
+					id: "12378515B07BF606"
+					item: "gtceu:ho_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7B35143A95FC024F"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"3F24B8F0A28079D7"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:er_dust"
+			id: "69A82F3E09D7B347"
+			tasks: [
+				{
+					id: "7D067C93587691E1"
+					item: "gtceu:er_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "50A07747EF7FAE0B"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"3A4C15216D2DFB40"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:tm_dust"
+			id: "1CAE661FAD0EBE26"
+			tasks: [
+				{
+					id: "79377D2506D4A638"
+					item: "gtceu:tm_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "33F18ED96072F958"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"65B0C8590F1BB2E9"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:yb_dust"
+			id: "78CF6D9C93F9BA52"
+			tasks: [
+				{
+					id: "15B983AB2114CB45"
+					item: "gtceu:yb_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58CEDD5F570FAC68"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"05C27BA4306320CF"
+				"676903E7B2F4AB3D"
+			]
+			icon: "gtceu:lutetium_dust"
+			id: "23F5F9F2F92821F4"
+			tasks: [
+				{
+					id: "6997FFA1AAE44098"
+					item: "gtceu:lutetium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "12ACF7DA266B764D"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 23.5d
 		}
 	]
 	title: "单质元素"

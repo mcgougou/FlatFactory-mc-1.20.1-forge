@@ -145,7 +145,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('out')
         //setMaxIOSize(int,int,int,int)
         //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
-        .setMaxIOSize(3,1, 3, 1)
+        .setMaxIOSize(3,1, 3, 1).setSound(GTSoundEntries.TURBINE)   
         .setMaxTooltips(5)//设置最大信息提示
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
     event.create('xitu_recipe')
@@ -159,7 +159,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxTooltips(5)//设置最大信息提示
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
         
-        .setSound(GTSoundEntries.TURBINE)    
+        .setSound(GTSoundEntries.CHEMICAL)    
     event.create('greenhouse')
         .category('example')
         .setEUIO('in')
@@ -703,11 +703,27 @@ function furn(machine, recipe) {
         //.chanceMultiplier(double)       
          
 }
+function furn_2(machine, recipe) {
+    if (!(machine instanceof $MetaMachine)) return ModifierFunction.NULL;
+    if (!(recipe instanceof $GTRecipe)) return ModifierFunction.NULL;
+ 
+ 
+ 
+                            //步差大于等于1时，执行配方加速
+    return ModifierFunction.builder()
+        .durationMultiplier(0.5).eutMultiplier(0.1) 
+        .build();
+        //其他可用的方法
+        //.eutMultiplier(double)             能量消耗
+        //.outputMultiplier(double)       
+        //.chanceMultiplier(double)       
+         
+}
 event.create("mcgougou_furnace","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("electric_furnace")
-        .recipeModifiers([(machine,recipe)=>furn(machine,recipe),GTRecipeModifiers.BATCH_MODE,GTRecipeModifiers.OC_NON_PERFECT,GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([(machine,recipe)=>furn(machine,recipe),GTRecipeModifiers.BATCH_MODE,GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA')
@@ -718,12 +734,37 @@ event.create("mcgougou_furnace","multiblock")
   .aisle('AAAAAAA', 'ABBBBBA', 'A#####A', 'ACCCCCA', 'ACCCCCA', 'ACCCCCA', 'AAAAAAA')
   .aisle('AAAAAAA', 'AAADAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA')
   .where('C', Predicates.blocks('minecraft:furnace'))
-  .where('A', Predicates.blocks('minecraft:cobblestone').or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .where('A', Predicates.blocks('minecraft:cobblestone').or(Predicates.autoAbilities(definition.getRecipeTypes())))
   .where('B', Predicates.blocks('minecraft:campfire'))
   .where('D',  Predicates.controller(Predicates.blocks(definition.get())))
   .where('#', Predicates.any())
   .build()
 ).workableCasingModel("minecraft:block/cobblestone",
+            "gtceu:block/multiblock/pyrolyse_oven");
+
+event.create("mcgougou_furnace_2","multiblock")
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("electric_furnace")
+        .recipeModifiers([GTRecipeModifiers.BATCH_MODE,GTRecipeModifiers.OC_PERFECT,GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe)=> furn_2(machine,recipe)
+
+        ])
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('AAAAA', 'A###A', 'A###A', 'A###A', 'A###A', 'AAAAA')
+  .aisle('AAAAA', '#BBB#', '#BBB#', '#BBB#', '#BBB#', 'AAAAA')
+  .aisle('AAAAA', '#B#B#', '#B#B#', '#B#B#', '#B#B#', 'AACAA')
+  .aisle('AAAAA', '#BBB#', '#BBB#', '#BBB#', '#BBB#', 'AAAAA')
+  .aisle('AADAA', 'A###A', 'A###A', 'A###A', 'A###A', 'AAAAA')
+  .where('A',  Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()).or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+  .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .where('B', Predicates.heatingCoils())
+  .where('D', Predicates.controller(Predicates.blocks(definition.get())))
+  .where('C', Predicates.abilities(PartAbility.MUFFLER))
+  .where('#', Predicates.any())
+  .build()
+)
+.workableCasingModel("gtceu:block/casings/solid/machine_casing_heatproof",
             "gtceu:block/multiblock/pyrolyse_oven");
 // event.create("mv_machine","multiblock")
 //         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))

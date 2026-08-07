@@ -137,6 +137,33 @@
 			x: -0.5d
 			y: -2.5d
 		}
+		{
+			id: "12CE66D3A4AAD527"
+			tasks: [{
+				id: "40D573DEF504D06C"
+				title: "ev"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "377A025B1DE86D04"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51B553ED17C9B1A6"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "5F7BE6C0029404D9"
+				item: "gtceu:ev_generator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
 	]
 	title: "发电"
 }

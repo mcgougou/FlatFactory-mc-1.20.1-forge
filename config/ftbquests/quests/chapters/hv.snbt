@@ -1048,6 +1048,7 @@
 				table_id: 3438830455175391625L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "716BE7B1F4D094EF"
 				item: "gtceu:hv_ore"
@@ -1055,6 +1056,45 @@
 			}]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["47D94C8355718749"]
+			description: [
+				"必须搭配并行控制仓使用，否则使用效果极差"
+				"搭配越好的能源仓，处理效率越快"
+			]
+			id: "3A9D22BDB8E684BF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EA1ADA3C1C9B654"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			tasks: [{
+				id: "189F6F4C12D305B7"
+				item: "gtceu:mcgougou_furnace_2"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3736AB0006A82125"]
+			description: ["换高效矿机"]
+			id: "05FECC7A78447AE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F4AC7BA6522C9A3"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5991700BFE48ADD8"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -9.5d
 		}
 	]
 	title: "第五章：高压时代（HV）"

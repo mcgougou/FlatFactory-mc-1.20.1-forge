@@ -575,6 +575,12 @@ event.recipes.gtceu.fluid_driller_recipe('mcgougou:drilling_net_1')
         .duration(10)
         .circuit(1)
         .EUt(64);
+event.recipes.gtceu.fluid_driller_recipe('mcgougou:drilling_moon_1')
+        .notConsumable('mcgougou:moon_marker')
+        .outputFluids(Fluid.of("gtceu:radon",10))
+        .duration(10)
+        .circuit(1)
+        .EUt(64);
 event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_vfe_tofe_v')
         .itemInputs('gtceu:vanadium_magnetite_dust')
         .itemInputs('4x gtceu:carbon_dust')
@@ -1878,7 +1884,7 @@ event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_y2o3')
         .EUt(1920);
 event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ca')
 .itemInputs('6x gtceu:quicklime_dust')
-.itemOutputs('2x gtceu:aluminium_dust')
+.itemInputs('2x gtceu:aluminium_dust')
 .outputFluids(Fluid.of("gtceu:ca_gas",3000))
 .itemOutputs('3x gtceu:lvsuangai_dust')
 .blastFurnaceTemp(1173)
@@ -1889,6 +1895,150 @@ event.recipes.gtceu.fluid_solidifier('mcgougou:sol_ca')
 .itemOutputs('gtceu:calcium_dust')
         .duration(20)
         .EUt(500);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_la')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:la2o3_dust')
+.itemOutputs('2x gtceu:lanthanum_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ce')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:ce2o3_dust')
+.itemOutputs('2x gtceu:cerium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_pr')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:pr2o3_dust')
+.itemOutputs('2x gtceu:pr_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_nd')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:nd2o3_dust')
+.itemOutputs('2x gtceu:neodymium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_sm')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:sm2o3_dust')
+.itemOutputs('2x gtceu:samarium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_eu')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:eu2o3_dust')
+.itemOutputs('2x gtceu:europium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_gd')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:gd2o3_dust')
+.itemOutputs('2x gtceu:gd_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_tb')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:tb2o3_dust')
+.itemOutputs('2x gtceu:tb_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_dy')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:dy2o3_dust')
+.itemOutputs('2x gtceu:dy_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_ho')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:ho2o3_dust')
+.itemOutputs('2x gtceu:ho_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_er')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:er2o3_dust')
+.itemOutputs('2x gtceu:er_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_tm')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:tm2o3_dust')
+.itemOutputs('2x gtceu:tm_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_yb')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:yb2o3_dust')
+.itemOutputs('2x gtceu:yb_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_lu')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:lu2o3_dust')
+.itemOutputs('2x gtceu:lutetium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_sc')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:sc2o3_dust')
+.itemOutputs('2x gtceu:sc_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_y')
+.itemInputs('3x gtceu:calcium_dust')
+.itemInputs('gtceu:y2o3_dust')
+.itemOutputs('2x gtceu:yttrium_dust')
+.itemOutputs('3x gtceu:quicklime_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(1920);
 // event.recipes.gtceu.test_generator('mcgougou:turbinerecipe_01')
 //         .itemInputs('gtceust')
 //         .itemOutputs('gtcedust')
