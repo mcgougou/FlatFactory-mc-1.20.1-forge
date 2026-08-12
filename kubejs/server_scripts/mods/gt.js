@@ -2039,6 +2039,12 @@ event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_y')
 .blastFurnaceTemp(1400)
         .duration(20)
         .EUt(1920);
+event.recipes.gtceu.mixer('mcgougou:mix_bolao')
+.itemInputs('10x gtceu:platinum_dust')
+.itemInputs('gtceu:rhodium_dust')
+.itemOutputs('11x gtceu:pt10rh_dust')
+        .duration(100)
+        .EUt(1920);
 // event.recipes.gtceu.test_generator('mcgougou:turbinerecipe_01')
 //         .itemInputs('gtceust')
 //         .itemOutputs('gtcedust')
