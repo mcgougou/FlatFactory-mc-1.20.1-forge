@@ -171,6 +171,22 @@ const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gt
 const $LargeTurbineMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.generator.LargeTurbineMachine")
 const $GTRecipe = Java.loadClass("com.gregtechceu.gtceu.api.recipe.GTRecipe");
 const $MetaMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.MetaMachine");
+const EnhancedFluidHatchPartMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.part.EnhancedFluidHatchPartMachine')
+const EnhancedParallelHatchPartMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.part.EnhancedParallelHatchPartMachine')
+const IndustrialSteamHatchPartMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.part.IndustrialSteamHatchPartMachine')
+const GTUF_Machines = Java.loadClass('com.liangqu.gtuf.common.data.GTUF_Machines')
+
+const TierElectricParallelMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.electric.TierElectricParallelMachine')
+const ConfigurableElectricParallelMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.electric.ConfigurableElectricParallelMachine')
+const EnhanceableElectricMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.electric.EnhanceableElectricMachine')
+
+const GTUFPatternPredicates = Java.loadClass('com.liangqu.gtuf.api.pattern.GTUF_PatternPredicates')
+const GTUFPartAbility = Java.loadClass('com.liangqu.gtuf.api.machine.multiblock.GTUF_PartAbility')
+const GTUFModels = Java.loadClass('com.liangqu.gtuf.common.data.models.GTUFModels')
+
+const AdjustableSteamParallelMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.steam.AdjustableSteamParallelMachine')
+const EnhanceableSteamMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.steam.EnhanceableSteamMachine')
+const IndustrialSteamMachine = Java.loadClass('com.liangqu.gtuf.common.machine.multiblock.steam.IndustrialSteamMachine')
 // const $CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine");
 // const $RecipeModifier = Java.loadClass("com.gregtechceu.gtceu.api.recipe.modifier.RecipeModifier");
  
@@ -287,11 +303,10 @@ event.create("simple_air_distillery","multiblock")
   .build()
 ).workableCasingModel("gtceu:block/casings/solid/machine_casing_frost_proof",
             "gtceu:block/multiblock/pyrolyse_oven");
-event.create("nh3_factory","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("nh3_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("nh3_factory_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> GTRecipeModifiers.pyrolyseOvenOverclock(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('##AAAAA', '##ABABA', '##ABBBA', '##ABBBA', '##ABBBA', '##ABBBA', '##AAAAA', '#######', '#######', '#######', '#######', '#######')
@@ -330,11 +345,12 @@ event.create("nh3_factory","multiblock")
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/pyrolyse_oven");
-event.create("bayer","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("bayer","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("bayer_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> GTRecipeModifiers.pyrolyseOvenOverclock(machine,recipe)])
+  //       .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+  //  .recipeModifier((machine, recipe) => TierElectricParallelMachine.recipeModifier(machine, recipe), true)
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('##AAAAA#', '##AAAAA#', '##ADDDA#', '##ADDDA#', '##AEAEA#', '########', '########')
@@ -377,11 +393,10 @@ event.create("bayer","multiblock")
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/pyrolyse_oven");
-event.create("h2so4_factory","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("h2so4_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("h2so4_factory_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> GTRecipeModifiers.pyrolyseOvenOverclock(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '##AAA##', '#######', '#######', '#######', '#######')
@@ -424,11 +439,10 @@ event.create("h2so4_factory","multiblock")
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_heatproof",
             "gtceu:block/multiblock/pyrolyse_oven");
             ////////////////////////////////////
-    event.create("hno3_factory","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+    event.create("hno3_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("hno3_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> GTRecipeModifiers.pyrolyseOvenOverclock(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#AAA#', '#####', '#####', '#####', '#####')
@@ -460,11 +474,10 @@ event.create("h2so4_factory","multiblock")
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe",
             "gtceu:block/multiblock/pyrolyse_oven");
             ////////////////////////////////////////////////////////////////////////////
-event.create("plastic_factory","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("plastic_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("plastic_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> GTRecipeModifiers.pyrolyseOvenOverclock(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('AAAAAAAAA', 'AAAAAAAAA', 'AAAABAAAA', 'AAAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA', 'AAAAAAAAA')
@@ -489,11 +502,10 @@ event.create("plastic_factory","multiblock")
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/pyrolyse_oven");
 ///xitu
-event.create("xitu_factory","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("xitu_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("xitu_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('#########################', '###AAA###################', '#####A###################', '#BBB#A###################', '#B###A###################', '#B###A###################', '#B#AAA###################', '#B#######################', '#BBB#####################', '#########################')
@@ -711,7 +723,7 @@ function furn_2(machine, recipe) {
  
                             //步差大于等于1时，执行配方加速
     return ModifierFunction.builder()
-        .durationMultiplier(0.5).eutMultiplier(0.1) 
+        .durationMultiplier(0.005).eutMultiplier(0.02) 
         .build();
         //其他可用的方法
         //.eutMultiplier(double)             能量消耗
@@ -743,12 +755,9 @@ event.create("mcgougou_furnace","multiblock")
             "gtceu:block/multiblock/pyrolyse_oven");
 
 event.create("mcgougou_furnace_2","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("electric_furnace")
-        .recipeModifiers([GTRecipeModifiers.BATCH_MODE,GTRecipeModifiers.OC_PERFECT,GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe)=> furn_2(machine,recipe)
-
-        ])
+        .recipeTypes("electric_furnace").machine((holder) => new ConfigurableElectricParallelMachine(holder, 10000))
+        .recipeModifiers(true,GTRecipeModifiers.BATCH_MODE, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => furn_2(machine, recipe),(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('AAAAA', 'A###A', 'A###A', 'A###A', 'A###A', 'AAAAA')
@@ -766,6 +775,34 @@ event.create("mcgougou_furnace_2","multiblock")
 )
 .workableCasingModel("gtceu:block/casings/solid/machine_casing_heatproof",
             "gtceu:block/multiblock/pyrolyse_oven");
+/*
+event.create('kjs_config_parallel', 'multiblock')
+      .machine((holder) => new ConfigurableElectricParallelMachine(holder, 32))
+      //32 -> Max_Parallels(int)
+      //32 -> 设置最大并行数（int）
+      .rotationState(RotationState.ALL)
+      .appearanceBlock(GCYMBlocks.CASING_INDUSTRIAL_STEAM)
+      .recipeType('forge_hammer')
+      .recipeModifier((machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe), true)
+      .addOutputLimit(ItemRecipeCapability.CAP, 1)
+      .pattern(definition => FactoryBlockPattern.start()
+          .aisle('AAAAAA', 'ACCCCA', 'AAAAAA')
+          .aisle('AAAAAA', 'ADDDDA', 'AAAAAA')
+          .aisle('AAAAAA', 'ACACCA', 'AAAAAA')
+          .aisle('AAA###', 'AKA###', 'AAA###')
+          .where('#', Predicates.any())
+          .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+          .where('D', Predicates.blocks('gtceu:bronze_gearbox'))
+          .where('C', Predicates.blocks('gtceu:frame_bronze'))
+          .where('A', Predicates.blocks('gtceu:industrial_steam_casing').setMinGlobalLimited(45)
+              .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+              .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
+          .build())
+      .model(GTMachineModels.createWorkableCasingMachineModel(
+          GTCEu.id('block/casings/gcym/industrial_steam_casing'),
+          GTCEu.id('block/multiblock/large_chemical_reactor')))
+*/
 // event.create("mv_machine","multiblock")
 //         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 //         .rotationState(RotationState.NON_Y_AXIS)

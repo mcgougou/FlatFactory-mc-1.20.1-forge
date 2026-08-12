@@ -14,11 +14,18 @@ ServerEvents.recipes(event=>{
     //     } catch (err) {
     //     }
     // })
-    // event.forEachRecipe({ id:'gtceu:electrolyzer/water_electrolysis' }, recipe => { // 
-    //     try { // 
-    //         var newDuration = recipe.get("duration") // 
-    //         recipe.set("duration", newDuration*1600) // 
-    //     } catch (err) {
-    //     }
-    // })
+    event.forEachRecipe({ id:'gtceu:fluid_heater/heat_distilled_to_steam' }, recipe => { // 
+        try { // 
+            var newDuration = recipe.get("duration") // 
+            recipe.set("duration", newDuration*10) // 
+        } catch (err) {
+        }
+    })
+    event.forEachRecipe({ id:'gtceu:fluid_heater/heat_water_to_steam' }, recipe => { // 
+        try { // 
+            var newDuration = recipe.get("duration") // 
+            recipe.set("duration", newDuration*10) // 
+        } catch (err) {
+        }
+    })
 })

@@ -597,8 +597,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			can_repeat: true
@@ -702,6 +702,54 @@
 			title: "EV无线电"
 			x: 0.0d
 			y: 7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5753B5DA44A55910"]
+			icon: "gtceu:uv_parallel_hatch"
+			id: "5D8ED9F139F0C496"
+			rewards: [{
+				count: 4
+				id: "1D128BBBB24FE359"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "187B9B7F00833EB0"
+				item: "coinsje:iron_coin"
+				type: "item"
+			}]
+			title: "UV并行控制仓"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			icon: "travelanchors:travel_anchor"
+			id: "37403A63362E39C2"
+			rewards: [
+				{
+					count: 100
+					id: "175A827D3E041CC3"
+					item: "travelanchors:travel_anchor"
+					type: "item"
+				}
+				{
+					id: "74EDCAAFD9AE8CCF"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "32652DC2D9B1BDFD"
+				item: "coinsje:iron_coin"
+				type: "item"
+			}]
+			title: "旅行锚"
+			x: -4.5d
+			y: -3.0d
 		}
 	]
 	title: "商店"
