@@ -1,5 +1,12 @@
 // priority: 97
 ServerEvents.recipes(event=>{
+//mo
+event.remove({type:"minecraft:smelting",output:'gtceu:molybdenum_ingot'})
+event.remove({type:"minecraft:blasting",output:'gtceu:molybdenum_ingot'})
+event.replaceOutput({ type:'gtceu:thermal_centrifuge' }, 'gtceu:molybdenum_dust', 'gtceu:molybdenite_dust')  
+event.replaceOutput({ type:'gtceu:ore_washer' }, 'gtceu:molybdenum_dust', 'gtceu:molybdenite_dust')  
+event.replaceOutput({ type:'gtceu:forge_hammer' }, 'gtceu:molybdenum_dust', 'gtceu:molybdenite_dust')  
+event.replaceOutput({ type:'gtceu:macerator' }, 'gtceu:molybdenum_dust', 'gtceu:molybdenite_dust')  
     //ca
 event.replaceOutput({ type:'gtceu:centrifuge' }, 'gtceu:calcium_dust', 'gtceu:calcite_dust')      
     //nd

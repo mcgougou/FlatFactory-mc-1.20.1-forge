@@ -584,14 +584,12 @@ function hv_ore_fun(machine, recipe) {
         //.chanceMultiplier(double)       
          
 }
-event.create("hv_ore","multiblock")
-        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+event.create("hv_ore","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 8))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe)=> hv_ore_fun(machine,recipe),
+        (machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("ore_breaker_recipe")
         .recipeTypes("fluid_driller_recipe")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH,
-          GTRecipeModifiers.OC_PERFECT,
-            (machine, recipe)=> hv_ore_fun(machine,recipe)])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
   .aisle('AAAAAAAAA', 'AAAAAAAAA', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########')

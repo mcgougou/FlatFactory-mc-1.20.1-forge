@@ -314,7 +314,9 @@ ServerEvents.recipes(event=>{
         'gtceu:large_chemical_reactor/polyvinyl_butyral',
         'gtceu:chemical_reactor/polyvinyl_butyral',
         'gtceu:chemical_reactor/butraldehyde',
-        'gtceu:large_chemical_reactor/butraldehyde'
+        'gtceu:large_chemical_reactor/butraldehyde',
+        'gtceu:electrolyzer/tungstic_acid_electrolysis',
+        'gtceu:chemical_bath/tungstic_acid_from_scheelite'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})
@@ -326,8 +328,20 @@ event.replaceInput({id:'gtceu:macerator/macerate_certus_quartz_gem'},'gtceu:cert
 event.replaceInput({id:'advanced_ae:reactionchamber'},'minecraft:glowstone_dust','minecraft:redstone')
 event.replaceInput({id:'gtceu:assembler/smd_diode'},'gtceu:fine_platinum_wire','gtceu:fine_electrum_wire')
 event.replaceOutput({ type:"minecraft:blasting" }, 'gtceu:certus_quartz_gem', 'ae2:certus_quartz_crystal')
+event.replaceOutput({ id:"gtceu:chemical_bath/tungstic_acid_from_tungstate" },'gtceu:lithium_chloride_dust', '2x gtceu:lithium_chloride_dust')
 event.replaceOutput({ type:"minecraft:smelting" }, 'gtceu:certus_quartz_gem', 'ae2:certus_quartz_crystal')
 event.replaceInput({ id:'gtceu:assembler/cover_advanced_energy_detector' }, 'gtceu:hv_sensor', 'gtceu:lv_sensor')
+//mo
+event.replaceOutput({ id:'gtceu:macerator/macerate_molybdenum_turbine_blade' }, 'gtceu:molybdenite_dust', 'gtceu:molybdenum_dust')  
+event.replaceOutput({ id:'gtceu:macerator/macerate_molybdenum_block' }, 'gtceu:molybdenite_dust', 'gtceu:molybdenum_dust')  
+event.replaceOutput({ id:'gtceu:macerator/macerate_molybdenum_plate' }, 'gtceu:molybdenite_dust', 'gtceu:molybdenum_dust')  
+event.replaceOutput({ id:'gtceu:macerator/macerate_double_molybdenum_plate' }, 'gtceu:molybdenite_dust', 'gtceu:molybdenum_dust')  
+event.replaceOutput({ id:'gtceu:macerator/macerate_molybdenum_ingot' }, 'gtceu:molybdenite_dust', 'gtceu:molybdenum_dust')  
+event.replaceOutput({ id:'gtceu:centrifuge/centrifuge_molybdenite_dirty_dust_to_dust' }, 'gtceu:molybdenum_dust','gtceu:molybdenite_dust' )  
+event.replaceOutput({ id:'gtceu:centrifuge/centrifuge_scheelite_pure_dust_to_dust' }, 'gtceu:molybdenum_dust','gtceu:molybdenite_dust')  
+event.replaceOutput({ id:'gtceu:centrifuge/centrifuge_molybdenum_pure_dust_to_dust' }, 'gtceu:molybdenum_dust','gtceu:molybdenite_dust')  
+event.replaceOutput({ id:'gtceu:centrifuge/centrifuge_molybdenum_dirty_dust_to_dust' }, 'gtceu:molybdenum_dust','gtceu:molybdenite_dust')  
+//event.replaceOutput({ id:'' }, 'gtceu:molybdenum_dust','gtceu:molybdenite_dust')  
 //nd
 
 event.replaceOutput({ id: 'gtceu:macerator/macerate_magnetic_neodymium_block' }, 'gtceu:rare_earth_dust', 'gtceu:neodymium_dust')

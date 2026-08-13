@@ -38,6 +38,18 @@
 			x: 1.0d
 			y: -2.5d
 		}
+		{
+			id: "21A04921A5826343"
+			linked_quest: "39A236BEFD5DD9AF"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			id: "470AACF0A98FD6B4"
+			linked_quest: "2B7C1AD26CB1BB3B"
+			x: 5.5d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
@@ -228,12 +240,34 @@
 				table_id: 6752712865210306484L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "1C1658F3BE1DD42C"
 				item: "gtmthings:ev_2a_wireless_energy_input_hatch"
 				type: "item"
 			}]
 			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2B7C1AD26CB1BB3B"
+				"39A236BEFD5DD9AF"
+				"4BBDBDE980401EC2"
+			]
+			id: "59577EB5FC733C36"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "425C8A4B613F2283"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "705BFA51D9351FA9"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
 			y: 2.0d
 		}
 	]

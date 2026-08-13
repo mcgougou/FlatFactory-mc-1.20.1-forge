@@ -3596,6 +3596,331 @@
 			x: 35.0d
 			y: 23.5d
 		}
+		{
+			id: "39A236BEFD5DD9AF"
+			tasks: [{
+				id: "4EC687188E39A78D"
+				title: "钨"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: 25.0d
+		}
+		{
+			description: ["为什么钨酸锂流程更短呢？因为钨酸锂属于可溶物，可以省去高温焙烧工序"]
+			icon: "gtceu:tungstate_dust"
+			id: "40A1A13E47E883E7"
+			tasks: [
+				{
+					id: "26A0442D1D0D6C2B"
+					item: "gtceu:tungstate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6364C8232BF512BE"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 26.5d
+		}
+		{
+			icon: "gtceu:scheelite_dust"
+			id: "56538263E013C8AC"
+			tasks: [
+				{
+					id: "17257A6E871BE313"
+					item: "gtceu:scheelite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29E4EF4114621B54"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["56538263E013C8AC"]
+			icon: "gtceu:wusuanna_dust"
+			id: "274A9B70C09D09B6"
+			tasks: [
+				{
+					id: "755A785144E01486"
+					item: "gtceu:wusuanna_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D38BC752FE92403"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"40A1A13E47E883E7"
+				"274A9B70C09D09B6"
+			]
+			icon: "gtceu:tungstic_acid_dust"
+			id: "0D276388197FF2B4"
+			tasks: [
+				{
+					id: "5A7FEFD116498968"
+					item: "gtceu:tungstic_acid_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65094C2F471ACBC9"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["0D276388197FF2B4"]
+			icon: "gtceu:pure_wusuan_dust"
+			id: "5DC59D79FD23F2BA"
+			tasks: [
+				{
+					id: "6AAFE601950D9121"
+					item: "gtceu:pure_wusuan_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5FA4F1DDB00ACE30"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 26.5d
+		}
+		{
+			dependencies: ["5DC59D79FD23F2BA"]
+			icon: "gtceu:wo3_dust"
+			id: "480858667734504B"
+			tasks: [
+				{
+					id: "552BE654A9AFC48D"
+					item: "gtceu:wo3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4CBAE179621C11E8"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["480858667734504B"]
+			icon: "gtceu:wo2_dust"
+			id: "56F23E5A3556503F"
+			tasks: [
+				{
+					id: "13CEE40014ECFAAF"
+					item: "gtceu:wo2_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F51D946F3870447"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 26.5d
+		}
+		{
+			dependencies: ["56F23E5A3556503F"]
+			icon: "gtceu:tungsten_dust"
+			id: "1CD217A2E5037F67"
+			tasks: [
+				{
+					id: "2012E425F1502698"
+					item: "gtceu:tungsten_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58D45513D7DBDD98"
+					type: "checkmark"
+				}
+			]
+			x: 33.5d
+			y: 26.5d
+		}
+		{
+			id: "2B7C1AD26CB1BB3B"
+			tasks: [{
+				id: "5D100C584943C896"
+				title: "钼"
+				type: "checkmark"
+			}]
+			x: 26.0d
+			y: 29.5d
+		}
+		{
+			icon: "gtceu:molybdenite_dust"
+			id: "3996ADE7F91B2634"
+			tasks: [
+				{
+					id: "469EF5B69ADAC2A7"
+					item: "gtceu:molybdenite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E762C0465E46120"
+					type: "checkmark"
+				}
+			]
+			x: 26.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["3996ADE7F91B2634"]
+			icon: "gtceu:moo3_dust"
+			id: "11B21329B0D22505"
+			tasks: [
+				{
+					id: "17215FA293600583"
+					item: "gtceu:moo3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6FF177B76BA4A8D7"
+					type: "checkmark"
+				}
+			]
+			x: 27.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["11B21329B0D22505"]
+			icon: "gtceu:moo2cl2_bucket"
+			id: "28F9B4C70ABF57AC"
+			tasks: [
+				{
+					id: "14E84D1B9082C3D8"
+					item: "gtceu:moo2cl2_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36AE56C86EBC3DE1"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["28F9B4C70ABF57AC"]
+			icon: "gtceu:moo2cl2_dust"
+			id: "23E6EFA8779ADDBB"
+			tasks: [
+				{
+					id: "3EA408509C90592D"
+					item: "gtceu:moo2cl2_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F6FF1171941CE59"
+					type: "checkmark"
+				}
+			]
+			x: 30.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["23E6EFA8779ADDBB"]
+			icon: "gtceu:small_moo2cl2_dust"
+			id: "2CF048E759166BF6"
+			tasks: [
+				{
+					id: "4D1033FA52C299E9"
+					item: "gtceu:small_moo2cl2_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E3BCB261EEAA33E"
+					type: "checkmark"
+				}
+			]
+			x: 32.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["2CF048E759166BF6"]
+			icon: "gtceu:pure_moo3_dust"
+			id: "222AA0EBEB7D2ECE"
+			tasks: [
+				{
+					id: "397711DC0CD6D62B"
+					item: "gtceu:pure_moo3_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6EA8ECE5DF30B463"
+					type: "checkmark"
+				}
+			]
+			x: 33.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["222AA0EBEB7D2ECE"]
+			icon: "gtceu:moo2_dust"
+			id: "34D1965CDA3C187E"
+			tasks: [
+				{
+					id: "3A7132424EAA7E1D"
+					item: "gtceu:moo2_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3AA0E91AA608E8FC"
+					type: "checkmark"
+				}
+			]
+			x: 35.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["34D1965CDA3C187E"]
+			icon: "gtceu:molybdenum_dust"
+			id: "5B13F83D5076CAD9"
+			tasks: [
+				{
+					id: "03223385A6B31FB1"
+					item: "gtceu:molybdenum_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F465F087A5770FD"
+					type: "checkmark"
+				}
+			]
+			x: 36.5d
+			y: 31.0d
+		}
 	]
 	title: "单质元素"
 }

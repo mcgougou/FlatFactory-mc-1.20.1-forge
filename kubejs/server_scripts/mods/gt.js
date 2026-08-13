@@ -252,28 +252,36 @@ event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_00_moon')
         .chancedOutput('mcgougou:moon_marker',10,0)
         .circuit(0)
         .duration(15)
-        .EUt(8);
+        .EUt(32);
 event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_01_moon')
         .notConsumable('mcgougou:moon_marker')
         .itemOutputs('2x gtceu:raw_bauxite')
         .itemOutputs('gtceu:raw_ilmenite')
         .circuit(1)
         .duration(30)
-        .EUt(8);
+        .EUt(32);
 event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_02_moon')
         .notConsumable('mcgougou:moon_marker')
         .itemOutputs('3x gtceu:raw_bastnasite')
         .itemOutputs('gtceu:raw_monazite')
         .circuit(2)
         .duration(30)
-        .EUt(8);
+        .EUt(32);
 event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_03_moon')
         .notConsumable('mcgougou:moon_marker')
         .itemOutputs('3x gtceu:raw_bornite')
         .itemOutputs('2x gtceu:raw_cooperite')
         .circuit(3)
         .duration(30)
-        .EUt(8);
+        .EUt(32);
+event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_04_moon')
+        .notConsumable('mcgougou:moon_marker')
+        .itemOutputs('gtceu:raw_tungstate')
+        .itemOutputs('gtceu:raw_scheelite')
+        .itemOutputs('gtceu:raw_molybdenite')
+        .circuit(4)
+        .duration(30)
+        .EUt(32);
 event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_00_neth')
         .notConsumable('gtceu:the_nether_marker')
         .itemOutputs('64x minecraft:netherrack')
@@ -285,7 +293,7 @@ event.recipes.gtceu.ore_breaker_recipe('mcgougou:ore_breaker_00_neth')
         .chancedOutput('gtceu:the_nether_marker',10,0)
         .circuit(0)
         .duration(15)
-        .EUt(8);
+        .EUt(16);
 event.recipes.gtceu.monster_killer_recipe('mcgougou:monster_killer_recipe')
 .itemOutputs('minecraft:experience_bottle')
         .chancedOutput('minecraft:rotten_flesh',5000,0)
@@ -574,13 +582,13 @@ event.recipes.gtceu.fluid_driller_recipe('mcgougou:drilling_net_1')
         .outputFluids(Fluid.of("lava",1000))
         .duration(10)
         .circuit(1)
-        .EUt(64);
+        .EUt(128);
 event.recipes.gtceu.fluid_driller_recipe('mcgougou:drilling_moon_1')
         .notConsumable('mcgougou:moon_marker')
         .outputFluids(Fluid.of("gtceu:radon",10))
         .duration(10)
         .circuit(1)
-        .EUt(64);
+        .EUt(256);
 event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_vfe_tofe_v')
         .itemInputs('gtceu:vanadium_magnetite_dust')
         .itemInputs('4x gtceu:carbon_dust')
@@ -2045,6 +2053,86 @@ event.recipes.gtceu.mixer('mcgougou:mix_bolao')
 .itemOutputs('11x gtceu:pt10rh_dust')
         .duration(100)
         .EUt(1920);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_baiwukuang')
+.itemInputs('6x gtceu:scheelite_dust')
+.itemInputs('6x gtceu:soda_ash_dust')
+.itemOutputs('7x gtceu:wusuanna_dust')
+.itemOutputs('5x gtceu:calcium_carbonate_dust')
+.blastFurnaceTemp(1400)
+        .duration(20)
+        .EUt(7680);
+event.recipes.gtceu.chemical_bath('mcgougou:bath_wusuanna')
+.inputFluids( Fluid.of('gtceu:hydrochloric_acid', 2000))
+.itemInputs('7x gtceu:wusuanna_dust')
+.itemOutputs('7x gtceu:tungstic_acid_dust')
+.itemOutputs('2x gtceu:salt_dust')
+        .duration(21)
+        .EUt(960);
+event.recipes.gtceu.chemical_bath('mcgougou:bath_wusuan')
+.itemInputs('gtceu:tungstic_acid_dust').inputFluids( Fluid.of('gtceu:distilled_water', 2000))
+.itemOutputs('gtceu:pure_wusuan_dust')
+        .duration(40)
+        .EUt(7960);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_wusuan3')
+.itemInputs('7x gtceu:pure_wusuan_dust')
+.itemOutputs('4x gtceu:wo3_dust')
+.outputFluids(Fluid.of("gtceu:steam",1000))
+.blastFurnaceTemp(773)
+        .duration(20)
+        .EUt(7960);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blastw3')
+.itemOutputs('3x gtceu:wo2_dust')
+.itemInputs('4x gtceu:wo3_dust').inputFluids( Fluid.of('gtceu:hydrogen', 1000))
+.outputFluids(Fluid.of("gtceu:steam",1000))
+.blastFurnaceTemp(873)
+        .duration(20)
+        .EUt(7960);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blastw2')
+.itemOutputs('gtceu:tungsten_dust')
+.itemInputs('3x gtceu:wo2_dust').inputFluids( Fluid.of('gtceu:hydrogen', 2000))
+.outputFluids(Fluid.of("gtceu:steam",2000))
+.blastFurnaceTemp(1273)
+        .duration(30)
+        .EUt(7960);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blast_mos2')
+.itemInputs('3x gtceu:molybdenite_dust').inputFluids( Fluid.of('gtceu:oxygen', 7000))
+.outputFluids(Fluid.of("gtceu:sulfur_dioxide",4000))
+.itemOutputs('4x gtceu:moo3_dust')
+.blastFurnaceTemp(823)
+        .duration(20)
+        .EUt(7960);
+event.recipes.gtceu.chemical_reactor('mcgougou:chem_moo3tomocococ')
+.itemInputs('4x gtceu:moo3_dust')
+ .inputFluids( Fluid.of('gtceu:chlorine', 2000))
+ .outputFluids(Fluid.of("gtceu:moo2cl2",1000))
+        .duration(20)
+        .EUt(7960);
+event.recipes.gtceu.vacuum_freezer('mcgougou:vaaa_moooo')
+.itemOutputs('gtceu:moo2cl2_dust')
+ .inputFluids(Fluid.of("gtceu:moo2cl2",1000))
+        .duration(10)
+        .EUt(7960);
+event.recipes.gtceu.chemical_bath('mcgougou:bath_moooo')
+.itemInputs('gtceu:small_moo2cl2_dust').inputFluids( Fluid.of('gtceu:distilled_water', 4000))
+.itemOutputs('gtceu:pure_moo3_dust')
+        .duration(40)
+        .EUt(7960);
+
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blastm3')
+.itemOutputs('3x gtceu:moo2_dust')
+.itemInputs('4x gtceu:pure_moo3_dust').inputFluids( Fluid.of('gtceu:hydrogen', 1000))
+.outputFluids(Fluid.of("gtceu:steam",1000))
+.blastFurnaceTemp(873)
+        .duration(20)
+        .EUt(7960);
+event.recipes.gtceu.electric_blast_furnace('mcgougou:blastmo2')
+.itemOutputs('gtceu:molybdenum_dust')
+.itemInputs('3x gtceu:moo2_dust').inputFluids( Fluid.of('gtceu:hydrogen', 2000))
+.outputFluids(Fluid.of("gtceu:steam",2000))
+.blastFurnaceTemp(1273)
+        .duration(30)
+        .EUt(7960);
 // event.recipes.gtceu.test_generator('mcgougou:turbinerecipe_01')
 //         .itemInputs('gtceust')
 //         .itemOutputs('gtcedust')
