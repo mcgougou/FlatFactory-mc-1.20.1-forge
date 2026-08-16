@@ -42,13 +42,13 @@
 			id: "21A04921A5826343"
 			linked_quest: "39A236BEFD5DD9AF"
 			x: 6.5d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			id: "470AACF0A98FD6B4"
 			linked_quest: "2B7C1AD26CB1BB3B"
 			x: 5.5d
-			y: 1.0d
+			y: 0.5d
 		}
 	]
 	quests: [
@@ -269,6 +269,76 @@
 			}]
 			x: 6.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["59577EB5FC733C36"]
+			id: "07D5EB5994385A3E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A8F4B91745C9ECB"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "367FBEBF9E82CF04"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"07D5EB5994385A3E"
+				"71680CB701912894"
+			]
+			id: "384AEE0AC7F6CA70"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5772051777E3943A"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "75B6200A50B7258B"
+				item: "gtceu:rocket_2_material_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["384AEE0AC7F6CA70"]
+			description: ["燃料还没写"]
+			id: "0182CC0EAE8C4803"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E0D2C9A48182446"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7BDE2C243DE7A78B"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["39A236BEFD5DD9AF"]
+			id: "71680CB701912894"
+			tasks: [{
+				id: "175AC5070267314A"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
 		}
 	]
 	title: "第六章：超高压时代（EV）"

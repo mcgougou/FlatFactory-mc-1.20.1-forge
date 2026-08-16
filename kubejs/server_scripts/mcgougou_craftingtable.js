@@ -1,5 +1,30 @@
 ServerEvents.recipes(event => {
     //               event.custom()
+event.custom({
+"type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAB",
+    "ACD",
+    "AAB"
+  ],
+  "key": {
+    "A": {
+      "item": "gtceu:dense_rocket_2_material_plate"
+    },
+    "B": {
+      "item": "gtceu:rocket_2_material_screw"
+    },
+    "C": {
+      "item": "ad_astra:large_gas_tank"
+    },
+    "D": {
+      "item": "ad_astra:steel_tank"
+    }
+  },
+  "result": {
+    "item": 'ad_astra:desh_tank'
+  }
+})
     event.custom({
   "type": "minecraft:crafting_shaped",
   "pattern": [
@@ -12,7 +37,7 @@ ServerEvents.recipes(event => {
       "item": "gtceu:heatproof_machine_casing"
     },
     "B": {
-      "item": "mcgougou:hv_universal_circuit"
+      "tag":"gtceu:circuits/hv"
     },
     "C": {
       "item": "gtceu:electric_blast_furnace"
@@ -37,7 +62,7 @@ event.custom({
       "item": "gtceu:engine_intake_casing"
     },
     "C": {
-      "item": "mcgougou:luv_universal_circuit"
+      "tag":"gtceu:circuits/luv"
     }
   },
   "result": {
@@ -56,7 +81,7 @@ event.custom({
       "item": "gtceu:clean_machine_casing"
     },
     "B": {
-      "item": "mcgougou:iv_universal_circuit"
+      "tag":"gtceu:circuits/iv"
     },
     "C": {
       "item": "gtceu:ore_breaker"
@@ -84,7 +109,7 @@ event.custom({
       "item": "gtceu:stable_machine_casing"
     },
     "D": {
-      "item": "mcgougou:luv_universal_circuit"
+      "tag":"gtceu:circuits/luv"
     }
   },
   "result": {

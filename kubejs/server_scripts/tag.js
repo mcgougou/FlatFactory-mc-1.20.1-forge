@@ -36,4 +36,5 @@ ServerEvents.tags("fluid",event=>{
 
 event.removeAll("ad_astra:tier_1_rocket_fuel")
     event.add("ad_astra:tier_1_rocket_fuel",["gtceu:tier1_rocket_fuel"])
+event.removeAll("ad_astra:tier_2_rocket_fuel")
 })

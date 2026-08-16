@@ -316,7 +316,15 @@ ServerEvents.recipes(event=>{
         'gtceu:chemical_reactor/butraldehyde',
         'gtceu:large_chemical_reactor/butraldehyde',
         'gtceu:electrolyzer/tungstic_acid_electrolysis',
-        'gtceu:chemical_bath/tungstic_acid_from_scheelite'
+        'gtceu:chemical_bath/tungstic_acid_from_scheelite',
+        'ad_astra:smelting/desh_ingot_from_smelting_raw_desh',
+        'ad_astra:blasting/desh_ingot_from_blasting_raw_desh',
+        'ad_astra:steel_engine',
+        'ad_astra:compressing/desh_plate_from_compressing_desh_blocks',
+        'ad_astra:compressing/desh_plate_from_compressing_desh_ingots',
+        'ad_astra:desh_tank',
+        'ad_astra:desh_engine',
+        'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})
