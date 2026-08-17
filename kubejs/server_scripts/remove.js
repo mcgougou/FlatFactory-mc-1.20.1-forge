@@ -324,7 +324,16 @@ ServerEvents.recipes(event=>{
         'ad_astra:compressing/desh_plate_from_compressing_desh_ingots',
         'ad_astra:desh_tank',
         'ad_astra:desh_engine',
-        'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench'
+        'ad_astra:nasa_workbench/tier_2_rocket_from_nasa_workbench',
+        'gtceu:large_chemical_reactor/tetrafluoroethylene_from_methane',
+        'gtceu:chemical_reactor/dimethylhydrazine_from_methanol',
+        'gtceu:large_chemical_reactor/dimethylhydrazine_from_methanol',
+        'gtceu:chemical_reactor/dimethylamine',
+        'gtceu:large_chemical_reactor/dimethylamine',
+        'gtceu:chemical_reactor/dimethylhydrazine_from_dimethylamine',
+        'gtceu:chemical_reactor/dimethylhydrazine_from_methanol',
+        'gtceu:large_chemical_reactor/dimethylhydrazine_from_methanol',
+        'gtceu:large_chemical_reactor/dimethylhydrazine_from_dimethylamine'
     ]
     remove_id.forEach(recipeId =>{
        event.remove({id:recipeId})

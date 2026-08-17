@@ -26,6 +26,11 @@ ItemEvents.tooltip(event=>{
     event.add('gtceu:xitu_factory',[
         "自带8并行，可以额外使用并行控制仓",
     "具有无损超频"])
+    event.add('gtceu:youji_factory',[
+        "能将化学反应釜得到的产物直接送去精馏，可以运行更高级的有机物合成配方",
+        "可用配方类型：蒸馏塔，大型化学反应釜，有机合成工厂",
+        "自带16并行，可以额外使用并行控制仓",
+    "具有无损超频"])
     event.add('gtceu:mcgougou_furnace_2',["但速度上限取决于能源仓的等级和功率，推荐直接使用当前可制作的最强的能源仓",
         "自带10000并行，可以额外使用并行控制仓"])
     event.add('gtceu:hv_ore',[

@@ -8,13 +8,6 @@
 	order_index: 5
 	quest_links: [
 		{
-			id: "0F17C2B7D66D0708"
-			linked_quest: "2DBC4BC82B483726"
-			size: 1.2d
-			x: -1.0d
-			y: -1.0d
-		}
-		{
 			id: "4323B51DD9EE0796"
 			linked_quest: "2ACB6FB13A2326BF"
 			x: 1.0d
@@ -50,10 +43,23 @@
 			x: 5.5d
 			y: 0.5d
 		}
+		{
+			id: "0F17C2B7D66D0708"
+			linked_quest: "2DBC4BC82B483726"
+			size: 1.2d
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "114B8AF63B444D43"
+			linked_quest: "2FE97B1CDE4664B4"
+			x: 10.5d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
-			dependencies: ["2DBC4BC82B483726"]
+			dependencies: ["2ACB6FB13A2326BF"]
 			id: "65C4901A2932808D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -135,7 +141,7 @@
 				item: "gtceu:ev_generator"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -309,7 +315,7 @@
 		}
 		{
 			dependencies: ["384AEE0AC7F6CA70"]
-			description: ["燃料还没写"]
+			description: [""]
 			id: "0182CC0EAE8C4803"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -332,12 +338,35 @@
 		{
 			dependencies: ["39A236BEFD5DD9AF"]
 			id: "71680CB701912894"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "265C108D2D669CD3"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
 			tasks: [{
 				id: "175AC5070267314A"
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
 			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["71680CB701912894"]
+			id: "51ABFEA48773B942"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F5212862EF3ABB7"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "16D514DD9AA433AD"
+				item: "gtceu:youji_factory"
+				type: "item"
+			}]
+			x: 10.5d
 			y: 0.5d
 		}
 	]

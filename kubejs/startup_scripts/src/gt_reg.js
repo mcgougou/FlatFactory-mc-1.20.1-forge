@@ -160,6 +160,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
         
         .setSound(GTSoundEntries.CHEMICAL)    
+    event.create('youji_recipe')
+        //类
+        .category('example')
+        //setEUIO 耗能in/产能out
+        .setEUIO('in')
+        //setMaxIOSize(int,int,int,int)
+        //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
+        .setMaxIOSize(5,5, 5, 5)
+        .setMaxTooltips(5)//设置最大信息提示
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
+        
+        .setSound(GTSoundEntries.CHEMICAL)    
     event.create('greenhouse')
         .category('example')
         .setEUIO('in')
@@ -681,6 +693,38 @@ event.create("hv_jiare","multiblock")
   .build()
 )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
+            "gtceu:block/multiblock/pyrolyse_oven");
+///////////////////////////////////
+    event.create("youji_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 16,1,1))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,GTRecipeModifiers.OC_PERFECT,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("youji_recipe")
+        .recipeTypes("large_chemical_reactor")
+        .recipeTypes("distillation_tower")
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA')
+  .aisle('AAAAA', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'AAAAA')
+  .aisle('AABAA', 'A#C#A', 'A#C#A', 'A#C#A', 'A#C#A', 'A#C#A', 'A#C#A', 'A#C#A', 'A#C#A', 'AAAAA')
+  .aisle('AABAA', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'A###A', 'AAAAA')
+  .aisle('AABAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA')
+  .aisle('##B##', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####')
+  .aisle('DDBDD', 'DEEED', 'DEEED', 'DEEED', 'DDDDD', '#####', '#####', '#####', '#####', '#####')
+  .aisle('DDBDD', 'E###E', 'E###E', 'E###E', 'DDDDD', '#####', '#####', '#####', '#####', '#####')
+  .aisle('DDBDD', 'E###E', 'E###E', 'E###E', 'DDDDD', '#####', '#####', '#####', '#####', '#####')
+  .aisle('DDDDD', 'E###E', 'E###E', 'E###E', 'DDDDD', '#####', '#####', '#####', '#####', '#####')
+  .aisle('DDFDD', 'DEEED', 'DEEED', 'DEEED', 'DDDDD', '#####', '#####', '#####', '#####', '#####')
+  .where('C', Predicates.heatingCoils())
+  .where('B', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
+  .where('F', Predicates.controller(Predicates.blocks(definition.get())))
+  .where('E', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+  .where('D', Predicates.blocks(GTBlocks.CASING_PTFE_INERT.get()).or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+  .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .where('A', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()))
+  .where('#', Predicates.any())
+  .build()
+)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe",
             "gtceu:block/multiblock/pyrolyse_oven");
 
 function furn(machine, recipe) {
