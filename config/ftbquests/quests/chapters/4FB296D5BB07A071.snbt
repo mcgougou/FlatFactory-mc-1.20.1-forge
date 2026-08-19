@@ -3922,6 +3922,63 @@
 			x: 36.5d
 			y: 31.0d
 		}
+		{
+			id: "70751DA5207CE070"
+			tasks: [{
+				id: "40A768F5D674D576"
+				title: "iv"
+				type: "checkmark"
+			}]
+			x: 41.0d
+			y: -3.0d
+		}
+		{
+			id: "663626E1A2ECA7CF"
+			tasks: [{
+				id: "42E44656929B8092"
+				title: "铟"
+				type: "checkmark"
+			}]
+			x: 41.0d
+			y: -2.0d
+		}
+		{
+			icon: "gtceu:zincite_dust"
+			id: "70481F02B50BF285"
+			tasks: [
+				{
+					id: "7AB54A65F7326931"
+					item: "gtceu:zincite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "549BFBB49CE8B03F"
+					type: "checkmark"
+				}
+			]
+			x: 41.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["70481F02B50BF285"]
+			icon: "gtceu:xinjinchuzha_dust"
+			id: "647AEFC4CD2A3E22"
+			tasks: [
+				{
+					id: "651FF9EC9549CF7C"
+					item: "gtceu:xinjinchuzha_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4640B4CEFA7374E5"
+					type: "checkmark"
+				}
+			]
+			x: 42.5d
+			y: -0.5d
+		}
 	]
 	title: "单质元素"
 }

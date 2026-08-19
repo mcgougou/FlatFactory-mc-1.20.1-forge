@@ -1,5 +1,8 @@
 // priority: 97
 ServerEvents.recipes(event=>{
+    //daisi
+event.remove({type:"minecraft:smelting",output:'ad_astra:desh_ingot'})
+event.remove({type:"minecraft:blasting",output:'ad_astra:desh_ingot'})
 //mo
 event.remove({type:"minecraft:smelting",output:'gtceu:molybdenum_ingot'})
 event.remove({type:"minecraft:blasting",output:'gtceu:molybdenum_ingot'})

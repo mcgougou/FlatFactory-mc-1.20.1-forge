@@ -374,6 +374,10 @@
 		{
 			can_repeat: true
 			dependencies: ["1D459456A81EB01E"]
+			description: [
+				"16A能源仓通常需要并行控制仓才能使用！"
+				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
+			]
 			icon: "gtmthings:lv_wireless_energy_receive_cover"
 			id: "0CF3934CEDCE902D"
 			rewards: [
@@ -404,6 +408,10 @@
 		{
 			can_repeat: true
 			dependencies: ["72D89E8BC7E1AE0B"]
+			description: [
+				"16A能源仓通常需要并行控制仓才能使用！"
+				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
+			]
 			icon: "gtmthings:mv_wireless_energy_receive_cover"
 			id: "0E71913E1CF5D030"
 			rewards: [
@@ -434,6 +442,10 @@
 		{
 			can_repeat: true
 			dependencies: ["59DF2E07CF1A2D66"]
+			description: [
+				"16A能源仓通常需要并行控制仓才能使用！"
+				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
+			]
 			icon: "gtmthings:hv_wireless_energy_receive_cover"
 			id: "33F5926ED29FD50E"
 			rewards: [
@@ -643,6 +655,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "176C19967735B7B2"
+					item: "gtmthings:virtual_item_provider_cell"
+					type: "item"
+				}
 			]
 			tasks: [{
 				consume_items: true
@@ -676,7 +693,12 @@
 			y: 4.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["4BBDBDE980401EC2"]
+			description: [
+				"16A能源仓通常需要并行控制仓才能使用！"
+				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
+			]
 			icon: "gtmthings:ev_wireless_energy_receive_cover"
 			id: "3EEE9F068BBCF34E"
 			rewards: [
@@ -694,9 +716,10 @@
 				}
 			]
 			tasks: [{
+				consume_items: true
 				count: 4L
 				id: "5FAC27E2129F6331"
-				item: { Count: 2, id: "coinsje:iron_coin" }
+				item: "coinsje:iron_coin"
 				type: "item"
 			}]
 			title: "EV无线电"

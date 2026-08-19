@@ -125,7 +125,11 @@
 		}
 		{
 			dependencies: ["7BDD19DA08C901B7"]
-			description: ["感谢群友在内测期间对整合包的支持"]
+			description: [
+				"感谢群友在内测期间对整合包的支持"
+				"感谢AquentisAXY为整合包制作附属模组"
+				"感谢LiangquHMF对整合包的魔改提供帮助"
+			]
 			id: "150227A8AEFDE61C"
 			tasks: [{
 				id: "7F494836E33CF254"

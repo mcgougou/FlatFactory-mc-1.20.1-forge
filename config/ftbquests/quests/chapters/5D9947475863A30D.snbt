@@ -56,6 +56,12 @@
 			x: 10.5d
 			y: 3.5d
 		}
+		{
+			id: "00CAF1F5DFBFDC18"
+			linked_quest: "017D0AAA65AC8D76"
+			x: 12.0d
+			y: 0.5d
+		}
 	]
 	quests: [
 		{
@@ -147,6 +153,12 @@
 		{
 			dependencies: ["651899B6EA1E402D"]
 			id: "4CCCA30260DAC5AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "254BE41988FDE596"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
 			tasks: [{
 				id: "76D69E343DFC54E0"
 				item: "gtceu:neodymium_ingot"
@@ -354,6 +366,7 @@
 		}
 		{
 			dependencies: ["71680CB701912894"]
+			description: ["仓室等功能性方块只能放置在聚四氟乙烯的位置"]
 			id: "51ABFEA48773B942"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -368,6 +381,110 @@
 			}]
 			x: 10.5d
 			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0182CC0EAE8C4803"
+				"2FE97B1CDE4664B4"
+			]
+			description: ["没错，你又要搬一个多功能机器去了"]
+			id: "4BDC8DB0C438385F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "313591B721D9BFC0"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4125B731FF6CF663"
+				item: "mcgougou:mars_marker"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71680CB701912894"]
+			id: "536410DEA979F743"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A2B7187F66CB78B"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "033C43402F9BDA16"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["59577EB5FC733C36"]
+			description: ["都是冷却热锭"]
+			id: "51D17FA62D5D2EBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1900BBFC50E8D880"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "09E0B05CEB1E4B36"
+					item: "gtceu:tungsten_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "2BADA0A753A5FEAF"
+					item: "gtceu:hssg_ingot"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51D17FA62D5D2EBB"]
+			id: "7E0FBE9DF0D4ADDE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "061C929E285425FE"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "53A7CEF8D68295D8"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71680CB701912894"]
+			description: [
+				"一定要用多A能源仓啊！不然发挥不出效果"
+				"16A能源仓通常需要并行控制仓才能使用！"
+				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
+			]
+			id: "14EDD2ABE9F8A6EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "773D16AC31185407"
+				table_id: 6752712865210306484L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1CD2E0F277F49770"
+				item: "gtceu:mcgougou_blast"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
 		}
 	]
 	title: "第六章：超高压时代（EV）"

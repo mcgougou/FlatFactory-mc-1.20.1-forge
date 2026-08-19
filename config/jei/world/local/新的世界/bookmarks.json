@@ -1,0 +1,11 @@
+[
+  {"version":1},
+  {"type":"item_stack","value":"{Count:1b,id:\"gtceu:silicon_dust\"}"},
+  {"type":"ingredient","value":"fluid_stack\u0026fluid:gtceu:chloromethane"},
+  {"type":"recipe","value":"gtceu:assembler#gtceu:assembler/fluid_export_hatch_ulv_polybenzimidazole#item_stack\u0026gtceu:ulv_output_hatch"},
+  {"type":"ingredient","value":"fluid_stack\u0026fluid:gtceu:polybenzimidazole"},
+  {"type":"ingredient","value":"fluid_stack\u0026fluid:gtceu:helium"},
+  {"type":"recipe","value":"gtceu:vacuum_freezer#gtceu:vacuum_freezer/tungsten_carbide#item_stack\u0026gtceu:tungsten_carbide_ingot"},
+  {"type":"item_stack","value":"{Count:1b,id:\"gtceu:bi2o3_dust\"}"},
+  {"type":"item_stack","value":"{Count:1b,id:\"gtceu:carbon_dust\"}"}
+]
