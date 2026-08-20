@@ -466,11 +466,7 @@
 		}
 		{
 			dependencies: ["71680CB701912894"]
-			description: [
-				"一定要用多A能源仓啊！不然发挥不出效果"
-				"16A能源仓通常需要并行控制仓才能使用！"
-				"因此如果你使用16A的时候提示Recipe Modifier Fail，请搭配UV并行控制仓"
-			]
+			description: ["一定要用多A能源仓啊！不然发挥不出效果"]
 			id: "14EDD2ABE9F8A6EE"
 			rewards: [{
 				exclude_from_claim_all: true
