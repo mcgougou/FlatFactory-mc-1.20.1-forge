@@ -143,7 +143,7 @@
 		{
 			description: [
 				"第三步的按钮，左边两个按两次变成自动输出，右边两个按一次变成允许即可"
-				"{ \"text\": \"强烈推荐样板供应器装上这个升级，这样就能一个机器运行不同的电路号配方\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"320315351BD6B7B4\" } }"
+				"写样板的时候带上编程电路，写完之后样板如果有一行橙色字体写着编程电路为x号即为成功"
 				"{image:image_ftbq:textures/dfkzd1.png width:100 height:100 align:center}"
 				"{image:image_ftbq:textures/dfkzd2.png width:150 height:100 align:center}"
 			]

@@ -466,7 +466,10 @@
 		}
 		{
 			dependencies: ["71680CB701912894"]
-			description: ["一定要用多A能源仓啊！不然发挥不出效果"]
+			description: [
+				"一定要用多A能源仓啊！不然发挥不出效果"
+				"必须使用EV消声仓"
+			]
 			id: "14EDD2ABE9F8A6EE"
 			rewards: [{
 				exclude_from_claim_all: true

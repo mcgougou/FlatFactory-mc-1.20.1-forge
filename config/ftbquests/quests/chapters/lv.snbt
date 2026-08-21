@@ -162,7 +162,7 @@
 		{
 			dependencies: ["195DA8932FE14FA0"]
 			description: [
-				"相同等级的电路板会有很多种，用组装机加32号电路可以将同等级的电路统一为【通用电路板】（材质来自GTNH），这样就不必频繁调整样板了。"
+				"相同等级的电路板会有很多种，用打包机加32号电路可以将同等级的电路统一为【通用电路板】（材质来自GTNH），这样就不必频繁调整样板了。"
 				"在编写样板时，会自动使用通用电路板"
 			]
 			id: "054AFFA5D7514193"
@@ -175,7 +175,7 @@
 			tasks: [
 				{
 					id: "6BD8E7111628071C"
-					item: "gtceu:lv_assembler"
+					item: "gtceu:lv_packer"
 					type: "item"
 				}
 				{
@@ -409,6 +409,7 @@
 			dependencies: [
 				"4B987489CB940D73"
 				"08021F824C618919"
+				"524633DB9D0B95B1"
 			]
 			description: [
 				"重要的半导体材料，现实中性能甚至超过硅。"
@@ -584,14 +585,12 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"2CB606ACC5A2E036"
-				"4A90B31E31D1A65C"
-			]
+			dependencies: ["2CB606ACC5A2E036"]
 			description: [
 				"制取氮气！"
 				"输入仓不够可以用ME输入仓或者使用巨型输入总成"
 			]
+			hide_dependency_lines: true
 			id: "524633DB9D0B95B1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -604,8 +603,27 @@
 				item: "gtceu:simple_air_distillery"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["195DA8932FE14FA0"]
+			description: ["高效炼钢"]
+			id: "5E8F77C6AACB0A78"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "049E0B29D46C44EA"
+				table_id: 3438830455175391625L
+				type: "random"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "447B7B7C8E07EB94"
+				item: "gtceu:mcgougou_steel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
 		}
 	]
 	title: "第三章：低压时代（LV）"

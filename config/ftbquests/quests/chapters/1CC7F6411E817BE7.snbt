@@ -312,26 +312,6 @@
 		}
 		{
 			can_repeat: true
-			icon: "pccard:card_programmed_circuit"
-			id: "58957BB9B906CB75"
-			rewards: [{
-				count: 64
-				id: "059B41E2F89AD586"
-				item: "pccard:card_programmed_circuit"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "328C5B552350FF9A"
-				item: "coinsje:copper_coin"
-				type: "item"
-			}]
-			title: "可编程电路卡"
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
 			icon: "extendedae_plus:infinity_biginteger_cell"
 			id: "435CAE7B0CE991A9"
 			rewards: [{
@@ -611,65 +591,6 @@
 		}
 		{
 			can_repeat: true
-			description: [
-				"可以在发配物品时同时调整仓室的电路，详情请见以下教程"
-				"https://www.mcmod.cn/post/5116.html"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:programmed_circuit"
-				tag: {
-					Configuration: 0
-				}
-			}
-			id: "3084588E72EEE2FD"
-			rewards: [
-				{
-					count: 64
-					id: "67103E4E15DC4F6B"
-					item: {
-						Count: 1
-						id: "gtceu:programmed_circuit"
-						tag: {
-							Configuration: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 64
-					id: "26F303BC002D5ED9"
-					item: "gtmthings:uv_programmablec_hatch"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "62E5F4EC69F08F94"
-					item: {
-						Count: 1
-						id: "gtmthings:virtual_item_provider"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "176C19967735B7B2"
-					item: "gtmthings:virtual_item_provider_cell"
-					type: "item"
-				}
-			]
-			tasks: [{
-				consume_items: true
-				id: "49DE465D1B0CFE46"
-				item: "coinsje:iron_coin"
-				type: "item"
-			}]
-			title: "多方块仓室电路自动切换"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
 			icon: "minecraft:light_gray_concrete"
 			id: "43D7D77B0C46F265"
 			rewards: [{
@@ -770,6 +691,30 @@
 			title: "旅行锚"
 			x: -4.5d
 			y: -3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"下单好帮手！"
+				"巨型输入总成不支持切换电路，不要使用"
+			]
+			icon: "gtceu:max_dual_input_hatch"
+			id: "469AC4978BA20DDE"
+			rewards: [{
+				count: 100
+				id: "6B917499A50D6ED9"
+				item: "gtceu:max_dual_input_hatch"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "1D97F75F44B9968C"
+				item: "coinsje:iron_coin"
+				type: "item"
+			}]
+			title: "输入总成"
+			x: -4.5d
+			y: 2.5d
 		}
 	]
 	title: "商店"

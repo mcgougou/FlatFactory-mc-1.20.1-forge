@@ -3436,17 +3436,6 @@
 		}
 		{
 			dependencies: ["1EE217CE2C27279C"]
-			id: "4009F1533C8F1647"
-			tasks: [{
-				id: "70E79B86043B28F7"
-				item: "gtceu:jiajiyixijishengjiao_bucket"
-				type: "item"
-			}]
-			x: 23.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["4009F1533C8F1647"]
 			icon: "gtceu:jiajiyixijishengjiao_bucket"
 			id: "21A1B5EB52A0AE59"
 			tasks: [
@@ -3460,7 +3449,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 25.0d
+			x: 23.5d
 			y: 17.5d
 		}
 		{
@@ -3479,7 +3468,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 26.5d
+			x: 25.0d
 			y: 17.5d
 		}
 	]

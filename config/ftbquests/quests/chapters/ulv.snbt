@@ -116,7 +116,7 @@
 			dependencies: ["20AA04F5B686F1A6"]
 			description: [
 				"这个机器其实就是个单方块机器，结构成型之后才能用而已"
-				"这个就没必要搞下单了，根本供不应求（"
+				"这个搞不了下单"
 				"{ \"text\": \"最好先做巨型熔炉\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A17B915D782C6ED\" } }"
 			]
 			icon: "gtceu:primitive_blast_furnace"

@@ -115,6 +115,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
         
         .setSound(GTSoundEntries.COMPRESSOR)   
+    event.create('steel_recipe')
+        //类
+        .category('example')
+        //setEUIO 耗能in/产能out
+        .setEUIO('in')
+        //setMaxIOSize(int,int,int,int)
+        //物品输入槽位，物品输出槽位，流体输入槽位，流体输出槽位
+        .setMaxIOSize(2,1, 0, 0)
+        .setMaxTooltips(5)//设置最大信息提示
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)//处理中的图标,处理中图标的方向
+        
+        .setSound(GTSoundEntries.FURNACE)   
     event.create('mv_generator_recipe')
         //类
         .category('example')
@@ -728,8 +740,9 @@ event.create("hv_jiare","multiblock")
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
             "gtceu:block/multiblock/pyrolyse_oven");
 ///////////////////////////////////
-    event.create("youji_factory","multiblock").machine((holder) => new ConfigurableElectricParallelMachine(holder, 16,1,1))
-        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
+    event.create("youji_factory","multiblock")
+.machine((holder) => new EnhancedCoilElectricMachine(holder, 16, 0.1, 0, 0, true))
+        .recipeModifiers(true, GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe) => EnhancedCoilElectricMachine.recipeModifier(machine, recipe))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("youji_recipe")
         .recipeTypes("large_chemical_reactor")
@@ -776,6 +789,28 @@ function furn(machine, recipe) {
         //.chanceMultiplier(double)       
          
 }
+event.create("mcgougou_steel","multiblock")
+        .machine((holder) => new ConfigurableElectricParallelMachine(holder, 16,1,1))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("steel_recipe")        
+        .recipeModifiers(true,GTRecipeModifiers.BATCH_MODE,
+          GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe) => ConfigurableElectricParallelMachine.recipeModifier(machine, recipe))
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+        .pattern(definition => FactoryBlockPattern.start()
+  .aisle('AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', '#######', '#######', '#######', '#######')
+  .aisle('AAAAAAA', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', '#AAAAA#', '#AAAAA#', '#AAAAA#', '#AAAAA#')
+  .aisle('AAAAAAA', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', '#ABABA#', '#A#A#A#', '#A#A#A#', '#A#A#A#')
+  .aisle('AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', '#AAAAA#', '#AAAAA#', '#AAAAA#', '#AAAAA#')
+  .aisle('AAAAAAA', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', '#ABABA#', '#A#A#A#', '#A#A#A#', '#A#A#A#')
+  .aisle('AAAAAAA', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', 'A##A##A', '#AAAAA#', '#AAAAA#', '#AAAAA#', '#AAAAA#')
+  .aisle('AAACAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', '#######', '#######', '#######', '#######')
+  .where('C',  Predicates.controller(Predicates.blocks(definition.get())))
+  .where('A', Predicates.blocks('gtceu:firebricks').or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)).or(Predicates.autoAbilities(definition.getRecipeTypes())))
+  .where('B', Predicates.blocks('minecraft:campfire'))
+  .where('#', Predicates.any())
+  .build()
+).workableCasingModel("gtceu:block/casings/solid/machine_primitive_bricks",
+            "gtceu:block/multiblock/pyrolyse_oven");
 event.create("mcgougou_furnace","multiblock")
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)

@@ -365,7 +365,21 @@ ServerEvents.recipes(event=>{
         'gtceu:chemical_reactor/qbit_cpu_wafer_quantum_eye',
         'gtceu:large_chemical_reactor/indium_concentrate_separation_4x',
         'gtceu:chemical_reactor/indium_phosphide_separation',
-        'gtceu:chemical_reactor/indium_concentrate_separation_4x'
+        'gtceu:chemical_reactor/indium_concentrate_separation_4x',
+        'gtmthings:assembler/huge_dual_hatch_lv',
+        'gtmthings:assembler/huge_dual_hatch_mv',
+        'gtmthings:assembler/huge_dual_hatch_hv',
+        'gtmthings:assembler/huge_dual_hatch_ev',
+        'gtmthings:assembler/huge_dual_hatch_iv',
+        'gtmthings:assembler/huge_dual_hatch_luv',
+        'gtmthings:assembler/huge_dual_hatch_zpm',
+        'gtmthings:assembler/huge_dual_hatch_uv',
+        'gtmthings:assembler/huge_dual_hatch_uhv',
+        'gtmthings:assembler/huge_dual_hatch_uev',
+        'gtmthings:assembler/huge_dual_hatch_uiv',
+        'gtmthings:assembler/huge_dual_hatch_uxv',
+        'gtmthings:assembler/huge_dual_hatch_opv',
+        'gtmthings:assembler/huge_dual_hatch_max',
 
     ]
     remove_id.forEach(recipeId =>{

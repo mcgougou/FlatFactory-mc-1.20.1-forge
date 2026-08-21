@@ -95,29 +95,6 @@
 			y: -0.5d
 		}
 		{
-			description: [
-				"可以用来编写含有编程电路的gt单方块机器配方，只需要在样板供应器放上这个升级，供应器发配物品时会自动调整至对应电路号码。"
-				"&4仅限单方块机器，仓室不行。&r"
-				""
-				"{ \"text\": \"多方块的仓室电路号码调整在这里\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3084588E72EEE2FD\" } }供应器记得开阻挡！"
-				"{ \"text\": \"这里买\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"58957BB9B906CB75\" } }"
-			]
-			id: "320315351BD6B7B4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4E61E7C117937F06"
-				table_id: 3438830455175391625L
-				type: "random"
-			}]
-			tasks: [{
-				id: "278F985077B6A3F0"
-				item: "pccard:card_programmed_circuit"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -0.5d
-		}
-		{
 			description: ["矿物采掘机主世界0号电路0.1%概率获得，放着慢慢挂机吧"]
 			id: "0B4221DE38BE1F56"
 			rewards: [{
