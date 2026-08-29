@@ -144,6 +144,7 @@
 			description: [
 				"第三步的按钮，左边两个按两次变成自动输出，右边两个按一次变成允许即可"
 				"写样板的时候带上编程电路，写完之后样板如果有一行橙色字体写着编程电路为x号即为成功"
+				"样板供应器禁止开启智能阻挡和智能翻倍！"
 				"{image:image_ftbq:textures/dfkzd1.png width:100 height:100 align:center}"
 				"{image:image_ftbq:textures/dfkzd2.png width:150 height:100 align:center}"
 			]
@@ -239,6 +240,26 @@
 			}]
 			x: 7.0d
 			y: -0.5d
+		}
+		{
+			description: [
+				"样板供应器&4无需&r开启阻挡模式，&4不能&r开启智能阻挡和智能翻倍；"
+				"样板供应器对着的机器或仓室&4不能&r有物品/流体；"
+				"功能为自动根据样板更改编程电路的值，如果不开阻挡也不会串配方，只会发同样编程电路的样板；"
+				"&4需要&r准备两个机器，一个做带电路的配方，另一个做不带电路的；"
+				""
+				""
+				"图片中的开关可以调整编写样板时是否开启切换编程电路的功能"
+				"{image:image_ftbq:textures/yangban.png width:175 height:90 align:center}"
+			]
+			id: "1D32636F0971F500"
+			tasks: [{
+				id: "0182167F7E36E655"
+				title: "带电路的样板使用方法"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.0d
 		}
 	]
 	title: "部分内容教程"

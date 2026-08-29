@@ -716,6 +716,48 @@
 			x: -4.5d
 			y: 2.5d
 		}
+		{
+			can_repeat: true
+			description: [
+				"可以拿它执行一些带模具等不消耗物品的配方"
+				"可参考以下教程，把电路板换成相应的模具等即可"
+				"https://www.mcmod.cn/post/5116.html"
+			]
+			icon: "gtmthings:uv_programmablec_hatch"
+			id: "0F03F4CD5758B522"
+			rewards: [
+				{
+					count: 64
+					id: "69ACE3B3BAD66155"
+					item: "gtmthings:uv_programmablec_hatch"
+					type: "item"
+				}
+				{
+					id: "7DA953373AAC522B"
+					item: "gtmthings:virtual_item_provider_cell"
+					type: "item"
+				}
+				{
+					count: 100
+					id: "30CCC69E6E701190"
+					item: {
+						Count: 1
+						id: "gtmthings:virtual_item_provider"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "6AF334F7778A523B"
+				item: "coinsje:iron_coin"
+				type: "item"
+			}]
+			title: "编程仓"
+			x: 1.5d
+			y: 2.5d
+		}
 	]
 	title: "商店"
 }

@@ -535,7 +535,7 @@ event.create("plastic_factory","multiblock")
 ///////////////////////////
 event.create("mcgougou_blast","multiblock")
 .machine((holder) => new EnhancedCoilElectricMachine(holder, 64, 0.1, 64, 0, true))
-        .recipeModifiers(true,GTRecipeModifiers.PARALLEL_HATCH,(machine, recipe) => GTRecipeModifiers.ebfOverclock(machine, recipe),
+        .recipeModifiers(true,GTRecipeModifiers.PARALLEL_HATCH,//(machine, recipe) => GTRecipeModifiers.ebfOverclock(machine, recipe),
         (machine, recipe) => EnhancedCoilElectricMachine.recipeModifier(machine, recipe))
 .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("electric_blast_furnace")

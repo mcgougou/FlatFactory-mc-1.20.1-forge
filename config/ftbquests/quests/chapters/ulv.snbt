@@ -447,6 +447,8 @@
 				"{ \"text\": \"单方块机器的主动（样板）自动化看这里\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"72790F95F68ECB20\" } }"
 				"{ \"text\": \"单方块机器的被动（产线）自动化物品槽位问题\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4C523BDDB8BC1EDE\" } }"
 				"{ \"text\": \"不想损失电压先可以这样，马上就能做超导导线了\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"781126C33E4F6F76\" } }"
+				""
+				"{ \"text\": \"自动调整编程电路的功能\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1D32636F0971F500\" } }"
 			]
 			id: "195DA8932FE14FA0"
 			rewards: [{
