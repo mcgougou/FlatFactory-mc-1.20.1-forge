@@ -3979,6 +3979,101 @@
 			x: 42.5d
 			y: -0.5d
 		}
+		{
+			dependencies: ["647AEFC4CD2A3E22"]
+			icon: "gtceu:ciyanghuaxin_dust"
+			id: "2B4D3FB772D05AE9"
+			tasks: [
+				{
+					id: "326D4FEC0B446B3C"
+					item: "gtceu:ciyanghuaxin_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "783677E43307E778"
+					type: "checkmark"
+				}
+			]
+			x: 44.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2B4D3FB772D05AE9"]
+			icon: "gtceu:fuyinzha_dust"
+			id: "14CCBB25C750BFDB"
+			tasks: [
+				{
+					id: "0589DF8BE7E2B424"
+					item: "gtceu:fuyinzha_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B26B64181AA898B"
+					type: "checkmark"
+				}
+			]
+			x: 45.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["14CCBB25C750BFDB"]
+			icon: "gtceu:suanfuyin_bucket"
+			id: "47BCE72A87C24617"
+			tasks: [
+				{
+					id: "3E5932A84505DFDC"
+					item: "gtceu:suanfuyin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51E14C4AB8BBBC6F"
+					type: "checkmark"
+				}
+			]
+			x: 47.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["47BCE72A87C24617"]
+			icon: "gtceu:suanfuyin_2_bucket"
+			id: "04C9E55E406455B6"
+			tasks: [
+				{
+					id: "743CC5CD8A340BE3"
+					item: "gtceu:suanfuyin_2_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BAEEA9A4BD7ECD9"
+					type: "checkmark"
+				}
+			]
+			x: 48.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["04C9E55E406455B6"]
+			icon: "gtceu:incl3_bucket"
+			id: "631CF495D9904070"
+			tasks: [
+				{
+					id: "03845FA0BF9652FE"
+					item: "gtceu:incl3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3EA888BA3DD93408"
+					type: "checkmark"
+				}
+			]
+			x: 50.0d
+			y: -0.5d
+		}
 	]
 	title: "单质元素"
 }

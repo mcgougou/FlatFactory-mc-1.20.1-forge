@@ -380,6 +380,10 @@ ServerEvents.recipes(event=>{
         'gtmthings:assembler/huge_dual_hatch_uxv',
         'gtmthings:assembler/huge_dual_hatch_opv',
         'gtmthings:assembler/huge_dual_hatch_max',
+        'gtceu:mixer/indium_concentrate',
+        'gtceu:chemical_reactor/indium_concentrate_separation',
+        'gtceu:large_chemical_reactor/indium_concentrate_separation',
+        'gtceu:extractor/extract_zncl2_dust'
 
     ]
     remove_id.forEach(recipeId =>{
